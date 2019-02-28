@@ -1,0 +1,16 @@
+[?1h=
+                            < M A T L A B (R) >
+                  Copyright 1984-2018 The MathWorks, Inc.
+                   R2018b (9.5.0.944444) 64-bit (maci64)
+                              August 28, 2018
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+length = 6.688427 
+bottom = 10.660000 
+d_mean = -5.772985 
+d_left = -5.219810 
+d_right = -6.326160 
+[?1l>
