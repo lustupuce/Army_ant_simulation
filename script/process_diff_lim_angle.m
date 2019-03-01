@@ -13,71 +13,71 @@
 %data{:,12} dissolution;
 %data{:,13} Nb robots end of dissolution;
 %(data{:,14} initial distance from the bottom of the V;) (opt)
-
-filepath(1) = "../experiments/limi_angle/delay_025_angle_lim_0_2019-02-27_23-24/results/length.txt"; 
-filepath(2) = '../experiments/limi_angle/delay_025_phase_angle_lim_30_abs_2019-02-08_10-45/results/length.txt'; 
-filepath(3) = '../experiments/limi_angle/delay_025_angle_lim_2_25_2019-02-27_16-38/results/length.txt'; 
-filepath(4) = '../experiments/limi_angle/delay_025_angle_lim_3_2019-02-27_20-57/results/length.txt'; 
-
-
-for i=1:length(filepath)
-    data(:,:,i)=unique(dlmread(filepath(i), ';'),'rows');
-    data(:,:,i)=sortrows(data(:,:,i),1);
-%     data_2_25(:,:,i)=data_l(data_l(:,3,i)==2.25,:,i);
-%     data_3_25(:,:,i)=data_l(data_l(:,3,i)==3.25,:,i);
-%     data_4_25(:,:,i)=data_l(data_l(:,3,i)==4.25,:,i);
-%     data_5_25(:,:,i)=data_l(data_l(:,3,i)==5.25,:,i);
-end
-
-folder='../experiments/global_results/lim_angle/'
-
-
-delay=unique(data(:,3,1),'rows');
-angle=unique(data(:,1,1),'rows');
-h_2bl = 1./tan(angle.*pi/180);
-h_bl = 0.5./tan(angle.*pi/180);
-
-x0=500;
-y0=500;
-width=750;
-height=400;
-
-%========================================================================
-%
-%                  HEIGHT
-%
-%=========================================================================
-cmap = colormap(parula(15)); %30
-lim_angle=[0 0.5 2.25/pi 3/pi];
-for i=1:length(delay)
-    fig= figure(i);
-    hold on
-    for j=1:length(filepath)
-        d = delay(i);
-        dist = (floor(d)+0.5)*0.52/1.02;
-        a = lim_angle(j);
-        txt = strcat("Min angle to avoid pushing: ", num2str(a,2), "\pi Rad");
-        tmp = data(data(:,3,j)==d,11,j);
-        plot(angle,abs(data(data(:,3,j)==d,11,j)), '-', 'Color',cmap(2*j,:), 'DisplayName',txt);
-    end
-    % plot(angle,abs(h_mean));
-    plot(angle,h_2bl,'--', 'Color','k', 'DisplayName','2 BL width');
-    plot(angle,h_bl,'--', 'Color','k', 'DisplayName','1 BL width');
-    legend show
-    ylabel('Mean bridge height [Body length unit]')
-    xlabel('V-Angle/2 [Deg] ')
-
-    set(gcf,'position',[x0,y0,width,height])
-    
-    txt_title = strcat("height_delay_", num2str(dist,2), ".png");
-    title = fullfile(folder, txt_title);
-    saveas(fig,title);
-    txt_title = strcat("height_delay_", num2str(dist,2), ".png");
-    title = fullfile(folder, txt_title);
-    saveas(fig,title);
-end
-
-clear all
+% 
+% filepath(1) = "../experiments/limi_angle/delay_025_angle_lim_0_2019-02-27_23-24/results/length.txt"; 
+% filepath(2) = '../experiments/limi_angle/delay_025_phase_angle_lim_30_abs_2019-02-08_10-45/results/length.txt'; 
+% filepath(3) = '../experiments/limi_angle/delay_025_angle_lim_2_25_2019-02-27_16-38/results/length.txt'; 
+% filepath(4) = '../experiments/limi_angle/delay_025_angle_lim_3_2019-02-27_20-57/results/length.txt'; 
+% 
+% 
+% for i=1:length(filepath)
+%     data(:,:,i)=unique(dlmread(filepath(i), ';'),'rows');
+%     data(:,:,i)=sortrows(data(:,:,i),1);
+% %     data_2_25(:,:,i)=data_l(data_l(:,3,i)==2.25,:,i);
+% %     data_3_25(:,:,i)=data_l(data_l(:,3,i)==3.25,:,i);
+% %     data_4_25(:,:,i)=data_l(data_l(:,3,i)==4.25,:,i);
+% %     data_5_25(:,:,i)=data_l(data_l(:,3,i)==5.25,:,i);
+% end
+% 
+% folder='../experiments/global_results/lim_angle/'
+% 
+% 
+% delay=unique(data(:,3,1),'rows');
+% angle=unique(data(:,1,1),'rows');
+% h_2bl = 1./tan(angle.*pi/180);
+% h_bl = 0.5./tan(angle.*pi/180);
+% 
+% x0=500;
+% y0=500;
+% width=750;
+% height=400;
+% 
+% %========================================================================
+% %
+% %                  HEIGHT
+% %
+% %=========================================================================
+% cmap = colormap(parula(15)); %30
+% lim_angle=[0 0.5 2.25/pi 3/pi];
+% for i=1:length(delay)
+%     fig= figure(i);
+%     hold on
+%     for j=1:length(filepath)
+%         d = delay(i);
+%         dist = (floor(d)+0.5)*0.52/1.02;
+%         a = lim_angle(j);
+%         txt = strcat("Min angle to avoid pushing: ", num2str(a,2), "\pi Rad");
+%         tmp = data(data(:,3,j)==d,11,j);
+%         plot(angle,abs(data(data(:,3,j)==d,11,j)), '-', 'Color',cmap(2*j,:), 'DisplayName',txt);
+%     end
+%     % plot(angle,abs(h_mean));
+%     plot(angle,h_2bl,'--', 'Color','k', 'DisplayName','2 BL width');
+%     plot(angle,h_bl,'--', 'Color','k', 'DisplayName','1 BL width');
+%     legend show
+%     ylabel('Mean bridge height [Body length unit]')
+%     xlabel('V-Angle/2 [Deg] ')
+% 
+%     set(gcf,'position',[x0,y0,width,height])
+%     
+%     txt_title = strcat("height_delay_", num2str(dist,2), ".png");
+%     title = fullfile(folder, txt_title);
+%     saveas(fig,title);
+%     txt_title = strcat("height_delay_", num2str(dist,2), ".png");
+%     title = fullfile(folder, txt_title);
+%     saveas(fig,title);
+% end
+% 
+% clear all
 
 %==============================================================
 %----------- percent of dissolution
@@ -104,13 +104,18 @@ filepath(4) = '../experiments/limi_angle/delay_025_angle_lim_3_2019-02-27_20-57/
 for i=1:length(filepath)
     data(:,:,i)=unique(dlmread(filepath(i), ';'),'rows');
     data(:,:,i)=sortrows(data(:,:,i),1);
-    percent_diss(i) = sum(data(:,10,i))/sum(data(:,6,i))*100;
-    percent_stack(i) = sum(data(data(:,7,i)<200,10,i))/sum(data(:,6,i))*100;
+    percent_diss(i) = sum(data(data(:,6,i)==1,10,i))/sum(data(:,6,i))*100;
+    percent_stack(i) = sum(data(data(:,7,i)<200,6,i))/sum(data(:,6,i))*100;
 end
 
 folder='../experiments/global_results/lim_angle/'
-
-
-clear all
+lim_angle=[0 0.5*180 2.25*180/pi 3*180/pi];
+plot(lim_angle,percent_diss);
+hold on
+plot(lim_angle,percent_stack);
+legend('Successful dissolution', 'Stacking')
+ylabel('Percentage [%]')
+xlabel('Min angle to avoid pushing [Deg] ')
+% clear all
 
 

@@ -222,7 +222,7 @@ private:
 	bool m_isStable = false;
 	bool m_isDissolved = false;
 	double m_dissolutionTime = 0;
-	double m_angle_min= 0; // PI/8
+	double m_angle_min= PI/8;
 	b2Body* m_terrainBody=nullptr;
 
 //

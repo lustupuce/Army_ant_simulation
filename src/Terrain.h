@@ -14,7 +14,7 @@
 
 #include "Config.h"
 
-enum e_terrain_type {DEFAULT, V_TERRAIN, RAMP, BOX};
+enum e_terrain_type {DEFAULT, V_TERRAIN, RAMP, BOX, V_STEPPER};
 
 class Terrain {
 public:

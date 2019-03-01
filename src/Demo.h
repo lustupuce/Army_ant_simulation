@@ -17,6 +17,7 @@
 #include "Vterrain.h"
 #include "V2BLTerrain.h"
 #include "Ramp.h"
+#include "VStepper.h"
 #include <iostream>
 #include <fstream>
 #include "Config.h"
@@ -67,7 +68,7 @@ private:
 //	b2Vec2 m_gravity = b2Vec2(0.f, 0.f);
 	RobotController m_robotController;
 	double m_to_px;
-	Vterrain m_terrain;
+	VStepper m_terrain;
 	MyContactListener_v2* myContactListener;
 	double m_it = 0;
 	int m_nbRobots = 0;

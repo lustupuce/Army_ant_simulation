@@ -1,4 +1,4 @@
-filepath_00 = '../experiments/delay_025_angle_lim_0_2019-02-27_23-24/results/nb_robots.txt'
+filepath_00 = '../experiments/limi_angle/delay_025_angle_lim_0_2019-02-27_23-24/results/nb_robots.txt'
 data=dlmread(filepath_00, ';');
 [folder,name,ext] = fileparts(filepath_00);
 
