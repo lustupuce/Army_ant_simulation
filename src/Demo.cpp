@@ -35,7 +35,8 @@
 
 bool distance_from_bottom = false;
 
-bool gaussian_delay = false;
+bool gaussian_delay = true;
+bool periodic_delay = false;
 
 Demo::Demo(b2World* world, config::sConfig cfg){
 	m_world = world;
@@ -71,7 +72,7 @@ Demo::Demo(b2World* world, config::sConfig cfg){
 
 	if(gaussian_delay){
 		m_gauss_delay = std::normal_distribution<double>(m_config.simulation.robot_delay,m_std_dev);
-		m_seed = m_rd();
+		m_seed = 2954034953.000000 ;//m_rd();
 		m_gen.seed(m_seed);
 //		m_gen.seed(3.5);
 	}
@@ -235,7 +236,6 @@ void Demo::demoLoop(){
 bool Demo::addRobotWithDelay(){
 
 	if(m_nbRobots < m_config.simulation.nb_robots){
-		int delay = int(m_config.controller.walk_delay*FPS);
 		int final_it = int(60 * m_config.simulation.robot_delay) ; // at 60 fps
 		if(m_it > final_it){
 //			std::cout<< m_config.simulation.robot_delay<<std::endl;

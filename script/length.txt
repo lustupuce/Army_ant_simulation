@@ -8,9 +8,9 @@
 To get started, type doc.
 For product information, visit www.mathworks.com.
  
-length = 6.688427 
+length = 6.316076 
 bottom = 10.660000 
-d_mean = -5.772985 
-d_left = -5.219810 
-d_right = -6.326160 
+d_mean = -5.877753 
+d_left = -6.258780 
+d_right = -5.496727 
 [?1l>

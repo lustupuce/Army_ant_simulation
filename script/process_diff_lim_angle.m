@@ -14,19 +14,23 @@
 %data{:,13} Nb robots end of dissolution;
 %(data{:,14} initial distance from the bottom of the V;) (opt)
 % 
-% filepath(1) = "../experiments/limi_angle/delay_025_angle_lim_0_2019-02-27_23-24/results/length.txt"; 
-% filepath(2) = '../experiments/limi_angle/delay_025_phase_angle_lim_30_abs_2019-02-08_10-45/results/length.txt'; 
-% filepath(3) = '../experiments/limi_angle/delay_025_angle_lim_2_25_2019-02-27_16-38/results/length.txt'; 
-% filepath(4) = '../experiments/limi_angle/delay_025_angle_lim_3_2019-02-27_20-57/results/length.txt'; 
+
+
+% filepath(1) = "../experiments/limi_angle/delay_05_angle_lim_0_2019-02-27_11-38/results/length.txt"; 
+% filepath(2) = '../experiments/limi_angle/delay_05_phase_limit_angle_2019-02-04_16-47/results/length.txt'; 
+% filepath(3) = '../experiments/limi_angle/delay_05_angle_lim_2_2019-02-27_14-29/results/length.txt'; 
+% filepath(4) = '../experiments/limi_angle/delay_05_angle_lim_3_2019-02-27_08-43/results/length.txt'; 
+% % filepath(1) = "../experiments/limi_angle/delay_025_angle_lim_0_2019-02-27_23-24/results/length.txt"; 
+% % filepath(2) = '../experiments/limi_angle/delay_025_phase_angle_lim_30_abs_2019-02-08_10-45/results/length.txt'; 
+% % filepath(3) = '../experiments/limi_angle/delay_025_angle_lim_2_25_2019-02-27_16-38/results/length.txt'; 
+% % filepath(4) = '../experiments/limi_angle/delay_025_angle_lim_3_2019-02-27_20-57/results/length.txt'; 
+% % filepath(5) = '../experiments/limi_angle/delay_025_angle_lim_0_no_min_2019-02-28_11-57/results/length.txt';
+% % filepath(6) = '../experiments/limi_angle/delay_025_angle_lim_05pi_no_min_2019-02-28_14-50/results/length.txt';
 % 
 % 
 % for i=1:length(filepath)
 %     data(:,:,i)=unique(dlmread(filepath(i), ';'),'rows');
 %     data(:,:,i)=sortrows(data(:,:,i),1);
-% %     data_2_25(:,:,i)=data_l(data_l(:,3,i)==2.25,:,i);
-% %     data_3_25(:,:,i)=data_l(data_l(:,3,i)==3.25,:,i);
-% %     data_4_25(:,:,i)=data_l(data_l(:,3,i)==4.25,:,i);
-% %     data_5_25(:,:,i)=data_l(data_l(:,3,i)==5.25,:,i);
 % end
 % 
 % folder='../experiments/global_results/lim_angle/'
@@ -48,7 +52,7 @@
 % %
 % %=========================================================================
 % cmap = colormap(parula(15)); %30
-% lim_angle=[0 0.5 2.25/pi 3/pi];
+% lim_angle=[0 0.5 2.25/pi 3/pi 0 0.5];
 % for i=1:length(delay)
 %     fig= figure(i);
 %     hold on
@@ -57,6 +61,9 @@
 %         dist = (floor(d)+0.5)*0.52/1.02;
 %         a = lim_angle(j);
 %         txt = strcat("Min angle to avoid pushing: ", num2str(a,2), "\pi Rad");
+%         if j>4
+%             txt = strcat("Min angle to avoid pushing: ", num2str(a,2), "\pi Rad, no min angle");
+%         end
 %         tmp = data(data(:,3,j)==d,11,j);
 %         plot(angle,abs(data(data(:,3,j)==d,11,j)), '-', 'Color',cmap(2*j,:), 'DisplayName',txt);
 %     end
@@ -95,14 +102,24 @@
 %data{:,10} dissolution;
 %data{:,11} Nb robots end of dissolution;
 
-filepath(1) = "../experiments/limi_angle/delay_025_angle_lim_0_2019-02-27_23-24/results/nb_robots.txt"; 
-filepath(2) = '../experiments/limi_angle/delay_025_phase_angle_lim_30_abs_2019-02-08_10-45/results/nb_robots.txt'; 
-filepath(3) = '../experiments/limi_angle/delay_025_angle_lim_2_25_2019-02-27_16-38/results/nb_robots.txt'; 
-filepath(4) = '../experiments/limi_angle/delay_025_angle_lim_3_2019-02-27_20-57/results/nb_robots.txt'; 
+filepath(1) = "../experiments/limi_angle/delay_05_angle_lim_0_2019-02-27_11-38/results/nb_robots.txt"; 
+filepath(2) = '../experiments/limi_angle/delay_05_phase_limit_angle_2019-02-04_16-47/results/nb_robots.txt'; 
+filepath(3) = '../experiments/limi_angle/delay_05_angle_lim_2_2019-02-27_14-29/results/nb_robots.txt'; 
+filepath(4) = '../experiments/limi_angle/delay_05_angle_lim_3_2019-02-27_08-43/results/nb_robots.txt'; 
 
+% filepath(5) = '../experiments/limi_angle/delay_025_angle_lim_0_no_min_2019-02-28_11-57/results/nb_robots.txt';
+% filepath(6) = '../experiments/limi_angle/delay_025_angle_lim_05pi_no_min_2019-02-28_14-50/results/nb_robots.txt';
+
+fig = figure(7)
+x0=500;
+y0=500;
+width=750;
+height=400;
 
 for i=1:length(filepath)
-    data(:,:,i)=unique(dlmread(filepath(i), ';'),'rows');
+%     data(:,:,i)=unique(dlmread(filepath(i), ';'),'rows');
+    tmp=unique(dlmread(filepath(i), ';'),'rows');
+    data(:,:,i)=tmp(tmp(:,3)<7.5,:);
     data(:,:,i)=sortrows(data(:,:,i),1);
     percent_diss(i) = sum(data(data(:,6,i)==1,10,i))/sum(data(:,6,i))*100;
     percent_stack(i) = sum(data(data(:,7,i)<200,6,i))/sum(data(:,6,i))*100;
@@ -116,6 +133,15 @@ plot(lim_angle,percent_stack);
 legend('Successful dissolution', 'Stacking')
 ylabel('Percentage [%]')
 xlabel('Min angle to avoid pushing [Deg] ')
-% clear all
+
+set(gcf,'position',[x0,y0,width,height])
+
+txt_title = strcat("percent_diss.png");
+title = fullfile(folder, txt_title);
+saveas(fig,title);
+txt_title = strcat("percent_diss.png");
+title = fullfile(folder, txt_title);
+saveas(fig,title);
+clear all
 
 

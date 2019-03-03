@@ -80,18 +80,18 @@ void default_parameters(config::sConfig& cfg){
 
 	cfg.terrain.runaway = 7; //7
 	cfg.terrain.v_width = 5; //10.2
-	cfg.terrain.v_height = 3;
-	cfg.terrain.v_angle = 55/RAD_TO_DEG;
+	cfg.terrain.v_height = 8;
+	cfg.terrain.v_angle = 20/RAD_TO_DEG;
 
 	cfg.simulation.gravity = 0.0;
 	cfg.simulation.robot_distance = 3.5;
 	cfg.simulation.robot_phase = 0;
-	cfg.simulation.robot_delay = 3.25;
+	cfg.simulation.robot_delay = 4.25;
 	cfg.simulation.robot_initial_posX = 5.20;
 	cfg.simulation.robot_initial_posY = 1.0;
 	cfg.simulation.nb_robots = 250; //250
 	cfg.simulation.bridge_duration = 100;
-	cfg.simulation.dissolution_duration = 100;
+	cfg.simulation.dissolution_duration = 200;
 	cfg.simulation.visualization = true;
 
 	cfg.controller.angle_limit = PI/2;// PI/2

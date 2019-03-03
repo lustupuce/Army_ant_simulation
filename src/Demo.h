@@ -68,7 +68,7 @@ private:
 //	b2Vec2 m_gravity = b2Vec2(0.f, 0.f);
 	RobotController m_robotController;
 	double m_to_px;
-	VStepper m_terrain;
+	Vterrain m_terrain;
 	MyContactListener_v2* myContactListener;
 	double m_it = 0;
 	int m_nbRobots = 0;
@@ -98,7 +98,7 @@ private:
 	// Mersenne twister PRNG, initialized with seed from previous random device instance
 	std::mt19937 m_gen;
 	double m_seed;
-	double m_std_dev=0.40; //0.25
+	double m_std_dev=0.25; //0.25
 
 //	std::default_random_engine gen;
 	std::normal_distribution<double> m_gauss_delay;

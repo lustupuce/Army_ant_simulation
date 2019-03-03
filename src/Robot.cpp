@@ -927,24 +927,6 @@ bool Robot::contactOnGripSide(b2Contact* contact){
 				return true;
 			}
 		}
-
-//		if(PI/2 <= angle < 3*PI/2){
-//			angle = PI-angle;
-//			double eq = tan(angle)*x - y ;
-//			if(eq > 0){
-//				return true;
-//			}
-//		}
-//		else{
-//			angle = PI-angle;
-//			double eq = tan(angle)*x - y ;
-//			std::cout << "tan:" << tan(angle) << std::endl;
-//			if(eq < 0){
-//				return true;
-//			}
-//		}
-
-
 	}
 
 	return false;

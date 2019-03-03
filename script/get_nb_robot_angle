@@ -1,5 +1,5 @@
 #!/bin/bash
-path="../experiments/delay_025_angle_lim_3_2019-02-27_20-57"
+path="../experiments/limi_angle/delay_05_angle_lim_3_2019-02-27_08-43"
 
 if [ ! -d "$path/results" ]
 then
