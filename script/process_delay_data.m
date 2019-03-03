@@ -15,8 +15,8 @@
 %data{:,13} Nb robots end of dissolution;
 %(data{:,14} initial distance from the bottom of the V;) (opt)
 
-filepath_00 = '../experiments/delay_gauss_025_std_01_2019-02-28_09-19/results/length.txt';
-filepath_gauss = '../experiments/delay_gauss_025_std_01_2019-02-28_09-19/results/length.txt';
+filepath_00 = '../experiments/delay_025_no_gripp_area_2019-03-02_22-43/results/length.txt';
+filepath_gauss = '../experiments/delay_025_no_gripp_area_2019-03-02_22-43/results/length.txt';
 data=dlmread(filepath_00, ';');
 data_g=dlmread(filepath_gauss, ';');
 [folder,name,ext] = fileparts(filepath_00);

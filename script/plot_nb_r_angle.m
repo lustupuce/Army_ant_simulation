@@ -1,5 +1,5 @@
-filepath1 = '../experiments/general_delay_2019-01-08_10-08/results/nb_robots.txt'
-filepath2 = '../experiments/general_delay_2019-01-16_13-41/results/nb_robots.txt'
+filepath1 = '../experiments/delay_025_no_gripp_area_2019-03-02_22-43/results/nb_robots.txt'
+filepath2 = '../experiments/delay_025_no_gripp_area_2019-03-02_22-43/results/nb_robots.txt'
 data1=dlmread(filepath1, ';');
 data2=dlmread(filepath2, ';');
 data = [data1; data2];

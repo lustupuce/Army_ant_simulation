@@ -35,7 +35,7 @@
 
 bool distance_from_bottom = false;
 
-bool gaussian_delay = true;
+bool gaussian_delay = false;
 bool periodic_delay = false;
 
 Demo::Demo(b2World* world, config::sConfig cfg){
@@ -140,6 +140,9 @@ void Demo::demoLoop(){
 
 					m_elapsedTime += 1.f/FPS;
 					m_currentIt ++;
+					if(!m_stableBridge){
+						m_stableBridge = m_robotController.isBridgeStable();
+					}
 				}
 
 				else if(m_elapsedTime < m_config.simulation.dissolution_duration + m_config.simulation.bridge_duration){
@@ -193,6 +196,9 @@ void Demo::demoLoop(){
 
 				m_elapsedTime += 1.f/FPS;
 				m_currentIt ++;
+				if(!m_stableBridge){
+					m_stableBridge = m_robotController.isBridgeStable();
+				}
 			}
 
 		// Get the number of robots in the final bridge
@@ -491,7 +497,7 @@ void Demo::writeResultFile(){
 		m_logFile << "	Number of robots in the bridge: "<< std::to_string(m_nbRobotsInBridge) << "\n\n";
 		m_logFile << "	Number of robots in bridge state: "<< std::to_string(m_nbRobotsInBridgeState) << "\n\n";
 
-		if(m_robotController.isBridgeStable()){
+		if(m_stableBridge){
 		  m_logFile << "The bridge is STABLE \n";
 		  t = m_robotController.getStabilizationTime();
 		  m_logFile << "Time to reach stable bridge: "<< std::to_string(t) << " s \n\n";

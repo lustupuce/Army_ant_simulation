@@ -5,39 +5,33 @@
  *      Author: lucie
  */
 
-#ifndef WORLD_H_
-#define WORLD_H_
+#ifndef BOXTERRAIN_H_
+#define BOXTERRAIN_H_
 
-#include "Box2D/Box2D.h"
-#include "SFML/Graphics.hpp"
-#include "SFML/Window.hpp"
+#include "Terrain.h"
 
-#include "Config.h"
-
-class World {
+class BoxTerrain: public Terrain {
 public:
-	World(	b2World& world, sf::RenderWindow& window,
-			float m_to_pix, float window_x_px, float window_y_px,
-			float wall_w_m, float wall_h_m);
-	virtual ~World();
+	BoxTerrain();
+	BoxTerrain(	b2World* world, sf::RenderWindow& window, config::sTerrain terrainParam, int WINDOW_X_PX, double bodyLength=1);
+	virtual ~BoxTerrain();
+
+	void create(b2World* world, sf::RenderWindow& window, config::sTerrain terrainParam, int WINDOW_X_PX, double bodyLength=1);
 
 	/// Create the Box2D body for the static object of the scene.
 	/// @param m_to_pix, window_x_px, window_y_px: configuration of the window, they are usually defined in the config file.
 	/// @param wall_w_m, wall_h_m: configuration of the walls, they are usually defined in the config file.
-	void createBody(	b2World& world,
-						float m_to_pix, float window_x_px, float window_y_px,
-						float wall_w_m, float wall_h_m);
+	void createBody(b2World* world);
 
 	/// Draw the shapes corresponding to the Box2D body created previously.
 	/// @param m_to_pix, window_x_px, window_y_px: configuration of the window, they are usually defined in the config file.
 	/// @param wall_w_m, wall_h_m: configuration of the walls, they are usually defined in the config file.
-	void drawBody(	sf::RenderWindow& window,
-					float m_to_pix, float window_x_px, float window_y_px,
-					float wall_w_m, float wall_h_m);
+	void drawBody(	sf::RenderWindow& window);
 
+	e_terrain_type getType();
 private:
-	b2Body* m_groundBody;
-	float m_M_TO_PX ;
+	int m_window_x=0;
+	int m_window_y=0;
 };
 
-#endif /* WORLD_H_ */
+#endif /* BOXTERRAIN_H_ */

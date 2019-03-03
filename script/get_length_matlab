@@ -1,6 +1,6 @@
 #!/bin/bash
 
-path="../experiments/delay_025_angle_lim_05pi_no_min_2019-02-28_14-50"
+path="../experiments/delay_025_no_gripp_area_2019-03-02_22-43"
 export PATH=/Applications/MATLAB_R2018b.app/bin:$PATH
 
 if [ ! -d "$path/results" ]

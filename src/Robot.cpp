@@ -910,20 +910,17 @@ bool Robot::contactOnGripSide(b2Contact* contact){
 
 	if(bodyA==movingWheel || bodyB==movingWheel)
 	{
+//		return true;
 		double x0 = movingWheel->GetLocalPoint(worldManifold.points[0]).x;
 		double y0 = movingWheel->GetLocalPoint(worldManifold.points[0]).y;
 		double y = y0*cos(angle)- x0*sin(angle);
 		if(m_movingSide == RIGHT){
-//			std::cout<<"Right"<<std::endl;
 			if(y>0){
-//				std::cout<<"Right wheel: "<<angle*RAD_TO_DEG<<std::endl;
 				return true;
 			}
 		}
 		else{
-//			std::cout<<"Left"<<std::endl;
 			if(y<0){
-//				std::cout<<"Left wheel: "<<angle*RAD_TO_DEG<<std::endl;
 				return true;
 			}
 		}

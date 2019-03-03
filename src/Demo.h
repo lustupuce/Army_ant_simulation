@@ -13,7 +13,6 @@
 #include <iostream>
 #include "Robot.h"
 #include "RobotController.h"
-#include "World.h"
 #include "Vterrain.h"
 #include "V2BLTerrain.h"
 #include "Ramp.h"
@@ -23,6 +22,7 @@
 #include "Config.h"
 
 #include <random>
+#include "BoxTerrain.h"
 
 
 class MyContactListener_v2 : public b2ContactListener
@@ -68,7 +68,7 @@ private:
 //	b2Vec2 m_gravity = b2Vec2(0.f, 0.f);
 	RobotController m_robotController;
 	double m_to_px;
-	Vterrain m_terrain;
+	BoxTerrain m_terrain;
 	MyContactListener_v2* myContactListener;
 	double m_it = 0;
 	int m_nbRobots = 0;
@@ -82,6 +82,7 @@ private:
 	int m_nbRobotsInBridgeState = 0;
 
 	bool m_stacking = false;
+	bool m_stableBridge = false;
 
 	b2Vec2 m_startP;
 	b2Vec2 m_endP;
