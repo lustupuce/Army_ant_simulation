@@ -14,12 +14,12 @@
 %data{:,13} Nb robots end of dissolution;
 %(data{:,14} initial distance from the bottom of the V;) (opt)
 
-filepath(1) = "../experiments/delay_gauss_025_2019-02-24_00-12/results/length.txt"; 
-filepath(2) = '../experiments/diff_std/delay_gauss_025_std_01_2019-02-28_09-19/results/length.txt'; 
-filepath(3) = '../experiments/diff_std/delay_gauss_025_std_04_2019-02-28_10-43/results/length.txt';
+filepath(1) = "../experiments/diff_std/delay_gauss_025_std_01_2019-02-28_09-19/results/mid_height.txt"; 
+filepath(2) = "../experiments/delay_gauss_025_2019-02-21_08-45/results/mid_height.txt"; 
+filepath(3) = '../experiments/diff_std/delay_gauss_025_std_04_2019-02-28_10-43/results/mid_height.txt';
 
 for i=1:length(filepath)
-    if i==1
+    if i==2
         tmp = unique(dlmread(filepath(i), ';'),'rows');
         data(:,:,i) = [tmp(tmp(:,3)==3.25,:); tmp(tmp(:,3)==4.25,:)];
     else
@@ -46,7 +46,7 @@ height=400;
 % %
 % %=========================================================================
 cmap = colormap(parula(15)); %30
-std=[0.25 0.1 0.4];
+std=[ 0.1 0.25 0.4];
 for i=1:length(delay)
     fig= figure(i);
     hold on
@@ -61,15 +61,15 @@ for i=1:length(delay)
     plot(angle,h_2bl,'--', 'Color','k', 'DisplayName','2 BL width');
     plot(angle,h_bl,'--', 'Color','k', 'DisplayName','1 BL width');
     legend show
-    ylabel('Mean bridge height [Body length unit]')
+    ylabel('Bridge height in the middle [Body length unit]')
     xlabel('V-Angle/2 [Deg] ')
 
     set(gcf,'position',[x0,y0,width,height])
     
-    txt_title = strcat("height_delay_", num2str(dist,2), ".png");
+    txt_title = strcat("height_delay_", num2str(dist,2), "_v2.png");
     title = fullfile(folder, txt_title);
     saveas(fig,title);
-    txt_title = strcat("height_delay_", num2str(dist,2), ".png");
+    txt_title = strcat("height_delay_", num2str(dist,2), "_v2.png");
     title = fullfile(folder, txt_title);
     saveas(fig,title);
 end

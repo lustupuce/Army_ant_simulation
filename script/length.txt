@@ -8,19 +8,6 @@
 To get started, type doc.
 For product information, visit www.mathworks.com.
  
-
-y_left =
-
-    5.7650
-
-
-t =
-
-    5.7650
-
-length = 6.991617 
 bottom = 10.660000 
-d_mean = -6.421900 
-d_left = -4.895000 
-d_right = -7.948800 
+d_mean = -9.156479 
 [?1l>

@@ -269,8 +269,8 @@ void RobotController::setRobotState(Robot& robot, e_state robotState){
 					printf("Pourquoi putain de nul \n");
 				}
 
-	//			robot.blockMotorRotation(LEFT);
-	//			robot.blockMotorRotation(RIGHT);
+//				robot.blockMotorRotation(LEFT);
+//				robot.blockMotorRotation(RIGHT);
 
 				robot.limitMotorRotation(LEFT, 30/RAD_TO_DEG);
 				robot.limitMotorRotation(RIGHT, 30/RAD_TO_DEG);
@@ -286,9 +286,6 @@ void RobotController::setRobotState(Robot& robot, e_state robotState){
 //				robot.limitMotorRotation(robot.m_movingSide,30/RAD_TO_DEG);
 				robot.setState(BRIDGE);
 			}
-
-//			robot.turnOffMotor(LEFT);
-//			robot.turnOffMotor(RIGHT);
 
 			break;
 	}

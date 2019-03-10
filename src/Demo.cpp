@@ -35,7 +35,7 @@
 
 bool distance_from_bottom = false;
 
-bool gaussian_delay = false;
+bool gaussian_delay = true;
 bool periodic_delay = false;
 
 Demo::Demo(b2World* world, config::sConfig cfg){
@@ -72,7 +72,7 @@ Demo::Demo(b2World* world, config::sConfig cfg){
 
 	if(gaussian_delay){
 		m_gauss_delay = std::normal_distribution<double>(m_config.simulation.robot_delay,m_std_dev);
-		m_seed = 2954034953.000000 ;//m_rd();
+		m_seed = m_rd();// 2954034953.000000 ;//
 		m_gen.seed(m_seed);
 //		m_gen.seed(3.5);
 	}
@@ -143,6 +143,9 @@ void Demo::demoLoop(){
 					if(!m_stableBridge){
 						m_stableBridge = m_robotController.isBridgeStable();
 					}
+					if(periodic_delay){
+						m_config.simulation.robot_delay = 2.5/(cos(PI/(18*60)*m_currentIt)*cos(PI/(18*60)*m_currentIt));
+					}
 				}
 
 				else if(m_elapsedTime < m_config.simulation.dissolution_duration + m_config.simulation.bridge_duration){
@@ -199,6 +202,9 @@ void Demo::demoLoop(){
 				if(!m_stableBridge){
 					m_stableBridge = m_robotController.isBridgeStable();
 				}
+				if(periodic_delay){
+					m_config.simulation.robot_delay = 2.5/(cos(PI/(18*60)*m_currentIt)*cos(PI/(18*60)*m_currentIt));
+				}
 			}
 
 		// Get the number of robots in the final bridge
@@ -252,7 +258,7 @@ bool Demo::addRobotWithDelay(){
 			m_robotController.createRobot(m_world, 0, m_config.simulation.robot_initial_posX, m_config.simulation.robot_initial_posY);
 			m_it = 0;
 			if(gaussian_delay){
-				m_config.simulation.robot_delay=std::max(m_gauss_delay(m_gen), 1.1);
+				m_config.simulation.robot_delay=std::max(m_gauss_delay(m_gen), 1.5);
 				std::cout<<"delay rand= "<< m_config.simulation.robot_delay<<std::endl;
 			}
 			m_nbRobots++;

@@ -78,18 +78,18 @@ int main(int argc, char* argv[])
 
 void default_parameters(config::sConfig& cfg){
 
-	cfg.terrain.runaway = 7; //7
+	cfg.terrain.runaway = 8; //7
 	cfg.terrain.v_width = 10; //10.2
-	cfg.terrain.v_height = 6; //8
-	cfg.terrain.v_angle = 0;//20/RAD_TO_DEG;
+	cfg.terrain.v_height = 3.5; //8
+	cfg.terrain.v_angle = 50/RAD_TO_DEG;
 
 	cfg.simulation.gravity = 0.0;
 	cfg.simulation.robot_distance = 3.5;
 	cfg.simulation.robot_phase = 0;
-	cfg.simulation.robot_delay = 4.25;
+	cfg.simulation.robot_delay = 3.25;
 	cfg.simulation.robot_initial_posX = 5.20;
 	cfg.simulation.robot_initial_posY = 1.0;
-	cfg.simulation.nb_robots = 1; //250
+	cfg.simulation.nb_robots = 25; //250
 	cfg.simulation.bridge_duration = 100;
 	cfg.simulation.dissolution_duration = 200;
 	cfg.simulation.visualization = true;

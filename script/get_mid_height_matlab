@@ -1,6 +1,6 @@
 #!/bin/bash
 
-path="../experiments/limi_angle/delay_025_angle_lim_078_2019-03-01_08-40"
+path="../experiments/periodic_delay_T_18_m_2_5_2019-03-03_22-54"
 export PATH=/Applications/MATLAB_R2018b.app/bin:$PATH
 
 if [ ! -d "$path/results" ]
@@ -63,20 +63,19 @@ do
 
     if grep -q 'No bridge has formed' "$File"
     then
-      echo "$Angle; $Height; $delay; $dist; $phase; $Stable; 0.0; $bottomY; 0.0; 0.0; 0.0; $Dissol; $Nb_r_diss; $init "  >> $path/results/length.txt
+      echo "$Angle; $Height; $delay; $dist; $phase; $Stable; 0.0; $bottomY; 0.0; 0.0; 0.0; $Dissol; $Nb_r_diss; $init "  >> $path/results/mid_height.txt
     else
-      matlab -nodesktop -nosplash -r "getBridgeLength($bridge_file, $top_leftX, $top_leftY, $top_rightX, $top_rightY, $bottomX , $bottomY, $t_stab);exit" > length.txt
-      length="$(sed -n 's/length = \(.*\)/\1/p' < "length.txt")"
-      dl="$(sed -n 's/d_left = \(.*\)/\1/p' < "length.txt")"
-      dr="$(sed -n 's/d_right = \(.*\)/\1/p' < "length.txt")"
+      matlab -nodesktop -nosplash -r "getMiddleBridgeHeight($bridge_file, $top_leftX, $top_leftY, $top_rightX, $top_rightY, $bottomX , $bottomY, $t_stab);exit" > length.txt
       dm="$(sed -n 's/d_mean = \(.*\)/\1/p' < "length.txt")"
-      echo "Length is $length"
+      dl=$dm
+      dr=$dm
+      length="0"
       #eval $length
       if grep -q STABLE "$File";
       then
         Stable="1"
       fi
-      echo "$Angle; $Height; $delay; $dist; $phase; $Stable; $length; $bottomY; $dr; $dl; $dm; $Dissol; $Nb_r_diss; $init"  >> $path/results/length.txt
+      echo "$Angle; $Height; $delay; $dist; $phase; $Stable; $length; $bottomY; $dr; $dl; $dm; $Dissol; $Nb_r_diss; $init"  >> $path/results/mid_height.txt
       #echo "$Angle; $Height; $dist; $Stable; $length ; $bottomY; $dr; $dl; $dm"  >> $path/results/length.txt
     fi
   fi

@@ -1,5 +1,5 @@
 #!/bin/bash
-path="../experiments/delay_025_no_gripp_area_2019-03-02_22-43"
+path="../experiments/gauss_delay_025_blocked_2019-03-05_12-33"
 
 if [ ! -d "$path/results" ]
 then

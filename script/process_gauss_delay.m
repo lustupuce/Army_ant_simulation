@@ -1,29 +1,30 @@
-filepath_1 = '../experiments/delay_gauss_025_2019-02-20_22-17/results/nb_robots.txt'; 
-% filepath_1 = '../experiments/old_gauss_20_feb/delay_gauss_025_2019-02-19_11-12/results/nb_robots.txt'; 
-filepath_2 = '../experiments/delay_gauss_025_2019-02-21_08-45/results/nb_robots.txt'; 
-filepath_3 = '../experiments/delay_gauss_025_2019-02-23_20-22/results/nb_robots.txt'; 
-filepath_4 = '../experiments/delay_gauss_025_2019-02-21_14-40/results/nb_robots.txt'; 
-filepath_5 = '../experiments/delay_gauss_025_2019-02-21_16-33/results/nb_robots.txt'; 
-filepath_6 = '../experiments/delay_gauss_025_2019-02-22_08-37/results/nb_robots.txt'; 
-filepath_7 = '../experiments/delay_gauss_025_2019-02-22_10-46/results/nb_robots.txt'; 
-filepath_8 = '../experiments/delay_gauss_025_2019-02-22_12-56/results/nb_robots.txt'; 
-filepath_9 = '../experiments/delay_gauss_025_2019-02-22_20-56/results/nb_robots.txt'; 
-filepath_10 = '../experiments/delay_gauss_025_2019-02-22_14-56/results/nb_robots.txt'; 
+% filepath_1 = '../experiments/delay_gauss_025_2019-02-20_22-17/results/nb_robots.txt'; 
+filepath_1 = '../experiments/periodic_delay_T_18_m_2_5_2019-03-03_22-54/results/nb_robots.txt'; 
+% filepath_2 = '../experiments/delay_gauss_025_2019-02-21_08-45/results/nb_robots.txt';
+% filepath_3 = '../experiments/delay_gauss_025_2019-02-23_20-22/results/nb_robots.txt'; 
+% filepath_4 = '../experiments/delay_gauss_025_2019-02-21_14-40/results/nb_robots.txt'; 
+% filepath_5 = '../experiments/delay_gauss_025_2019-02-21_16-33/results/nb_robots.txt'; 
+% filepath_6 = '../experiments/delay_gauss_025_2019-02-22_08-37/results/nb_robots.txt'; 
+% filepath_7 = '../experiments/delay_gauss_025_2019-02-22_10-46/results/nb_robots.txt'; 
+% filepath_8 = '../experiments/delay_gauss_025_2019-02-22_12-56/results/nb_robots.txt'; 
+% filepath_9 = '../experiments/delay_gauss_025_2019-02-22_20-56/results/nb_robots.txt'; 
+% filepath_10 = '../experiments/delay_gauss_025_2019-02-22_14-56/results/nb_robots.txt'; 
+
 
 data(:,:,1)=unique(dlmread(filepath_1, ';'),'rows');
-data(:,:,2)=unique(dlmread(filepath_2, ';'),'rows');
-data(:,:,3)=unique(dlmread(filepath_3, ';'),'rows');
-data(:,:,4)=unique(dlmread(filepath_4, ';'),'rows');
-data(:,:,5)=unique(dlmread(filepath_5, ';'),'rows');
-data(:,:,6)=unique(dlmread(filepath_6, ';'),'rows');
-data(:,:,7)=unique(dlmread(filepath_7, ';'),'rows');
-data(:,:,8)=unique(dlmread(filepath_8, ';'),'rows');
-data(:,:,9)=unique(dlmread(filepath_9, ';'),'rows');
-data(:,:,10)=unique(dlmread(filepath_10, ';'),'rows');
+% data(:,:,2)=unique(dlmread(filepath_2, ';'),'rows');
+% data(:,:,3)=unique(dlmread(filepath_3, ';'),'rows');
+% data(:,:,4)=unique(dlmread(filepath_4, ';'),'rows');
+% data(:,:,5)=unique(dlmread(filepath_5, ';'),'rows');
+% data(:,:,6)=unique(dlmread(filepath_6, ';'),'rows');
+% data(:,:,7)=unique(dlmread(filepath_7, ';'),'rows');
+% data(:,:,8)=unique(dlmread(filepath_8, ';'),'rows');
+% data(:,:,9)=unique(dlmread(filepath_9, ';'),'rows');
+% data(:,:,10)=unique(dlmread(filepath_10, ';'),'rows');
 %data=data_00;
-nb_exp=10;
-% [folder,name,ext] = fileparts(filepath_3);
-folder='../experiments/global_results/gaussian/result_10_exp/'
+nb_exp=1;
+[folder,name,ext] = fileparts(filepath_1);
+%folder='../experiments/global_results/gaussian/result_10_exp/'
 
 %Data is organized as following: 
 %data{:,1} V-angle; 
@@ -236,8 +237,8 @@ clear all
 %                  HEIGHT
 %
 %=========================================================================
-
-folder='../experiments/global_results/gaussian/result_10_exp/'
+% 
+% folder='../experiments/global_results/gaussian/result_10_exp/'
 fig4=figure(4)
 x0=500;
 y0=500;
@@ -261,18 +262,20 @@ set(gcf,'position',[x0,y0,width,height])
 %data{:,13} Nb robots end of dissolution;
 %(data{:,14} initial distance from the bottom of the V;) (opt)
 
+filepath(1) = "../experiments/periodic_delay_T_18_m_2_5_2019-03-03_22-54/results/mid_height.txt"; 
 
-filepath(1) = "../experiments/delay_gauss_025_2019-02-20_22-17/results/length.txt"; 
-filepath(2) = "../experiments/delay_gauss_025_2019-02-21_08-45/results/length.txt"; 
-filepath(3) = "../experiments/delay_gauss_025_2019-02-23_16-25/results/length.txt"; 
-filepath(4) = '../experiments/delay_gauss_025_2019-02-21_14-40/results/length.txt'; 
-filepath(5) = '../experiments/delay_gauss_025_2019-02-21_16-33/results/length.txt'; 
-filepath(6) = '../experiments/delay_gauss_025_2019-02-22_08-37/results/length.txt'; 
-filepath(7) = '../experiments/delay_gauss_025_2019-02-22_10-46/results/length.txt'; 
-filepath(8) = '../experiments/delay_gauss_025_2019-02-22_12-56/results/length.txt'; 
-filepath(9) = '../experiments/delay_gauss_025_2019-02-22_20-56/results/length.txt'; 
-filepath(10) = '../experiments/delay_gauss_025_2019-02-22_14-56/results/length.txt'; 
+% filepath(1) = "../experiments/delay_gauss_025_2019-02-20_22-17/results/mid_height.txt"; 
+% filepath(2) = "../experiments/delay_gauss_025_2019-02-21_08-45/results/mid_height.txt"; 
+% filepath(3) = "../experiments/delay_gauss_025_2019-02-23_20-22/results/mid_height.txt"; %delay_gauss_025_2019-02-23_16-25
+% filepath(4) = '../experiments/delay_gauss_025_2019-02-21_14-40/results/mid_height.txt'; 
+% filepath(5) = '../experiments/delay_gauss_025_2019-02-21_16-33/results/mid_height.txt'; 
+% filepath(6) = '../experiments/delay_gauss_025_2019-02-22_08-37/results/mid_height.txt'; 
+% filepath(7) = '../experiments/delay_gauss_025_2019-02-22_10-46/results/mid_height.txt'; 
+% filepath(8) = '../experiments/delay_gauss_025_2019-02-22_12-56/results/mid_height.txt'; 
+% filepath(9) = '../experiments/delay_gauss_025_2019-02-22_20-56/results/mid_height.txt'; 
+% filepath(10) = '../experiments/delay_gauss_025_2019-02-22_14-56/results/mid_height.txt'; 
 
+[folder,name,ext] = fileparts(filepath(1));
 cmap = colormap(parula(15)); %30
 
 for i=1:length(filepath)
@@ -311,11 +314,11 @@ legend show
 ylabel('Mean bridge height [Body length unit]')
 xlabel('V-Angle/2 [Deg] ')
 
-title = fullfile(folder, 'gaussian_height.png');
+title = fullfile(folder, 'gaussian_middle_height.png');
 saveas(fig4,title);
-title = fullfile(folder, 'gaussian_height.fig');
+title = fullfile(folder, 'gaussian_middle_height.fig');
 saveas(fig4,title);
 
 clear all
 
-
+% 

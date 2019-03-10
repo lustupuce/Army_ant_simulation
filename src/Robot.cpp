@@ -80,8 +80,6 @@ void Robot::createBody(b2World* world, config::sRobot robotParameters, double po
 	b2FixtureDef boxFixtureDef;
 	boxFixtureDef.shape = &boxShape;
 	boxFixtureDef.density = 2.f;
-	boxFixtureDef.friction = 0.0;
-	boxFixtureDef.restitution = 0.0;
 	m_robotBody->CreateFixture(&boxFixtureDef);
 
 	/* Box2D left wheel  ---------------------------------*/
@@ -97,9 +95,6 @@ void Robot::createBody(b2World* world, config::sRobot robotParameters, double po
 	mcircleShape.m_radius = m_robotParameters.wheel_radius; //radius
 	b2FixtureDef leftFixtureDef;
 	leftFixtureDef.density = 1.f;
-	leftFixtureDef.restitution =0.0;
-	leftFixtureDef.friction = 0.0;
-	//FixtureDef.friction = 0.7f;
 	leftFixtureDef.shape = &mcircleShape;
 	m_leftWheel->CreateFixture(&leftFixtureDef);
 
@@ -130,8 +125,6 @@ void Robot::createBody(b2World* world, config::sRobot robotParameters, double po
 	mcircleShape.m_p.Set(0, 0); //left wheel
 	rightFixtureDef.shape = &mcircleShape;
 	rightFixtureDef.density = 1.f;
-	rightFixtureDef.restitution =0.0;
-	rightFixtureDef.friction = 0.0;
 	m_rightWheel->CreateFixture(&rightFixtureDef);
 
 		// Joint

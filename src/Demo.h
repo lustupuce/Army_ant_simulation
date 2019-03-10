@@ -68,7 +68,7 @@ private:
 //	b2Vec2 m_gravity = b2Vec2(0.f, 0.f);
 	RobotController m_robotController;
 	double m_to_px;
-	BoxTerrain m_terrain;
+	VStepper m_terrain;
 	MyContactListener_v2* myContactListener;
 	double m_it = 0;
 	int m_nbRobots = 0;

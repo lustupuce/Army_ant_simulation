@@ -15,7 +15,7 @@ VStepper::VStepper() {
 VStepper::VStepper(b2World* world, sf::RenderWindow& window, config::sTerrain terrainParam, int WINDOW_X_PX, double bodyLength)
 : Terrain(world, window, terrainParam, WINDOW_X_PX, bodyLength){
 	m_M_TO_PX = WINDOW_X_PX /  (4*m_runaway);
-	m_posY=5;
+	m_posY=10;
 
 }
 
@@ -48,10 +48,20 @@ void VStepper::createBody(b2World* world){
 	firstSlope.shape = &edgeShape;
 	m_groundBody->CreateFixture(&firstSlope);
 
+	b2FixtureDef corner;
+	edgeShape.Set( b2Vec2(m_runaway-m_height/abs(tan(m_angle)),m_posY-m_height), b2Vec2(m_runaway-m_height/abs(tan(m_angle)),m_posY-1.2*m_height) );
+	corner.shape = &edgeShape;
+	m_groundBody->CreateFixture(&corner);
+
 	b2FixtureDef flat;
-	edgeShape.Set( b2Vec2(m_runaway-m_height/abs(tan(m_angle)),m_posY-m_height), b2Vec2(1.5*m_runaway+m_height/abs(tan(0.7*m_angle)),m_posY-m_height) );
+	edgeShape.Set( b2Vec2(m_runaway-m_height/abs(tan(m_angle)),m_posY-1.2*m_height), b2Vec2(1.5*m_runaway+m_height/abs(tan(0.7*m_angle)),m_posY-1.2*m_height) );
 	flat.shape = &edgeShape;
 	m_groundBody->CreateFixture(&flat);
+
+	b2FixtureDef corner2;
+	edgeShape.Set(b2Vec2(1.5*m_runaway+m_height/abs(tan(0.7*m_angle)),m_posY-1.2*m_height), b2Vec2(1.5*m_runaway+m_height/abs(tan(0.7*m_angle)),m_posY-m_height) );
+	corner2.shape = &edgeShape;
+	m_groundBody->CreateFixture(&corner2);
 
 	b2FixtureDef secondSlope;
 	edgeShape.Set( b2Vec2(1.5*m_runaway+m_height/abs(tan(0.7*m_angle)),m_posY-m_height), b2Vec2(1.5*m_runaway,m_posY) );
@@ -66,13 +76,15 @@ void VStepper::createBody(b2World* world){
 }
 
 void VStepper::drawBody(sf::RenderWindow& window){
-	sf::VertexArray lines(sf::LinesStrip, 6);
+	sf::VertexArray lines(sf::LinesStrip, 8);
 	lines[0].position = sf::Vector2f(0, (m_posY)*m_M_TO_PX);
 	lines[1].position = sf::Vector2f(m_runaway*m_M_TO_PX, (m_posY)*m_M_TO_PX);
 	lines[2].position = sf::Vector2f((m_runaway-m_height/abs(tan(m_angle)))*m_M_TO_PX, (m_posY-m_height)*m_M_TO_PX);
-	lines[3].position = sf::Vector2f((1.5*m_runaway+m_height/abs(tan(0.7*m_angle)))*m_M_TO_PX, (m_posY-m_height)*m_M_TO_PX);
-	lines[4].position = sf::Vector2f((1.5*m_runaway)*m_M_TO_PX, (m_posY)*m_M_TO_PX);
-	lines[5].position = sf::Vector2f((3*m_runaway)*m_M_TO_PX, (m_posY)*m_M_TO_PX);
+	lines[3].position = sf::Vector2f((m_runaway-m_height/abs(tan(m_angle)))*m_M_TO_PX, (m_posY-1.2*m_height)*m_M_TO_PX);
+	lines[4].position = sf::Vector2f((1.5*m_runaway+m_height/abs(tan(0.7*m_angle)))*m_M_TO_PX, (m_posY-1.2*m_height)*m_M_TO_PX);
+	lines[5].position = sf::Vector2f((1.5*m_runaway+m_height/abs(tan(0.7*m_angle)))*m_M_TO_PX, (m_posY-m_height)*m_M_TO_PX);
+	lines[6].position = sf::Vector2f((1.5*m_runaway)*m_M_TO_PX, (m_posY)*m_M_TO_PX);
+	lines[7].position = sf::Vector2f((3*m_runaway)*m_M_TO_PX, (m_posY)*m_M_TO_PX);
 
 	lines[0].color = sf::Color::Black;
 	lines[1].color = sf::Color::Black;
@@ -80,6 +92,8 @@ void VStepper::drawBody(sf::RenderWindow& window){
 	lines[3].color = sf::Color::Black;
 	lines[4].color = sf::Color::Black;
 	lines[5].color = sf::Color::Black;
+	lines[6].color = sf::Color::Black;
+	lines[7].color = sf::Color::Black;
 
 	window.draw(lines);
 }
