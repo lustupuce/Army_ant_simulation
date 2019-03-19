@@ -9,6 +9,8 @@ The example folder contains some executable to directly run variants of the simu
 ### Usage:
 Usage: Simulation_v2 [parameters]
 Parameters:
+	
+	-h 		Help (--help)
 	-cp PATH	Give the path of the configuration file (--configuration_path) 
 
 	Terrain parameters:
