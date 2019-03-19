@@ -1,5 +1,5 @@
 # Army ant simulation
-This github contains the c++ implementation of a simulator for soft robots similar to the Flippy robot[1] to investigate/reproduce army ant bridge behavior
+This github contains the c++ implementation of a simulator for soft robots similar to the Flippy robot[1] to investigate/reproduce army ant bridge behavior developped in the context of a 6-months master thesis (Report)
 
 ***
 Installation guide : [Installation](../../wiki/Installation-guide)
