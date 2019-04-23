@@ -19,7 +19,6 @@ Robot::Robot() {
 	//m_robotBody = createBody(world, posX, posY);
 
 }
-
 Robot::Robot(b2World* world, config::sRobot robotParameters, double posX, double posY, double angle) {
 	// TODO Auto-generated constructor stub
 	//m_robotBody = createBody(world, posX, posY);
@@ -28,7 +27,6 @@ Robot::Robot(b2World* world, config::sRobot robotParameters, double posX, double
 //	m_M_TO_PX = config::WINDOW_X_PX / ((2*8+3));
 
 }
-
 Robot::~Robot() {
 	printf(" destructor called \n");
 	// TODO Auto-generated destructor stub
@@ -54,11 +52,6 @@ Robot::~Robot() {
 	m_currentGripJoint = nullptr;
 }
 
-/** Create the box2D body of the robot and attach it to the world
- * @param world: box2D world defined in the main program
- * @param robotParameters: structure containing the robot parameters: only the body length and speed have to be defined
- * @param posX, posY : initial position of the robot in this world in meters
- * */
 void Robot::createBody(b2World* world, config::sRobot robotParameters, double posX, double posY, double angle){
 
 	m_robotParameters = robotParameters;
@@ -146,12 +139,6 @@ void Robot::createBody(b2World* world, config::sRobot robotParameters, double po
 
 }
 
-/** Use SFML to to draw the body and joints on the window
- * While the drawGripJoint method only draw the grip joint and add a line highlight the owner
- * the drawJoint draw all the joints of the robot.
- * @param window: active SFML window
- * @param m_to_pix is the conversion factor used to transform the meters to pixels
- * */
 void Robot::drawBody(sf::RenderWindow& window, double m_to_pix){
 
 	/* Left wheel */
@@ -452,10 +439,6 @@ void Robot::drawJoint(sf::RenderWindow& window, double m_to_px){
 	 }
 }
 
-/** Three different methods to move the robot body in the clockwise direction,
- * The speed is applied via the m_angularSpeed class member (except for the force
- * The impulse method uses a proportional action to reach the angular target speed
- * */
 void Robot::moveBodyWithMotor(){
 
 	if (m_movingSide == RIGHT){
@@ -536,7 +519,6 @@ void Robot::turnOffMotor(side s){
 		m_leftWheelMotor->EnableMotor(false);
 	}
 }
-
 void Robot::blockMotorRotation(side s){
 	if (s == RIGHT){
 		m_rightWheelMotor->EnableMotor(true);
@@ -558,7 +540,6 @@ void Robot::blockMotorRotation(side s){
 		m_leftWheelMotor->SetLimits( angle-0.01, angle+0.01 );
 	}
 }
-
 void Robot::limitMotorRotation(side s, double limit_angle_rad){
 	if (s == RIGHT){
 		m_rightWheelMotor->EnableMotor(false);
@@ -580,7 +561,6 @@ void Robot::limitMotorRotation(side s, double limit_angle_rad){
 		m_leftWheelMotor->SetLimits( m_referenceAngleJoint-limit_angle_rad, m_referenceAngleJoint+limit_angle_rad );
 	}
 }
-
 void Robot::allowMotorRotation(side s){
 	if (s == RIGHT){
 		m_rightWheelMotor->EnableLimit(false);
@@ -658,7 +638,6 @@ void Robot::grip(b2Contact* contact, b2Body* otherBody, double m_to_px){ //ou al
 	m_normal[1] = sf::Vertex(sf::Vector2f(m_to_px*(xB+(worldManifold.normal).x), m_to_px*(yB+(worldManifold.normal).y)), sf::Color(200, 200, 150));
 
 }
-
 bool Robot::gripSide(b2Contact* contact, b2Body* otherBody, double m_to_px){ //ou alors fonction retourne un joint ?
 
 	if(!contactOnGripSide(contact)){
@@ -747,7 +726,6 @@ bool Robot::gripSide(b2Contact* contact, b2Body* otherBody, double m_to_px){ //o
 	}
 	return false;
 }
-
 void Robot::gripGroundFromPos(){
 
 	//left wheel ------------------------------------------
@@ -957,7 +935,6 @@ bool Robot::checkGripp(side s){
 			return false;
 		}
 }
-
 bool Robot::isGrabbed(){
 //	printf("Robot.isGrabbed \n");
 	bool rightGrabbed = false;
@@ -1027,7 +1004,6 @@ void Robot::incrementNbJoint(side s){
 		m_nbJointRight++;
 	}
 }
-
 void Robot::resetNbJoint(side s){
 	if (s == LEFT){
 		m_nbJointLeft = 0;
@@ -1040,29 +1016,43 @@ void Robot::resetNbJoint(side s){
 //void Robot::releaseGrip(b2World* world, b2Joint* gripJoint){
 //
 //}
-void Robot::setState(e_state state){
-	m_state = state;
-}
 
 void Robot::setContact(bool contact){
 	m_contact = contact;
 }
-
 void Robot::setDelay(int delay){
 	//printf("set delay: %d tick \n", delay);
 	m_delay = delay;
 }
+void Robot::setId(int id){
+	m_id = id;
+}
+void Robot::setSpeed(double speed){
+	m_angularSpeed = speed;
+}
+void Robot::setState(e_state state){
+	m_state = state;
+}
 
+double Robot::getAngle(){
+	double a = m_robotBody->GetAngle();
+	return a;
+}
+b2Body* Robot::getBody(){
+	return m_robotBody;
+}
+double Robot::getBodyLength(){
+	double bl = 2*m_robotParameters.wheel_radius + m_robotParameters.wheel_distance;
+	return bl;
+}
 int Robot::getDelay(){
 
 	//printf("m_delai: %d tick \n", m_delay);
 	return m_delay;
 }
-
-bool Robot::isContact(){
-	return m_contact;
+int Robot::getId(){
+	return m_id;
 }
-
 b2PrismaticJointDef Robot::getJointDef(side s){
 	if (s == LEFT){
 		return m_leftGripJointDef;
@@ -1071,6 +1061,13 @@ b2PrismaticJointDef Robot::getJointDef(side s){
 		return m_rightGripJointDef;
 	}
 
+}
+b2Vec2 Robot::getPosition(){
+	b2Vec2 pos = m_robotBody->GetPosition();
+	return pos;
+}
+e_state Robot::getState(){
+	return m_state;
 }
 b2Body* Robot::getWheel(side s){
 	if (s == LEFT){
@@ -1081,52 +1078,21 @@ b2Body* Robot::getWheel(side s){
 	}
 }
 
+
+bool Robot::isContact(){
+	return m_contact;
+}
+bool Robot::isMoving(){
+	return m_moving;
+}
 bool Robot::isReady(){
 	return m_ready;
 }
 
-bool Robot::isMoving(){
-	return m_moving;
-}
 
-b2Body* Robot::getBody(){
-	return m_robotBody;
-}
-
-e_state Robot::getState(){
-	return m_state;
-}
-
-void Robot::setSpeed(double speed){
-	m_angularSpeed = speed;
-}
 void Robot::destroyBody(){
 	m_leftWheel->GetWorld()->DestroyBody( m_leftWheel );
 	m_rightWheel->GetWorld()->DestroyBody( m_rightWheel );
 	m_robotBody->GetWorld()->DestroyBody( m_robotBody );
 }
-
-double Robot::getBodyLength(){
-	double bl = 2*m_robotParameters.wheel_radius + m_robotParameters.wheel_distance;
-	return bl;
-}
-
-void Robot::setId(int id){
-	m_id = id;
-}
-
-int Robot::getId(){
-	return m_id;
-}
-
-b2Vec2 Robot::getPosition(){
-	b2Vec2 pos = m_robotBody->GetPosition();
-	return pos;
-}
-
-double Robot::getAngle(){
-	double a = m_robotBody->GetAngle();
-	return a;
-}
-
 
