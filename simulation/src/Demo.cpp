@@ -337,13 +337,6 @@ sf::RenderWindow* Demo::getWindow(){
 	return ptrWind;
 }
 
-
-void Demo::step(){
-	m_robotController.step(window.getSize().x);
-	m_world->Step(1.f/60.f, 100, 100);
-	m_robotController.drawRobots(window, m_to_px);
-}
-
 double Demo::getBridgeHeight(){
 	int n = m_robotController.getNbActiveRobots();
 	double x_start = FLT_MAX;
