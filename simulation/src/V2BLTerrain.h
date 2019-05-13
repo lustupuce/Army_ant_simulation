@@ -3,7 +3,7 @@
  *	@brief Implementation of the V2BLTerrain class which inherit from the Terrain class.
  *	@note Class for the V2BLTerrain creation including method for the Box2D implementation (Physics) and the SFMLF synchronization (graphics).
  *	The V2BL Terrain is a linear ground with a V shaped gap in the middle. The bottom of the V gap is truncated so that the bottom width is 2 Body length.
- *	The ground is located at m_posY from the top of the window/world and the at a distance m_runaway from the left end of the window/world.
+ *	The ground is located at m_posY from the top of the window/world and the left corner of the gap at a distance m_runaway from the left end of the window/world.
  *	The V gap is described by a given depth m_height and either a given angle m_angle or a given width m_width.
  *  @date 18 Feb. 2019
  *  @author lucie houel
