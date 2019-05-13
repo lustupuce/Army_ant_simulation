@@ -1,4 +1,4 @@
-/*
+/**
  *  @file Demo.h
  *	@brief Implementation of the Demo class and the MyContactListener_v2 class.
  *	@note The Demo class gather all the elements of the simulation: the terrain, the robot controller and the robots and implement more abstract simulation methods.
@@ -125,11 +125,6 @@ public:
 	void init();
 
 	/**
-	 * Single step of the Demo gathering the physics step and the controller step.
-	 */
-	void step();
-
-	/**
 	 * Take a screenshot of the simulation at a given time step.
 	 * The image is saved under  m_config.logfile_path + m_config.logfile_name + "_dissolution_" + std::to_string(m_currentIt) + ".jpg"
 	 * @param draw should be true if the window has to be drawn beforehand. It is the case when the visualization is deactivated
@@ -200,4 +195,3 @@ protected:
 
 #endif /* DEMO_H_ */
 
-#endif /* DEMO_H_ */
