@@ -36,6 +36,7 @@ public:
 	 * @param terrainParam are the terrain parameters (cf Config.h)
 	 * @param WINDOW_X_PX is the x-size of the window. it is used to calculate the scale to convert from meters to pixels
 	 * @param bodylength is the size of a robot. it is used to convert the dimension from body length to m */
+	//TODO remove WINDOW_X_PX parameters and deduce it from window with window.getSize().x
 	virtual void create(b2World* world, sf::RenderWindow& window, config::sTerrain terrainParam, int WINDOW_X_PX, double bodyLength);
 
 	/**
