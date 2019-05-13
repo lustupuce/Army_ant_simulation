@@ -103,5 +103,5 @@ b2Vec2 V2BLTerrain::getBottom(){
 }
 
 e_terrain_type V2BLTerrain::getType(){
-	return V_TERRAIN;
+	return V2BL_TERRAIN;
 }
