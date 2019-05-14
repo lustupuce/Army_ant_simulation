@@ -1,0 +1,8 @@
+<map id="RobotController::findContactRobots" name="RobotController::findContactRobots">
+<area shape="rect" id="node2" href="$class_robot.html#a885b7c6b9da718dfe4eb53802adfce92" title="Robot::isMoving" alt="" coords="272,5,389,31"/>
+<area shape="rect" id="node3" href="$class_robot.html#a0ccd9dbef98a3d5bf6b29d8cd781bd25" title="Robot::getBody" alt="" coords="274,55,387,80"/>
+<area shape="rect" id="node4" href="$class_robot.html#aed1ba5683c53ac2b7e4a6c3fc7bcadba" title="Robot::gripSide" alt="" coords="274,104,387,129"/>
+<area shape="rect" id="node6" href="$class_robot.html#af0d391d121096fa6f2d214bb8910c0a1" title="Robot::setContact" alt="" coords="267,153,395,179"/>
+<area shape="rect" id="node7" href="$class_robot_controller.html#a797837410a2802b5d7399d132924ba2c" title="RobotController::setRobot\lState" alt="" coords="243,203,418,241"/>
+<area shape="rect" id="node5" href="$class_robot.html#a7c5ede93bcb2007be1f2bd6b2137f271" title="Robot::getWheel" alt="" coords="466,104,587,129"/>
+</map>

@@ -1,0 +1,570 @@
+\hypertarget{class_robot_controller}{}\section{Robot\+Controller Class Reference}
+\label{class_robot_controller}\index{Robot\+Controller@{Robot\+Controller}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_robot_controller_a18526d0c7d6d17c00894ef1cd8d2a974}\label{class_robot_controller_a18526d0c7d6d17c00894ef1cd8d2a974}} 
+{\bfseries Robot\+Controller} (\mbox{\hyperlink{structconfig_1_1s_controller}{config\+::s\+Controller}} controller\+Param, \mbox{\hyperlink{structconfig_1_1s_robot}{config\+::s\+Robot}} robot\+Param, b2\+Body $\ast$terrain, double m\+\_\+to\+\_\+px=0)
+\item 
+void \mbox{\hyperlink{class_robot_controller_a1e3c66846d346e125954dd30bec8ac50}{add\+Robot}} (\mbox{\hyperlink{class_robot}{Robot}} $\ast$robot)
+\item 
+bool \mbox{\hyperlink{class_robot_controller_a69372797c97d6f9212dc63d2b35b4932}{check\+Grabbed}} (\mbox{\hyperlink{class_robot}{Robot}} \&robot)
+\item 
+\mbox{\Hypertarget{class_robot_controller_ae68c8240dde6a4f3545cfbc150bc122d}\label{class_robot_controller_ae68c8240dde6a4f3545cfbc150bc122d}} 
+void {\bfseries create} (\mbox{\hyperlink{structconfig_1_1s_controller}{config\+::s\+Controller}} controller\+Param, \mbox{\hyperlink{structconfig_1_1s_robot}{config\+::s\+Robot}} robot\+Param, b2\+Body $\ast$terrain, double m\+\_\+to\+\_\+px=0)
+\item 
+void \mbox{\hyperlink{class_robot_controller_a6b0bdb7620acbf40f48426e30ff0b759}{create\+Grip\+Robots}} (\mbox{\hyperlink{class_robot}{Robot}} \&robot)
+\item 
+bool \mbox{\hyperlink{class_robot_controller_ad79af125e28750338e0da1fb35d0b72d}{create\+Robot}} (b2\+World $\ast$world, int delay, double posX, double posY, double angle=0)
+\item 
+void \mbox{\hyperlink{class_robot_controller_a62fac365f203e2f826efb9b7b7e56854}{destroy\+Joints}} (\mbox{\hyperlink{class_robot}{Robot}} \&robot, \mbox{\hyperlink{_robot_8h_afc015eff6557e84151d2e53b94375445}{side}} s)
+\item 
+void \mbox{\hyperlink{class_robot_controller_a2d4d4c93aed605c945e7a95876825bdc}{draw\+Robots}} (sf\+::\+Render\+Window \&window, double m\+\_\+to\+\_\+px)
+\item 
+void \mbox{\hyperlink{class_robot_controller_a11e413a1ac6466f360f46820d28b0f2e}{find\+Contact\+Robots}} (b2\+Contact $\ast$contact)
+\item 
+double \mbox{\hyperlink{class_robot_controller_a55f55b2b3b9013bdfc28ad11e0318ce8}{get\+Dissolution\+Time}} ()
+\item 
+int \mbox{\hyperlink{class_robot_controller_a45a4e25b2bb49bf2f1dc18b0f21a6f8d}{get\+Nb\+Active\+Robots}} ()
+\item 
+int \mbox{\hyperlink{class_robot_controller_a612d9355c9638b9f0bb24348647ada45}{get\+Nb\+Robots}} (\mbox{\hyperlink{_robot_8h_a74a75e4700f1f71bb89d80765319e57b}{e\+\_\+state}} s)
+\item 
+int \mbox{\hyperlink{class_robot_controller_a83a58bbd6f7fbafb3038ec0cb6271fda}{get\+Nb\+Robots\+Blocked}} ()
+\item 
+\mbox{\hyperlink{class_robot}{Robot}} $\ast$ \mbox{\hyperlink{class_robot_controller_ae421f813b81632c35ec3494717fd0f12}{get\+Robot}} (int pos\+\_\+id)
+\item 
+\mbox{\hyperlink{class_robot}{Robot}} $\ast$ \mbox{\hyperlink{class_robot_controller_aa247b8c90ab585358f07a18c891c8b31}{get\+Robot\+With\+Id}} (int id)
+\item 
+double \mbox{\hyperlink{class_robot_controller_acd0a73a62eca471d77a42a0c15964b8e}{get\+Stabilization\+Time}} ()
+\item 
+void \mbox{\hyperlink{class_robot_controller_a3191cad0cf82d3378aec0512baf2722b}{invert\+Moving\+Wheel}} (\mbox{\hyperlink{class_robot}{Robot}} \&robot)
+\item 
+bool \mbox{\hyperlink{class_robot_controller_a5f3c279e0082ea8dbfe03fd32d8e42b5}{is\+Bridge\+Dissolved}} ()
+\item 
+bool \mbox{\hyperlink{class_robot_controller_a05233232614480ea30138101f730a329}{is\+Bridge\+Stable}} ()
+\item 
+void \mbox{\hyperlink{class_robot_controller_a0774831ed97c92f24d082603e66950b0}{remove\+Robot}} ()
+\item 
+void \mbox{\hyperlink{class_robot_controller_a68972b0f0f2f033ee0d2d2c849fb38c9}{robot\+Out}} (double end\+\_\+x, int id)
+\item 
+bool \mbox{\hyperlink{class_robot_controller_a927abf2765cd53b39acf128f318c3fe5}{robot\+Pushing}} (\mbox{\hyperlink{class_robot}{Robot}} \&r)
+\item 
+bool \mbox{\hyperlink{class_robot_controller_a83d343eb8958d365624d06ac1b0b1b3d}{robot\+Stacking}} (\mbox{\hyperlink{class_robot}{Robot}} $\ast$r, float posX)
+\item 
+void \mbox{\hyperlink{class_robot_controller_a19191b156161bd7a3978659329ceaad2}{set\+Bridge\+Stability}} (bool stable)
+\item 
+void \mbox{\hyperlink{class_robot_controller_adf00a753bc750624e805f57f8998ad78}{set\+Nb\+Robots}} (int nb\+\_\+robots)
+\item 
+void \mbox{\hyperlink{class_robot_controller_a797837410a2802b5d7399d132924ba2c}{set\+Robot\+State}} (\mbox{\hyperlink{class_robot}{Robot}} \&robot, \mbox{\hyperlink{_robot_8h_a74a75e4700f1f71bb89d80765319e57b}{e\+\_\+state}} robot\+State)
+\item 
+void \mbox{\hyperlink{class_robot_controller_a76d6bb1e93bb9523850370fdf76407c4}{set\+Scale}} (double m\+\_\+to\+\_\+px)
+\item 
+void \mbox{\hyperlink{class_robot_controller_ab2e4091fc2e47701cc5dbd7c2d9fc649}{step}} (double end\+\_\+x)
+\item 
+void \mbox{\hyperlink{class_robot_controller_ae433d7a77a59e8eced35fc4885051805}{wait\+\_\+delay}} (\mbox{\hyperlink{class_robot}{Robot}} \&robot)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_robot_controller_abe09204acb8936eddcacbae0b023423a}{m\+\_\+bridge\+Entry}} = false
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_robot_controller_a1e3c66846d346e125954dd30bec8ac50}\label{class_robot_controller_a1e3c66846d346e125954dd30bec8ac50}} 
+\index{Robot\+Controller@{Robot\+Controller}!add\+Robot@{add\+Robot}}
+\index{add\+Robot@{add\+Robot}!Robot\+Controller@{Robot\+Controller}}
+\subsubsection{\texorpdfstring{add\+Robot()}{addRobot()}}
+{\footnotesize\ttfamily void Robot\+Controller\+::add\+Robot (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_robot}{Robot}} $\ast$}]{robot }\end{DoxyParamCaption})}
+
+Add a robot to the controller after the robot has been created. A better solution to add a robot to the simulation should be to create directly a new robot from the controller method using the create\+Robot method. 
+\begin{DoxyParams}{Parameters}
+{\em robot} & is a pointer on a newly created robot object. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_robot_controller_a69372797c97d6f9212dc63d2b35b4932}\label{class_robot_controller_a69372797c97d6f9212dc63d2b35b4932}} 
+\index{Robot\+Controller@{Robot\+Controller}!check\+Grabbed@{check\+Grabbed}}
+\index{check\+Grabbed@{check\+Grabbed}!Robot\+Controller@{Robot\+Controller}}
+\subsubsection{\texorpdfstring{check\+Grabbed()}{checkGrabbed()}}
+{\footnotesize\ttfamily bool Robot\+Controller\+::check\+Grabbed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_robot}{Robot}} \&}]{robot }\end{DoxyParamCaption})}
+
+Check if the robot is grabbed by any other robot of the controller 
+\begin{DoxyParams}{Parameters}
+{\em robot} & is the robot to be tested \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the robot is grabbed, false otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_robot_controller_a69372797c97d6f9212dc63d2b35b4932_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_robot_controller_a69372797c97d6f9212dc63d2b35b4932_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_robot_controller_a6b0bdb7620acbf40f48426e30ff0b759}\label{class_robot_controller_a6b0bdb7620acbf40f48426e30ff0b759}} 
+\index{Robot\+Controller@{Robot\+Controller}!create\+Grip\+Robots@{create\+Grip\+Robots}}
+\index{create\+Grip\+Robots@{create\+Grip\+Robots}!Robot\+Controller@{Robot\+Controller}}
+\subsubsection{\texorpdfstring{create\+Grip\+Robots()}{createGripRobots()}}
+{\footnotesize\ttfamily void Robot\+Controller\+::create\+Grip\+Robots (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_robot}{Robot}} \&}]{robot }\end{DoxyParamCaption})}
+
+Takes the robot as parameter and create a new grip in the box2D world if the robot.\+is\+Contact() is true 
+\begin{DoxyParams}{Parameters}
+{\em robot} & generally from the m\+\_\+robot\+Vector of the controller  \mbox{\hyperlink{class_robot_a35d0d222246bd7084fac5ae5cdf6d3ce}{Robot\+::m\+\_\+previous\+Grip\+Joint}} and Robot\+::m\+\_\+current\+Grip\+Joint for contacted robots  Robot\+::m\+\_\+contact by setting it to false once the joint has been created \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_robot_controller_a6b0bdb7620acbf40f48426e30ff0b759_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_robot_controller_a6b0bdb7620acbf40f48426e30ff0b759_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_robot_controller_ad79af125e28750338e0da1fb35d0b72d}\label{class_robot_controller_ad79af125e28750338e0da1fb35d0b72d}} 
+\index{Robot\+Controller@{Robot\+Controller}!create\+Robot@{create\+Robot}}
+\index{create\+Robot@{create\+Robot}!Robot\+Controller@{Robot\+Controller}}
+\subsubsection{\texorpdfstring{create\+Robot()}{createRobot()}}
+{\footnotesize\ttfamily bool Robot\+Controller\+::create\+Robot (\begin{DoxyParamCaption}\item[{b2\+World $\ast$}]{world,  }\item[{int}]{delay,  }\item[{double}]{posX,  }\item[{double}]{posY,  }\item[{double}]{angle = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+The function create a new robot object and add it to the m\+\_\+robot\+Vector 
+\begin{DoxyParams}{Parameters}
+{\em world} & pointer on the box2D world object \\
+\hline
+{\em posX} & initial x position of the robot in meters \\
+\hline
+{\em posY} & initial y position of the robot in meters \\
+\hline
+{\em angle} & initial angle of the robot in rad \\
+\hline
+{\em delay} & number of iteration before the robot is able to move for the first time \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the robot has been created and added to m\+\_\+robot\+Vector, false otherwise 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_robot_controller_ad79af125e28750338e0da1fb35d0b72d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_robot_controller_a62fac365f203e2f826efb9b7b7e56854}\label{class_robot_controller_a62fac365f203e2f826efb9b7b7e56854}} 
+\index{Robot\+Controller@{Robot\+Controller}!destroy\+Joints@{destroy\+Joints}}
+\index{destroy\+Joints@{destroy\+Joints}!Robot\+Controller@{Robot\+Controller}}
+\subsubsection{\texorpdfstring{destroy\+Joints()}{destroyJoints()}}
+{\footnotesize\ttfamily void Robot\+Controller\+::destroy\+Joints (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_robot}{Robot}} \&}]{robot,  }\item[{\mbox{\hyperlink{_robot_8h_afc015eff6557e84151d2e53b94375445}{side}}}]{s }\end{DoxyParamCaption})}
+
+Remove from the world and destroy a given Box2D joint. This joint is one of a robot gripper 
+\begin{DoxyParams}{Parameters}
+{\em s} & is either L\+E\+FT or R\+I\+G\+HT  \mbox{\hyperlink{class_robot_a35d0d222246bd7084fac5ae5cdf6d3ce}{Robot\+::m\+\_\+previous\+Grip\+Joint}} and Robot\+::m\+\_\+current\+Grip\+Joint \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=345pt]{class_robot_controller_a62fac365f203e2f826efb9b7b7e56854_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_robot_controller_a2d4d4c93aed605c945e7a95876825bdc}\label{class_robot_controller_a2d4d4c93aed605c945e7a95876825bdc}} 
+\index{Robot\+Controller@{Robot\+Controller}!draw\+Robots@{draw\+Robots}}
+\index{draw\+Robots@{draw\+Robots}!Robot\+Controller@{Robot\+Controller}}
+\subsubsection{\texorpdfstring{draw\+Robots()}{drawRobots()}}
+{\footnotesize\ttfamily void Robot\+Controller\+::draw\+Robots (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window,  }\item[{double}]{m\+\_\+to\+\_\+px }\end{DoxyParamCaption})}
+
+The function draws all the robots of the \mbox{\hyperlink{class_robot}{Robot}} controller on the S\+F\+ML window 
+\begin{DoxyParams}{Parameters}
+{\em window} & is the S\+F\+ML window \\
+\hline
+{\em m\+\_\+to\+\_\+px} & is the conversion factor from m to pixels, it is generally obtained via the terrain \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_robot_controller_a2d4d4c93aed605c945e7a95876825bdc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_robot_controller_a11e413a1ac6466f360f46820d28b0f2e}\label{class_robot_controller_a11e413a1ac6466f360f46820d28b0f2e}} 
+\index{Robot\+Controller@{Robot\+Controller}!find\+Contact\+Robots@{find\+Contact\+Robots}}
+\index{find\+Contact\+Robots@{find\+Contact\+Robots}!Robot\+Controller@{Robot\+Controller}}
+\subsubsection{\texorpdfstring{find\+Contact\+Robots()}{findContactRobots()}}
+{\footnotesize\ttfamily void Robot\+Controller\+::find\+Contact\+Robots (\begin{DoxyParamCaption}\item[{b2\+Contact $\ast$}]{contact }\end{DoxyParamCaption})}
+
+This is the function used in the contact\+Listener. It determines if a contact must lead to a grip creation, call the \mbox{\hyperlink{class_robot_aed1ba5683c53ac2b7e4a6c3fc7bcadba}{Robot\+::grip\+Side(b2\+Contact$\ast$ contact, b2\+Body$\ast$ other\+Body, double m\+\_\+to\+\_\+px)}} when a grip has to be created 
+\begin{DoxyParams}{Parameters}
+{\em contact} & is the Box2D contact object  Robot\+::m\+\_\+state for contacted robots  Robot\+::m\+\_\+left\+Grip\+Joint\+Def or Robot\+::m\+\_\+right\+Grip\+Joint\+Def for future gripping robots  Robot\+::m\+\_\+contact for future gripping robots \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_robot_controller_a11e413a1ac6466f360f46820d28b0f2e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_robot_controller_a55f55b2b3b9013bdfc28ad11e0318ce8}\label{class_robot_controller_a55f55b2b3b9013bdfc28ad11e0318ce8}} 
+\index{Robot\+Controller@{Robot\+Controller}!get\+Dissolution\+Time@{get\+Dissolution\+Time}}
+\index{get\+Dissolution\+Time@{get\+Dissolution\+Time}!Robot\+Controller@{Robot\+Controller}}
+\subsubsection{\texorpdfstring{get\+Dissolution\+Time()}{getDissolutionTime()}}
+{\footnotesize\ttfamily double Robot\+Controller\+::get\+Dissolution\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the time required to obtain the dissolution of the bridge. The dissolution is reached when no more robots are in the bridge state \begin{DoxyReturn}{Returns}
+the simulated time to reach the dissolution 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_robot_controller_a45a4e25b2bb49bf2f1dc18b0f21a6f8d}\label{class_robot_controller_a45a4e25b2bb49bf2f1dc18b0f21a6f8d}} 
+\index{Robot\+Controller@{Robot\+Controller}!get\+Nb\+Active\+Robots@{get\+Nb\+Active\+Robots}}
+\index{get\+Nb\+Active\+Robots@{get\+Nb\+Active\+Robots}!Robot\+Controller@{Robot\+Controller}}
+\subsubsection{\texorpdfstring{get\+Nb\+Active\+Robots()}{getNbActiveRobots()}}
+{\footnotesize\ttfamily int Robot\+Controller\+::get\+Nb\+Active\+Robots (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the number of active robots of the robot\+Controller. ie the number of robots in the world window \begin{DoxyReturn}{Returns}
+the number of active robots 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_robot_controller_a45a4e25b2bb49bf2f1dc18b0f21a6f8d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_robot_controller_a612d9355c9638b9f0bb24348647ada45}\label{class_robot_controller_a612d9355c9638b9f0bb24348647ada45}} 
+\index{Robot\+Controller@{Robot\+Controller}!get\+Nb\+Robots@{get\+Nb\+Robots}}
+\index{get\+Nb\+Robots@{get\+Nb\+Robots}!Robot\+Controller@{Robot\+Controller}}
+\subsubsection{\texorpdfstring{get\+Nb\+Robots()}{getNbRobots()}}
+{\footnotesize\ttfamily int Robot\+Controller\+::get\+Nb\+Robots (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_robot_8h_a74a75e4700f1f71bb89d80765319e57b}{e\+\_\+state}}}]{s }\end{DoxyParamCaption})}
+
+Get the number of robots of the robot\+Controller under a certain state 
+\begin{DoxyParams}{Parameters}
+{\em s} & is the considered state, can be either B\+R\+I\+D\+GE or W\+A\+LK \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the number of robot in this given state 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_robot_controller_a612d9355c9638b9f0bb24348647ada45_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_robot_controller_a83a58bbd6f7fbafb3038ec0cb6271fda}\label{class_robot_controller_a83a58bbd6f7fbafb3038ec0cb6271fda}} 
+\index{Robot\+Controller@{Robot\+Controller}!get\+Nb\+Robots\+Blocked@{get\+Nb\+Robots\+Blocked}}
+\index{get\+Nb\+Robots\+Blocked@{get\+Nb\+Robots\+Blocked}!Robot\+Controller@{Robot\+Controller}}
+\subsubsection{\texorpdfstring{get\+Nb\+Robots\+Blocked()}{getNbRobotsBlocked()}}
+{\footnotesize\ttfamily int Robot\+Controller\+::get\+Nb\+Robots\+Blocked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the number of robot still active at the end of the simulation \begin{DoxyReturn}{Returns}
+the number of robots still active at the time of the function call. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_robot_controller_ae421f813b81632c35ec3494717fd0f12}\label{class_robot_controller_ae421f813b81632c35ec3494717fd0f12}} 
+\index{Robot\+Controller@{Robot\+Controller}!get\+Robot@{get\+Robot}}
+\index{get\+Robot@{get\+Robot}!Robot\+Controller@{Robot\+Controller}}
+\subsubsection{\texorpdfstring{get\+Robot()}{getRobot()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_robot}{Robot}} $\ast$ Robot\+Controller\+::get\+Robot (\begin{DoxyParamCaption}\item[{int}]{pos\+\_\+id }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos\+\_\+id} & the robot position in the m\+\_\+robot\+Vector \mbox{\hyperlink{class_robot}{Robot}} vector containing all the robots belonging to the \mbox{\hyperlink{class_robot_controller}{Robot\+Controller}}. The pos\+\_\+id starts at 0 Be careful pos\+\_\+id does not necessarily match the robot id \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a pointer on the robot object 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_robot_controller_ae421f813b81632c35ec3494717fd0f12_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_robot_controller_aa247b8c90ab585358f07a18c891c8b31}\label{class_robot_controller_aa247b8c90ab585358f07a18c891c8b31}} 
+\index{Robot\+Controller@{Robot\+Controller}!get\+Robot\+With\+Id@{get\+Robot\+With\+Id}}
+\index{get\+Robot\+With\+Id@{get\+Robot\+With\+Id}!Robot\+Controller@{Robot\+Controller}}
+\subsubsection{\texorpdfstring{get\+Robot\+With\+Id()}{getRobotWithId()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_robot}{Robot}} $\ast$ Robot\+Controller\+::get\+Robot\+With\+Id (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & is the robot unique id Be careful, it does not necessarily match the robot position within the robots\textquotesingle{} vector. @ return a pointer on the robot object \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_robot_controller_aa247b8c90ab585358f07a18c891c8b31_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_robot_controller_acd0a73a62eca471d77a42a0c15964b8e}\label{class_robot_controller_acd0a73a62eca471d77a42a0c15964b8e}} 
+\index{Robot\+Controller@{Robot\+Controller}!get\+Stabilization\+Time@{get\+Stabilization\+Time}}
+\index{get\+Stabilization\+Time@{get\+Stabilization\+Time}!Robot\+Controller@{Robot\+Controller}}
+\subsubsection{\texorpdfstring{get\+Stabilization\+Time()}{getStabilizationTime()}}
+{\footnotesize\ttfamily double Robot\+Controller\+::get\+Stabilization\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the time required to obtain a stable bridge. A stable bridge is reached when the stability condition is reached. This condition is expressed as a duration defined by m\+\_\+controller\+Param.\+stability\+\_\+condition during which no more robots enter the bridge state. This duration can be changed in the main file or as a parameter in the simulation launch. \begin{DoxyReturn}{Returns}
+the simulated time to reach stability 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_robot_controller_a3191cad0cf82d3378aec0512baf2722b}\label{class_robot_controller_a3191cad0cf82d3378aec0512baf2722b}} 
+\index{Robot\+Controller@{Robot\+Controller}!invert\+Moving\+Wheel@{invert\+Moving\+Wheel}}
+\index{invert\+Moving\+Wheel@{invert\+Moving\+Wheel}!Robot\+Controller@{Robot\+Controller}}
+\subsubsection{\texorpdfstring{invert\+Moving\+Wheel()}{invertMovingWheel()}}
+{\footnotesize\ttfamily void Robot\+Controller\+::invert\+Moving\+Wheel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_robot}{Robot}} \&}]{robot }\end{DoxyParamCaption})}
+
+Invert the moving side of the robot 
+\begin{DoxyParams}{Parameters}
+{\em robot} & is the \mbox{\hyperlink{class_robot}{Robot}} object  Robot\+::m\+\_\+moving\+Side\+: become L\+E\+FT if it was R\+I\+G\+HT and vice versa \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_robot_controller_a5f3c279e0082ea8dbfe03fd32d8e42b5}\label{class_robot_controller_a5f3c279e0082ea8dbfe03fd32d8e42b5}} 
+\index{Robot\+Controller@{Robot\+Controller}!is\+Bridge\+Dissolved@{is\+Bridge\+Dissolved}}
+\index{is\+Bridge\+Dissolved@{is\+Bridge\+Dissolved}!Robot\+Controller@{Robot\+Controller}}
+\subsubsection{\texorpdfstring{is\+Bridge\+Dissolved()}{isBridgeDissolved()}}
+{\footnotesize\ttfamily bool Robot\+Controller\+::is\+Bridge\+Dissolved (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Check if the bridge has been dissolved. We consider that the dissolution is reached if only one robot remains in the simulation. \begin{DoxyReturn}{Returns}
+true if the dissolution of the bridge is obtained, false otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_robot_controller_a5f3c279e0082ea8dbfe03fd32d8e42b5_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_robot_controller_a05233232614480ea30138101f730a329}\label{class_robot_controller_a05233232614480ea30138101f730a329}} 
+\index{Robot\+Controller@{Robot\+Controller}!is\+Bridge\+Stable@{is\+Bridge\+Stable}}
+\index{is\+Bridge\+Stable@{is\+Bridge\+Stable}!Robot\+Controller@{Robot\+Controller}}
+\subsubsection{\texorpdfstring{is\+Bridge\+Stable()}{isBridgeStable()}}
+{\footnotesize\ttfamily bool Robot\+Controller\+::is\+Bridge\+Stable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Check if a stable bridge has been obtained. To do so, we compare the time the last robot entered the bridge with the stability condition. The time the last robot has been obtained is stocked inside m\+\_\+stable\+Time. m\+\_\+stable\+Time is updated everytime a robot enter the bridge state via a call of the function \mbox{\hyperlink{class_robot_controller_a797837410a2802b5d7399d132924ba2c}{set\+Robot\+State(\+Robot\& robot,  e\+\_\+state robot\+State)}}; \begin{DoxyReturn}{Returns}
+true if a stable bridge is obtained, false otherwise 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=339pt]{class_robot_controller_a05233232614480ea30138101f730a329_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_robot_controller_a0774831ed97c92f24d082603e66950b0}\label{class_robot_controller_a0774831ed97c92f24d082603e66950b0}} 
+\index{Robot\+Controller@{Robot\+Controller}!remove\+Robot@{remove\+Robot}}
+\index{remove\+Robot@{remove\+Robot}!Robot\+Controller@{Robot\+Controller}}
+\subsubsection{\texorpdfstring{remove\+Robot()}{removeRobot()}}
+{\footnotesize\ttfamily void Robot\+Controller\+::remove\+Robot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Remove robots from the controller and call its destructor. The robots that are destroyed using this method are the ones whose id has been copied inside the m\+\_\+robot\+To\+Destroy vector.  at the end all the robots whose id is in the m\+\_\+robot\+To\+Destroy vector are destroyed and this vector is emptied Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_robot_controller_a0774831ed97c92f24d082603e66950b0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_robot_controller_a68972b0f0f2f033ee0d2d2c849fb38c9}\label{class_robot_controller_a68972b0f0f2f033ee0d2d2c849fb38c9}} 
+\index{Robot\+Controller@{Robot\+Controller}!robot\+Out@{robot\+Out}}
+\index{robot\+Out@{robot\+Out}!Robot\+Controller@{Robot\+Controller}}
+\subsubsection{\texorpdfstring{robot\+Out()}{robotOut()}}
+{\footnotesize\ttfamily void Robot\+Controller\+::robot\+Out (\begin{DoxyParamCaption}\item[{double}]{end\+\_\+x,  }\item[{int}]{id }\end{DoxyParamCaption})}
+
+Check if a robot with a given unique id is outside the world. If it is the robot id is copied into the m\+\_\+robot\+To\+Destroy vector to be destroyed at the next call of the \mbox{\hyperlink{class_robot_controller_a0774831ed97c92f24d082603e66950b0}{remove\+Robot()}} method 
+\begin{DoxyParams}{Parameters}
+{\em end\+\_\+x} & corresponds to the end of the world \\
+\hline
+{\em id} & is the unique id of the robot, can be obtained with robot.\+get\+I\+D() \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_robot_controller_a927abf2765cd53b39acf128f318c3fe5}\label{class_robot_controller_a927abf2765cd53b39acf128f318c3fe5}} 
+\index{Robot\+Controller@{Robot\+Controller}!robot\+Pushing@{robot\+Pushing}}
+\index{robot\+Pushing@{robot\+Pushing}!Robot\+Controller@{Robot\+Controller}}
+\subsubsection{\texorpdfstring{robot\+Pushing()}{robotPushing()}}
+{\footnotesize\ttfamily bool Robot\+Controller\+::robot\+Pushing (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_robot}{Robot}} \&}]{r }\end{DoxyParamCaption})}
+
+Determine if a robot is pushing after the pushing delay has been reached by determining if the robot is touching another object. This contact has to be on the moving side. This is checked by calling the function Robot\+::contact\+On\+Grip\+Side(b2\+Contact$\ast$ contact). In addition, the robot must have run a higher angle than m\+\_\+angle\+\_\+min to avoid gripping the exact previous position 
+\begin{DoxyParams}{Parameters}
+{\em r} & is the \mbox{\hyperlink{class_robot}{Robot}} to be checked when its delay corresponds to the pushing\+\_\+delay, if no direct joint has been created  Robot\+::m\+\_\+delay, Robot\+::m\+\_\+contact, Robot\+::m\+\_\+left\+Grip\+Joint\+Def, Robot\+::m\+\_\+right\+Grip\+Joint\+Def \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the robot is pushing, false otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_robot_controller_a927abf2765cd53b39acf128f318c3fe5_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_robot_controller_a83d343eb8958d365624d06ac1b0b1b3d}\label{class_robot_controller_a83d343eb8958d365624d06ac1b0b1b3d}} 
+\index{Robot\+Controller@{Robot\+Controller}!robot\+Stacking@{robot\+Stacking}}
+\index{robot\+Stacking@{robot\+Stacking}!Robot\+Controller@{Robot\+Controller}}
+\subsubsection{\texorpdfstring{robot\+Stacking()}{robotStacking()}}
+{\footnotesize\ttfamily bool Robot\+Controller\+::robot\+Stacking (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_robot}{Robot}} $\ast$}]{r,  }\item[{float}]{posX }\end{DoxyParamCaption})}
+
+This function is used to help determine if the robots are stacking. It is called when a new robot will be created to check if the previous robot is too close to the new robot. The previous robot is too close when it is located before the given position posX + one body\+Length unit. 
+\begin{DoxyParams}{Parameters}
+{\em r} & is the \mbox{\hyperlink{class_robot}{Robot}} to be checked \\
+\hline
+{\em posX} & is the superior limit of the position one wants to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the robot is located before posX, false otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_robot_controller_a83d343eb8958d365624d06ac1b0b1b3d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_robot_controller_a83d343eb8958d365624d06ac1b0b1b3d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_robot_controller_a19191b156161bd7a3978659329ceaad2}\label{class_robot_controller_a19191b156161bd7a3978659329ceaad2}} 
+\index{Robot\+Controller@{Robot\+Controller}!set\+Bridge\+Stability@{set\+Bridge\+Stability}}
+\index{set\+Bridge\+Stability@{set\+Bridge\+Stability}!Robot\+Controller@{Robot\+Controller}}
+\subsubsection{\texorpdfstring{set\+Bridge\+Stability()}{setBridgeStability()}}
+{\footnotesize\ttfamily void Robot\+Controller\+::set\+Bridge\+Stability (\begin{DoxyParamCaption}\item[{bool}]{stable }\end{DoxyParamCaption})}
+
+Change the bridge stability flag value. 
+\begin{DoxyParams}{Parameters}
+{\em stable} & is either true if the stability has been reached or false  m\+\_\+is\+Stable \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_robot_controller_a19191b156161bd7a3978659329ceaad2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_robot_controller_adf00a753bc750624e805f57f8998ad78}\label{class_robot_controller_adf00a753bc750624e805f57f8998ad78}} 
+\index{Robot\+Controller@{Robot\+Controller}!set\+Nb\+Robots@{set\+Nb\+Robots}}
+\index{set\+Nb\+Robots@{set\+Nb\+Robots}!Robot\+Controller@{Robot\+Controller}}
+\subsubsection{\texorpdfstring{set\+Nb\+Robots()}{setNbRobots()}}
+{\footnotesize\ttfamily void Robot\+Controller\+::set\+Nb\+Robots (\begin{DoxyParamCaption}\item[{int}]{nb\+\_\+robots }\end{DoxyParamCaption})}
+
+Set the maximum number of robots that can be active at the same time in the simulation window. It is used to limit the size of the m\+\_\+robot\+Vector. 
+\begin{DoxyParams}{Parameters}
+{\em nb\+\_\+robots} & is the maximum number of robot that can be existing at the same time. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_robot_controller_a797837410a2802b5d7399d132924ba2c}\label{class_robot_controller_a797837410a2802b5d7399d132924ba2c}} 
+\index{Robot\+Controller@{Robot\+Controller}!set\+Robot\+State@{set\+Robot\+State}}
+\index{set\+Robot\+State@{set\+Robot\+State}!Robot\+Controller@{Robot\+Controller}}
+\subsubsection{\texorpdfstring{set\+Robot\+State()}{setRobotState()}}
+{\footnotesize\ttfamily void Robot\+Controller\+::set\+Robot\+State (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_robot}{Robot}} \&}]{robot,  }\item[{\mbox{\hyperlink{_robot_8h_a74a75e4700f1f71bb89d80765319e57b}{e\+\_\+state}}}]{robot\+State }\end{DoxyParamCaption})}
+
+Function used to set the state of a specific robot 
+\begin{DoxyParams}{Parameters}
+{\em robot} & is the \mbox{\hyperlink{class_robot}{Robot}} object \\
+\hline
+{\em robot\+State} & can be either W\+A\+LK or B\+R\+I\+D\+GE  Robot\+::m\+\_\+moving, Robot\+::m\+\_\+state, Robot\+::m\+\_\+contact and Robot\+::m\+\_\+delay \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_robot_controller_a797837410a2802b5d7399d132924ba2c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_robot_controller_a76d6bb1e93bb9523850370fdf76407c4}\label{class_robot_controller_a76d6bb1e93bb9523850370fdf76407c4}} 
+\index{Robot\+Controller@{Robot\+Controller}!set\+Scale@{set\+Scale}}
+\index{set\+Scale@{set\+Scale}!Robot\+Controller@{Robot\+Controller}}
+\subsubsection{\texorpdfstring{set\+Scale()}{setScale()}}
+{\footnotesize\ttfamily void Robot\+Controller\+::set\+Scale (\begin{DoxyParamCaption}\item[{double}]{m\+\_\+to\+\_\+px }\end{DoxyParamCaption})}
+
+Set the scale to do the conversion from real dimensions (m) to simulated ones (pixels). Ususlly the scale is obtained from the terrain with the \mbox{\hyperlink{class_terrain_af0cff27a194359a13c448c89bd374de3}{Terrain\+::get\+Scale()}} method. 
+\begin{DoxyParams}{Parameters}
+{\em m\+\_\+to\+\_\+px} & is the conversion factor from meters to pixels \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_robot_controller_ab2e4091fc2e47701cc5dbd7c2d9fc649}\label{class_robot_controller_ab2e4091fc2e47701cc5dbd7c2d9fc649}} 
+\index{Robot\+Controller@{Robot\+Controller}!step@{step}}
+\index{step@{step}!Robot\+Controller@{Robot\+Controller}}
+\subsubsection{\texorpdfstring{step()}{step()}}
+{\footnotesize\ttfamily void Robot\+Controller\+::step (\begin{DoxyParamCaption}\item[{double}]{end\+\_\+x }\end{DoxyParamCaption})}
+
+Run a step of the simulation. 
+\begin{DoxyParams}{Parameters}
+{\em end\+\_\+x} & is the position of the end of the simulation world it generally correspond to the end of the window. above this position the robot is destroyed. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_robot_controller_ab2e4091fc2e47701cc5dbd7c2d9fc649_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{class_robot_controller_ab2e4091fc2e47701cc5dbd7c2d9fc649_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_robot_controller_ae433d7a77a59e8eced35fc4885051805}\label{class_robot_controller_ae433d7a77a59e8eced35fc4885051805}} 
+\index{Robot\+Controller@{Robot\+Controller}!wait\+\_\+delay@{wait\+\_\+delay}}
+\index{wait\+\_\+delay@{wait\+\_\+delay}!Robot\+Controller@{Robot\+Controller}}
+\subsubsection{\texorpdfstring{wait\+\_\+delay()}{wait\_delay()}}
+{\footnotesize\ttfamily void Robot\+Controller\+::wait\+\_\+delay (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_robot}{Robot}} \&}]{robot }\end{DoxyParamCaption})}
+
+Handle the waiting delay of the robots by decreasing it at each world step. When the delay is null, the robot.\+m\+\_\+ready state is set to true 
+\begin{DoxyParams}{Parameters}
+{\em robot} & generally from the m\+\_\+robot\+Vector of the controller  Robot\+::m\+\_\+ready is set to true when Robot\+::m\+\_\+delay is null  Robot\+::m\+\_\+delay is decreased otherwise \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=313pt]{class_robot_controller_ae433d7a77a59e8eced35fc4885051805_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_robot_controller_ae433d7a77a59e8eced35fc4885051805_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_robot_controller_abe09204acb8936eddcacbae0b023423a}\label{class_robot_controller_abe09204acb8936eddcacbae0b023423a}} 
+\index{Robot\+Controller@{Robot\+Controller}!m\+\_\+bridge\+Entry@{m\+\_\+bridge\+Entry}}
+\index{m\+\_\+bridge\+Entry@{m\+\_\+bridge\+Entry}!Robot\+Controller@{Robot\+Controller}}
+\subsubsection{\texorpdfstring{m\+\_\+bridge\+Entry}{m\_bridgeEntry}}
+{\footnotesize\ttfamily bool Robot\+Controller\+::m\+\_\+bridge\+Entry = false}
+
+Flag used to notify when a new robot enter the bridge state. It is used to write a new entry in the bridge file. It is set to false once the bridge file have been updated (in the demo.\+cpp file). 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+simulation/src/\mbox{\hyperlink{_robot_controller_8h}{Robot\+Controller.\+h}}\item 
+simulation/src/Robot\+Controller.\+cpp\end{DoxyCompactItemize}

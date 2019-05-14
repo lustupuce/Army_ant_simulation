@@ -1,0 +1,117 @@
+\hypertarget{class_v_stepper}{}\section{V\+Stepper Class Reference}
+\label{class_v_stepper}\index{V\+Stepper@{V\+Stepper}}
+
+
+Inheritance diagram for V\+Stepper\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=138pt]{class_v_stepper__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for V\+Stepper\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{class_v_stepper__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_v_stepper_ab286d507c806c6e9fbac5ca38d47c443}\label{class_v_stepper_ab286d507c806c6e9fbac5ca38d47c443}} 
+{\bfseries V\+Stepper} (b2\+World $\ast$world, sf\+::\+Render\+Window \&window, \mbox{\hyperlink{structconfig_1_1s_terrain}{config\+::s\+Terrain}} terrain\+Param, int W\+I\+N\+D\+O\+W\+\_\+\+X\+\_\+\+PX, double body\+Length=1)
+\item 
+void \mbox{\hyperlink{class_v_stepper_adc0daf55fe95e9059576ae432bc4f24c}{create}} (b2\+World $\ast$world, sf\+::\+Render\+Window \&window, \mbox{\hyperlink{structconfig_1_1s_terrain}{config\+::s\+Terrain}} terrain\+Param, int W\+I\+N\+D\+O\+W\+\_\+\+X\+\_\+\+PX, double body\+Length=1)
+\item 
+void \mbox{\hyperlink{class_v_stepper_a3d7c63308277488473edf5326491d7ee}{create\+Body}} (b2\+World $\ast$world)
+\item 
+void \mbox{\hyperlink{class_v_stepper_ad81367e4f7422afcd460fd0094a25bc3}{draw\+Body}} (sf\+::\+Render\+Window \&window)
+\item 
+\mbox{\hyperlink{_terrain_8h_a6d0b7e83bb7325270c1162bece970fd8}{e\+\_\+terrain\+\_\+type}} \mbox{\hyperlink{class_v_stepper_a9621c3cbd705479e32baf9671983cb8b}{get\+Type}} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_v_stepper_adc0daf55fe95e9059576ae432bc4f24c}\label{class_v_stepper_adc0daf55fe95e9059576ae432bc4f24c}} 
+\index{V\+Stepper@{V\+Stepper}!create@{create}}
+\index{create@{create}!V\+Stepper@{V\+Stepper}}
+\subsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily void V\+Stepper\+::create (\begin{DoxyParamCaption}\item[{b2\+World $\ast$}]{world,  }\item[{sf\+::\+Render\+Window \&}]{window,  }\item[{\mbox{\hyperlink{structconfig_1_1s_terrain}{config\+::s\+Terrain}}}]{terrain\+Param,  }\item[{int}]{W\+I\+N\+D\+O\+W\+\_\+\+X\+\_\+\+PX,  }\item[{double}]{body\+Length = {\ttfamily 1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+The function create M\+U\+ST be called if the terrain object has been created via the default constructor (ex when created dynamically with new), otherwise no need to use it 
+\begin{DoxyParams}{Parameters}
+{\em world} & is a pointer on the Box2D world object \\
+\hline
+{\em window} & is the S\+F\+ML window \\
+\hline
+{\em terrain\+Param} & are the terrain parameters (cf \mbox{\hyperlink{_config_8h_source}{Config.\+h}}) \\
+\hline
+{\em W\+I\+N\+D\+O\+W\+\_\+\+X\+\_\+\+PX} & is the x-\/size of the window. it is used to calculate the scale to convert from meters to pixels \\
+\hline
+{\em bodylength} & is the size of a robot. it is used to convert the dimension from body length to m \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_terrain_ae7515dee9afa3b1cefac459abefb5442}{Terrain}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=287pt]{class_v_stepper_adc0daf55fe95e9059576ae432bc4f24c_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_v_stepper_a3d7c63308277488473edf5326491d7ee}\label{class_v_stepper_a3d7c63308277488473edf5326491d7ee}} 
+\index{V\+Stepper@{V\+Stepper}!create\+Body@{create\+Body}}
+\index{create\+Body@{create\+Body}!V\+Stepper@{V\+Stepper}}
+\subsubsection{\texorpdfstring{create\+Body()}{createBody()}}
+{\footnotesize\ttfamily void V\+Stepper\+::create\+Body (\begin{DoxyParamCaption}\item[{b2\+World $\ast$}]{world }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Create the Box2D static body of the terrain 
+\begin{DoxyParams}{Parameters}
+{\em world} & is a pointer on the Box2D world \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_terrain_a97e007277f8abb9dde20ef2b49c38a3a}{Terrain}}.
+
+\mbox{\Hypertarget{class_v_stepper_ad81367e4f7422afcd460fd0094a25bc3}\label{class_v_stepper_ad81367e4f7422afcd460fd0094a25bc3}} 
+\index{V\+Stepper@{V\+Stepper}!draw\+Body@{draw\+Body}}
+\index{draw\+Body@{draw\+Body}!V\+Stepper@{V\+Stepper}}
+\subsubsection{\texorpdfstring{draw\+Body()}{drawBody()}}
+{\footnotesize\ttfamily void V\+Stepper\+::draw\+Body (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Draw the body on the window using the S\+F\+ML library 
+\begin{DoxyParams}{Parameters}
+{\em window} & is the S\+F\+ML window where the terrain will be drawn \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_terrain_ae60571b91c1979fa94bdfc5002da6ac7}{Terrain}}.
+
+\mbox{\Hypertarget{class_v_stepper_a9621c3cbd705479e32baf9671983cb8b}\label{class_v_stepper_a9621c3cbd705479e32baf9671983cb8b}} 
+\index{V\+Stepper@{V\+Stepper}!get\+Type@{get\+Type}}
+\index{get\+Type@{get\+Type}!V\+Stepper@{V\+Stepper}}
+\subsubsection{\texorpdfstring{get\+Type()}{getType()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_terrain_8h_a6d0b7e83bb7325270c1162bece970fd8}{e\+\_\+terrain\+\_\+type}} V\+Stepper\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\begin{DoxyReturn}{Returns}
+the type of the terrain. Can be D\+E\+F\+A\+U\+LT, V\+\_\+\+T\+E\+R\+R\+A\+IN, V2\+B\+L\+\_\+\+T\+E\+R\+R\+A\+IN, R\+A\+MP, B\+OX or V\+\_\+\+S\+T\+E\+P\+P\+ER 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_terrain_a6cd1220b8e64466cc7a2219efff4141b}{Terrain}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+simulation/src/V\+Stepper.\+h\item 
+simulation/src/V\+Stepper.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,5 @@
+<map id="Demo::getNewPathLength" name="Demo::getNewPathLength">
+<area shape="rect" id="node2" href="$class_robot_controller.html#a45a4e25b2bb49bf2f1dc18b0f21a6f8d" title="RobotController::getNbActive\lRobots" alt="" coords="231,5,425,44"/>
+<area shape="rect" id="node3" href="$class_robot_controller.html#ae421f813b81632c35ec3494717fd0f12" title="RobotController::getRobot" alt="" coords="240,68,416,93"/>
+<area shape="rect" id="node4" href="$class_robot.html#a65b9be1d9d45b004a6ea500dd5f85246" title="Robot::getState" alt="" coords="271,117,385,143"/>
+</map>

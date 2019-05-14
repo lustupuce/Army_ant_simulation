@@ -1,0 +1,43 @@
+\hypertarget{_vterrain_8h}{}\section{simulation/src/\+Vterrain.h File Reference}
+\label{_vterrain_8h}\index{simulation/src/\+Vterrain.\+h@{simulation/src/\+Vterrain.\+h}}
+
+
+Implementation of the \mbox{\hyperlink{class_vterrain}{Vterrain}} class which inherit from the \mbox{\hyperlink{class_terrain}{Terrain}} class.  
+
+
+{\ttfamily \#include \char`\"{}Terrain.\+h\char`\"{}}\newline
+Include dependency graph for Vterrain.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_vterrain_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=203pt]{_vterrain_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_vterrain}{Vterrain}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Implementation of the \mbox{\hyperlink{class_vterrain}{Vterrain}} class which inherit from the \mbox{\hyperlink{class_terrain}{Terrain}} class. 
+
+\begin{DoxyNote}{Note}
+Class for the \mbox{\hyperlink{class_vterrain}{Vterrain}} creation including method for the Box2D implementation (Physics) and the S\+F\+M\+LF synchronization (graphics). The V \mbox{\hyperlink{class_terrain}{Terrain}} is a linear ground with a V shaped gap in the middle. The ground is located at m\+\_\+posY from the top of the window/world and the left corner of the gap at a distance m\+\_\+runaway from the left end of the window/world. The V gap is described by a given depth m\+\_\+height and either a given angle m\+\_\+angle (if terrain\+Param.\+v\+\_\+angle $>$ 0) or a given width m\+\_\+width. 
+\end{DoxyNote}
+\begin{DoxyDate}{Date}
+8 Oct. 2018 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+lucie houel 
+\end{DoxyAuthor}

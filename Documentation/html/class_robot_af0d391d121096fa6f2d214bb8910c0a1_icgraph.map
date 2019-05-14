@@ -1,0 +1,6 @@
+<map id="Robot::setContact" name="Robot::setContact">
+<area shape="rect" id="node2" href="$class_robot_controller.html#a11e413a1ac6466f360f46820d28b0f2e" title="RobotController::findContact\lRobots" alt="" coords="181,5,371,44"/>
+<area shape="rect" id="node3" href="$class_robot_controller.html#a6b0bdb7620acbf40f48426e30ff0b759" title="RobotController::createGrip\lRobots" alt="" coords="184,68,368,107"/>
+<area shape="rect" id="node4" href="$class_robot_controller.html#ab2e4091fc2e47701cc5dbd7c2d9fc649" title="RobotController::step" alt="" coords="419,75,566,100"/>
+<area shape="rect" id="node5" href="$class_demo.html#a5b12f30547c9f8e89d63ab84bf0cb95f" title="Demo::demoLoop" alt="" coords="614,75,742,100"/>
+</map>

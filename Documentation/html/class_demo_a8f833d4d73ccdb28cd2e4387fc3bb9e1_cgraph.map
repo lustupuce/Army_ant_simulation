@@ -1,0 +1,4 @@
+<map id="Demo::takeScreenshot" name="Demo::takeScreenshot">
+<area shape="rect" id="node2" href="$class_box_terrain.html#a309e67722a008ef166198d36add1690a" title="BoxTerrain::drawBody" alt="" coords="231,5,383,31"/>
+<area shape="rect" id="node3" href="$class_robot_controller.html#a2d4d4c93aed605c945e7a95876825bdc" title="RobotController::drawRobots" alt="" coords="210,55,404,80"/>
+</map>

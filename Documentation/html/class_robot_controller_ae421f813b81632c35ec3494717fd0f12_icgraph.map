@@ -1,0 +1,7 @@
+<map id="RobotController::getRobot" name="RobotController::getRobot">
+<area shape="rect" id="node2" href="$class_demo.html#a4636f708574c6be85334ff16373e2292" title="Demo::addRobotWithDelay" alt="" coords="230,5,412,31"/>
+<area shape="rect" id="node4" href="$class_demo.html#ac6657b0f7f55a81ba215811d31d9e5b5" title="Demo::getBridgeHeight" alt="" coords="241,55,401,80"/>
+<area shape="rect" id="node5" href="$class_demo.html#acd4e28d1626c6979bbab2e396b717cba" title="Demo::getNewPathLength" alt="" coords="232,104,410,129"/>
+<area shape="rect" id="node6" href="$class_demo.html#a653b6b835b58959fea0758f2a1695002" title="Demo::writeBridgeFile" alt="" coords="245,153,397,179"/>
+<area shape="rect" id="node3" href="$class_demo.html#a5b12f30547c9f8e89d63ab84bf0cb95f" title="Demo::demoLoop" alt="" coords="460,80,588,105"/>
+</map>

@@ -1,0 +1,75 @@
+\hypertarget{_robot_8h}{}\section{simulation/src/\+Robot.h File Reference}
+\label{_robot_8h}\index{simulation/src/\+Robot.\+h@{simulation/src/\+Robot.\+h}}
+
+
+Implement the \mbox{\hyperlink{class_robot}{Robot}} class and define enum linked to a robot object\+: e\+\_\+state and side.  
+
+
+{\ttfamily \#include \char`\"{}Box2\+D/\+Box2\+D.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}S\+F\+M\+L/\+Graphics.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}S\+F\+M\+L/\+Window.\+hpp\char`\"{}}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}constants.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Config.\+h\char`\"{}}\newline
+Include dependency graph for Robot.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_robot_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=270pt]{_robot_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_robot}{Robot}}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{_robot_8h_a74a75e4700f1f71bb89d80765319e57b}{e\+\_\+state}} \{ {\bfseries W\+A\+LK}, 
+{\bfseries B\+R\+I\+D\+GE}
+ \}
+\item 
+enum \mbox{\hyperlink{_robot_8h_afc015eff6557e84151d2e53b94375445}{side}} \{ {\bfseries R\+I\+G\+HT}, 
+{\bfseries L\+E\+FT}
+ \}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Implement the \mbox{\hyperlink{class_robot}{Robot}} class and define enum linked to a robot object\+: e\+\_\+state and side. 
+
+\begin{DoxyNote}{Note}
+The methods implemented in this class are relative to a single robot behavior\+: from movement to grip creation. 
+\end{DoxyNote}
+\begin{DoxyDate}{Date}
+26 sept. 2018 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+lucie houel 
+\end{DoxyAuthor}
+
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{_robot_8h_a74a75e4700f1f71bb89d80765319e57b}\label{_robot_8h_a74a75e4700f1f71bb89d80765319e57b}} 
+\index{Robot.\+h@{Robot.\+h}!e\+\_\+state@{e\+\_\+state}}
+\index{e\+\_\+state@{e\+\_\+state}!Robot.\+h@{Robot.\+h}}
+\subsubsection{\texorpdfstring{e\+\_\+state}{e\_state}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{_robot_8h_a74a75e4700f1f71bb89d80765319e57b}{e\+\_\+state}}}
+
+Describe the state of the robot, it can be either W\+A\+LK if the robot is in the walking state or B\+R\+I\+D\+GE if the robot is in the bridge state \mbox{\Hypertarget{_robot_8h_afc015eff6557e84151d2e53b94375445}\label{_robot_8h_afc015eff6557e84151d2e53b94375445}} 
+\index{Robot.\+h@{Robot.\+h}!side@{side}}
+\index{side@{side}!Robot.\+h@{Robot.\+h}}
+\subsubsection{\texorpdfstring{side}{side}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{_robot_8h_afc015eff6557e84151d2e53b94375445}{side}}}
+
+Used to describe which side of the robot is concerned, for example regarding the moving foot 

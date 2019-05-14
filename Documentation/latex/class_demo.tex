@@ -1,0 +1,276 @@
+\hypertarget{class_demo}{}\section{Demo Class Reference}
+\label{class_demo}\index{Demo@{Demo}}
+
+
+{\ttfamily \#include $<$Demo.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_demo_a7fa722430ba973c538ae230e407854ab}{Demo}} (b2\+World $\ast$m\+\_\+world, \mbox{\hyperlink{structconfig_1_1s_config}{config\+::s\+Config}} cfg)
+\item 
+bool \mbox{\hyperlink{class_demo_a4636f708574c6be85334ff16373e2292}{add\+Robot\+With\+Delay}} ()
+\item 
+bool \mbox{\hyperlink{class_demo_a37b03d288a1bf67f586cdfe1f9ba16af}{add\+Robot\+With\+Distance}} ()
+\item 
+void \mbox{\hyperlink{class_demo_ae0f7fe82aa44b946c13823d408b9ee01}{create\+Bridge\+File}} ()
+\item 
+void \mbox{\hyperlink{class_demo_a5b12f30547c9f8e89d63ab84bf0cb95f}{demo\+Loop}} ()
+\item 
+double \mbox{\hyperlink{class_demo_ac6657b0f7f55a81ba215811d31d9e5b5}{get\+Bridge\+Height}} ()
+\item 
+\mbox{\hyperlink{class_robot_controller}{Robot\+Controller}} \mbox{\hyperlink{class_demo_af3f1105a11288fd13d54e85ef2485da5}{get\+Controller}} ()
+\item 
+double \mbox{\hyperlink{class_demo_acd4e28d1626c6979bbab2e396b717cba}{get\+New\+Path\+Length}} ()
+\item 
+sf\+::\+Render\+Window $\ast$ \mbox{\hyperlink{class_demo_a2b9c1e5275d36c3d82c0d4ee5d8a9741}{get\+Window}} ()
+\item 
+void \mbox{\hyperlink{class_demo_a585ce54e47b0624ca078492d9aa1c59c}{init}} ()
+\item 
+void \mbox{\hyperlink{class_demo_a8f833d4d73ccdb28cd2e4387fc3bb9e1}{take\+Screenshot}} (bool draw, int step)
+\item 
+void \mbox{\hyperlink{class_demo_a1b09c62228a007c49ddc0639a65341b2}{write\+Result\+File}} ()
+\item 
+void \mbox{\hyperlink{class_demo_a653b6b835b58959fea0758f2a1695002}{write\+Bridge\+File}} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_demo_ab996202da88e954f84e9ce3a9d467065}\label{class_demo_ab996202da88e954f84e9ce3a9d467065}} 
+b2\+World $\ast$ {\bfseries m\+\_\+world} = nullptr
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \mbox{\hyperlink{class_demo}{Demo}} class gather all the elements of the simulation\+: the terrain, the robot controller and the robots and implement more abstract simulation methods. Those methods handle the robot interaction with the terrain and between themselves ie the group behavior. This is why the robots are only created via the robot controller. It also handle the simulation results by writing them in two distinct files\+:
+\begin{DoxyItemize}
+\item The overall result file with the summary of the results
+\item The bridge file that gather the timestep and position of every robots entering the bridge state. It is updated every time a new robot enter the bridge state. 
+\end{DoxyItemize}
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_demo_a7fa722430ba973c538ae230e407854ab}\label{class_demo_a7fa722430ba973c538ae230e407854ab}} 
+\index{Demo@{Demo}!Demo@{Demo}}
+\index{Demo@{Demo}!Demo@{Demo}}
+\subsubsection{\texorpdfstring{Demo()}{Demo()}}
+{\footnotesize\ttfamily Demo\+::\+Demo (\begin{DoxyParamCaption}\item[{b2\+World $\ast$}]{m\+\_\+world,  }\item[{\mbox{\hyperlink{structconfig_1_1s_config}{config\+::s\+Config}}}]{cfg }\end{DoxyParamCaption})}
+
+Initial x position of the robot in the world
+
+Initial y position of the robot Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_demo_a7fa722430ba973c538ae230e407854ab_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_demo_a4636f708574c6be85334ff16373e2292}\label{class_demo_a4636f708574c6be85334ff16373e2292}} 
+\index{Demo@{Demo}!add\+Robot\+With\+Delay@{add\+Robot\+With\+Delay}}
+\index{add\+Robot\+With\+Delay@{add\+Robot\+With\+Delay}!Demo@{Demo}}
+\subsubsection{\texorpdfstring{add\+Robot\+With\+Delay()}{addRobotWithDelay()}}
+{\footnotesize\ttfamily bool Demo\+::add\+Robot\+With\+Delay (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Create a new robot after a given delay defined by m\+\_\+config.\+simulation.\+robot\+\_\+delay (which has been obtained as an argument of the \mbox{\hyperlink{class_demo}{Demo}} object creation) until the maximum number of robots have been reached. The traffic is thus controlled by the initial position and the delay between the robots. \begin{DoxyReturn}{Returns}
+false if the robots are stacking (the previous robot too close to the one that will be created) 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_demo_a4636f708574c6be85334ff16373e2292_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=349pt]{class_demo_a4636f708574c6be85334ff16373e2292_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_demo_a37b03d288a1bf67f586cdfe1f9ba16af}\label{class_demo_a37b03d288a1bf67f586cdfe1f9ba16af}} 
+\index{Demo@{Demo}!add\+Robot\+With\+Distance@{add\+Robot\+With\+Distance}}
+\index{add\+Robot\+With\+Distance@{add\+Robot\+With\+Distance}!Demo@{Demo}}
+\subsubsection{\texorpdfstring{add\+Robot\+With\+Distance()}{addRobotWithDistance()}}
+{\footnotesize\ttfamily bool Demo\+::add\+Robot\+With\+Distance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Create a new robot when a given distance with the previous robot defined by m\+\_\+config.\+simulation.\+robot\+\_\+distance has been reached and the previous robot has an angle corresponding to the desired phase shift. It does so until the maximum number of robots have been reached. The traffic is thus controlled by the distance between the robots and the phase shift. \begin{DoxyReturn}{Returns}
+true when a new robot is created. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_demo_a37b03d288a1bf67f586cdfe1f9ba16af_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_demo_ae0f7fe82aa44b946c13823d408b9ee01}\label{class_demo_ae0f7fe82aa44b946c13823d408b9ee01}} 
+\index{Demo@{Demo}!create\+Bridge\+File@{create\+Bridge\+File}}
+\index{create\+Bridge\+File@{create\+Bridge\+File}!Demo@{Demo}}
+\subsubsection{\texorpdfstring{create\+Bridge\+File()}{createBridgeFile()}}
+{\footnotesize\ttfamily void Demo\+::create\+Bridge\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Create bridge file under m\+\_\+bridge\+File. Every line is structured as follow\+: Timestamp; robot ID; x coordinate; y coordinate; angle; current joint x; current joint y; previous joint x; previous joint y; it entry; age Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=298pt]{class_demo_ae0f7fe82aa44b946c13823d408b9ee01_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_demo_a5b12f30547c9f8e89d63ab84bf0cb95f}\label{class_demo_a5b12f30547c9f8e89d63ab84bf0cb95f}} 
+\index{Demo@{Demo}!demo\+Loop@{demo\+Loop}}
+\index{demo\+Loop@{demo\+Loop}!Demo@{Demo}}
+\subsubsection{\texorpdfstring{demo\+Loop()}{demoLoop()}}
+{\footnotesize\ttfamily void Demo\+::demo\+Loop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Simulation loop that handle the synchronization between the physics and the controller step. The visualization is activated or deactivated via m\+\_\+config.\+simulation.\+visualization. The Simulation is composed of two steps\+: the bridge formation where new robots are created following the given delay or distance and the bridge dissolution step where no more robots are created. The duration of the two steps are determined by respectively m\+\_\+config.\+simulation.\+bridge\+\_\+duration and m\+\_\+config.\+simulation.\+dissolution\+\_\+duration. The results are written in the two distinct files. Data processing Precise the simulation parameters\+: distance between robots, speed Get time of the first bridge contact get time when the last robot enter the stable bridge state get points of contact for every robot + position and orientation of centerHere is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_demo_a5b12f30547c9f8e89d63ab84bf0cb95f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_demo_ac6657b0f7f55a81ba215811d31d9e5b5}\label{class_demo_ac6657b0f7f55a81ba215811d31d9e5b5}} 
+\index{Demo@{Demo}!get\+Bridge\+Height@{get\+Bridge\+Height}}
+\index{get\+Bridge\+Height@{get\+Bridge\+Height}!Demo@{Demo}}
+\subsubsection{\texorpdfstring{get\+Bridge\+Height()}{getBridgeHeight()}}
+{\footnotesize\ttfamily double Demo\+::get\+Bridge\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the bridge height. This function is not up to date and should not be used in this state Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_demo_ac6657b0f7f55a81ba215811d31d9e5b5_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_demo_af3f1105a11288fd13d54e85ef2485da5}\label{class_demo_af3f1105a11288fd13d54e85ef2485da5}} 
+\index{Demo@{Demo}!get\+Controller@{get\+Controller}}
+\index{get\+Controller@{get\+Controller}!Demo@{Demo}}
+\subsubsection{\texorpdfstring{get\+Controller()}{getController()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_robot_controller}{Robot\+Controller}} Demo\+::get\+Controller (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the robot controller object Rq\+: in future development, could be adapted to be a pointer \begin{DoxyReturn}{Returns}
+the robot controller object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_demo_acd4e28d1626c6979bbab2e396b717cba}\label{class_demo_acd4e28d1626c6979bbab2e396b717cba}} 
+\index{Demo@{Demo}!get\+New\+Path\+Length@{get\+New\+Path\+Length}}
+\index{get\+New\+Path\+Length@{get\+New\+Path\+Length}!Demo@{Demo}}
+\subsubsection{\texorpdfstring{get\+New\+Path\+Length()}{getNewPathLength()}}
+{\footnotesize\ttfamily double Demo\+::get\+New\+Path\+Length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the new path length induced by the bridge from the left corner of the obstacle to its right corner. This function is not up to date and should not be used in this state. Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_demo_acd4e28d1626c6979bbab2e396b717cba_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_demo_a2b9c1e5275d36c3d82c0d4ee5d8a9741}\label{class_demo_a2b9c1e5275d36c3d82c0d4ee5d8a9741}} 
+\index{Demo@{Demo}!get\+Window@{get\+Window}}
+\index{get\+Window@{get\+Window}!Demo@{Demo}}
+\subsubsection{\texorpdfstring{get\+Window()}{getWindow()}}
+{\footnotesize\ttfamily sf\+::\+Render\+Window $\ast$ Demo\+::get\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get a pointer on the S\+F\+ML window \begin{DoxyReturn}{Returns}
+a pointer on the S\+F\+ML window 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_demo_a585ce54e47b0624ca078492d9aa1c59c}\label{class_demo_a585ce54e47b0624ca078492d9aa1c59c}} 
+\index{Demo@{Demo}!init@{init}}
+\index{init@{init}!Demo@{Demo}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void Demo\+::init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Initialize the demo Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=298pt]{class_demo_a585ce54e47b0624ca078492d9aa1c59c_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_demo_a8f833d4d73ccdb28cd2e4387fc3bb9e1}\label{class_demo_a8f833d4d73ccdb28cd2e4387fc3bb9e1}} 
+\index{Demo@{Demo}!take\+Screenshot@{take\+Screenshot}}
+\index{take\+Screenshot@{take\+Screenshot}!Demo@{Demo}}
+\subsubsection{\texorpdfstring{take\+Screenshot()}{takeScreenshot()}}
+{\footnotesize\ttfamily void Demo\+::take\+Screenshot (\begin{DoxyParamCaption}\item[{bool}]{draw,  }\item[{int}]{step }\end{DoxyParamCaption})}
+
+Take a screenshot of the simulation at a given time step. The image is saved under m\+\_\+config.\+logfile\+\_\+path + m\+\_\+config.\+logfile\+\_\+name + \char`\"{}\+\_\+dissolution\+\_\+\char`\"{} + std\+::to\+\_\+string(m\+\_\+current\+It) + \char`\"{}.\+jpg\char`\"{} 
+\begin{DoxyParams}{Parameters}
+{\em draw} & should be true if the window has to be drawn beforehand. It is the case when the visualization is deactivated \\
+\hline
+{\em step} & is the simulation step\+: it is either 1 if the simulation is in the bridge formation step or 2 if the simulation is in the bridge dissolution one. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_demo_a8f833d4d73ccdb28cd2e4387fc3bb9e1_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_demo_a8f833d4d73ccdb28cd2e4387fc3bb9e1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_demo_a653b6b835b58959fea0758f2a1695002}\label{class_demo_a653b6b835b58959fea0758f2a1695002}} 
+\index{Demo@{Demo}!write\+Bridge\+File@{write\+Bridge\+File}}
+\index{write\+Bridge\+File@{write\+Bridge\+File}!Demo@{Demo}}
+\subsubsection{\texorpdfstring{write\+Bridge\+File()}{writeBridgeFile()}}
+{\footnotesize\ttfamily void Demo\+::write\+Bridge\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Write the file containing the bridge formation details. This file is updated every time a new robot enter the bridge state The file is saved under m\+\_\+config.\+logfile\+\_\+path + m\+\_\+config.\+logfile\+\_\+name + \char`\"{}\+\_\+bridge.\+txt\char`\"{}; \mbox{\hyperlink{class_robot}{Robot}} id and age
+
+\mbox{\hyperlink{class_robot}{Robot}} position
+
+Joint position Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_demo_a653b6b835b58959fea0758f2a1695002_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{class_demo_a653b6b835b58959fea0758f2a1695002_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_demo_a1b09c62228a007c49ddc0639a65341b2}\label{class_demo_a1b09c62228a007c49ddc0639a65341b2}} 
+\index{Demo@{Demo}!write\+Result\+File@{write\+Result\+File}}
+\index{write\+Result\+File@{write\+Result\+File}!Demo@{Demo}}
+\subsubsection{\texorpdfstring{write\+Result\+File()}{writeResultFile()}}
+{\footnotesize\ttfamily void Demo\+::write\+Result\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Write the file containing the summary of the simulation results The file is saved under m\+\_\+config.\+logfile\+\_\+path + m\+\_\+config.\+logfile\+\_\+name + \char`\"{}\+\_\+result.\+txt\char`\"{}; \mbox{\hyperlink{class_terrain}{Terrain}} parameters ~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+ Simulation parameters ~\newline
+~\newline
+~\newline
+~\newline
+ Controller parameters ~\newline
+~\newline
+~\newline
+ Controller parameters ~\newline
+~\newline
+ Bridge parameters ~\newline
+ Dissolution parameters Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=335pt]{class_demo_a1b09c62228a007c49ddc0639a65341b2_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+simulation/src/\mbox{\hyperlink{_demo_8h}{Demo.\+h}}\item 
+simulation/src/Demo.\+cpp\end{DoxyCompactItemize}

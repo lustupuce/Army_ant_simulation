@@ -1,0 +1,69 @@
+\hypertarget{_terrain_8h}{}\section{simulation/src/\+Terrain.h File Reference}
+\label{_terrain_8h}\index{simulation/src/\+Terrain.\+h@{simulation/src/\+Terrain.\+h}}
+
+
+Implementation of the \mbox{\hyperlink{class_terrain}{Terrain}} class.  
+
+
+{\ttfamily \#include \char`\"{}Box2\+D/\+Box2\+D.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}S\+F\+M\+L/\+Graphics.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}S\+F\+M\+L/\+Window.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Config.\+h\char`\"{}}\newline
+Include dependency graph for Terrain.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_terrain_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_terrain_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_terrain}{Terrain}}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{_terrain_8h_a6d0b7e83bb7325270c1162bece970fd8}{e\+\_\+terrain\+\_\+type}} \{ \newline
+{\bfseries D\+E\+F\+A\+U\+LT}, 
+{\bfseries V\+\_\+\+T\+E\+R\+R\+A\+IN}, 
+{\bfseries V2\+B\+L\+\_\+\+T\+E\+R\+R\+A\+IN}, 
+{\bfseries R\+A\+MP}, 
+\newline
+{\bfseries B\+OX}, 
+{\bfseries V\+\_\+\+S\+T\+E\+P\+P\+ER}
+ \}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Implementation of the \mbox{\hyperlink{class_terrain}{Terrain}} class. 
+
+\begin{DoxyNote}{Note}
+General class for the \mbox{\hyperlink{class_terrain}{Terrain}} creation including method for the Box2D implementation (Physics) and the S\+F\+M\+LF synchronization (graphics). The default terrain is linear ground of width 3$\ast$m\+\_\+runaway located at m\+\_\+posY from the top of the window. The m\+\_\+width, m\+\_\+height and m\+\_\+angle members do not represent actual dimension in the case of the default terrain. 
+\end{DoxyNote}
+\begin{DoxyDate}{Date}
+28 sept. 2018 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+lucie houel 
+\end{DoxyAuthor}
+
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{_terrain_8h_a6d0b7e83bb7325270c1162bece970fd8}\label{_terrain_8h_a6d0b7e83bb7325270c1162bece970fd8}} 
+\index{Terrain.\+h@{Terrain.\+h}!e\+\_\+terrain\+\_\+type@{e\+\_\+terrain\+\_\+type}}
+\index{e\+\_\+terrain\+\_\+type@{e\+\_\+terrain\+\_\+type}!Terrain.\+h@{Terrain.\+h}}
+\subsubsection{\texorpdfstring{e\+\_\+terrain\+\_\+type}{e\_terrain\_type}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{_terrain_8h_a6d0b7e83bb7325270c1162bece970fd8}{e\+\_\+terrain\+\_\+type}}}
+
+Different types of terrain used to do the simulation 
