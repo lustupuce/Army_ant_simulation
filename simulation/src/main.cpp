@@ -1,10 +1,5 @@
-//============================================================================
-// Name        : test.cpp
-// Author      : 
-// Version     :
-// Copyright   : Your copyright notice
-// Description : Hello World in C++, Ansi-style
-//============================================================================
+/**@file main.cpp
+*/
 
 #include "Box2D/Box2D.h"
 #include "SFML/Graphics.hpp"
@@ -12,12 +7,7 @@
 #include <iostream>
 
 #include "Config.h"
-#include "Robot.h"
-#include "RobotController.h"
-#include "Vterrain.h"
 #include "Demo.h"
-#include <thread>
-#include "BoxTerrain.h"
 
 void default_parameters(config::sConfig& cfg);
 void parse_argument(char* argv[], int i, config::sConfig& cfg);
@@ -49,6 +39,7 @@ int main(int argc, char* argv[])
             	return 0;
             }
             else if (i + 1 != argc){
+						// The first thing to check is whether a configuration file has been specified
             	if (std::string(argv[i]) == "-cp" || std::string(argv[i]) == "--configuration_path") {
     				// We know the next argument *should* be the filename:
     				config_file_path = std::string(argv[i + 1]);
@@ -76,6 +67,8 @@ int main(int argc, char* argv[])
    return 0;
 }
 
+/** Update the config::sConfig cfg with the default configuration parameter values
+*/
 void default_parameters(config::sConfig& cfg){
 
 	cfg.terrain.runaway = 8; //7
@@ -218,7 +211,8 @@ void parse_argument(char* argv[], int i, config::sConfig& cfg){
 }
 
 
-// Help
+/** Function called when launch argument requires help. Print all the possible commands 
+*/
 void help(){
 	std::cout << "Launch a simulation for the ant bridge formation" << std::endl;
 	std::cout << "Usage: Simulation_v2 [parameters]" << std::endl;

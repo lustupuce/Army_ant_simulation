@@ -1,8 +1,10 @@
-/*
- * config.h
+/**
+ * @file config.h
+ *	@brief Implementation of the Configuration class used to parse the configuration file and the sConfig structure gathering the configuration parameters.
+ *	@details
+ *  @date 26 sept. 2018
+ *  @author lucie houel
  *
- *  Created on: 26 sept. 2018
- *      Author: lucie
  */
 
 #ifndef CONFIG_H_
@@ -22,11 +24,17 @@ namespace config
 
 
 
-
+/** @struct configuration parameters describing the terrain
+*
+*/
 struct sTerrain{
+	/**It is either the distance before the eentrance of the obstcle or 1/3 of the length of the ground in the default terrain*/
 	double runaway;
+	/** */
 	double v_width;
+	/** */
 	double v_height;
+	/** */
 	double v_angle;
 };
 

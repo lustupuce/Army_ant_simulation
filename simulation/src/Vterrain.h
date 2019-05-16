@@ -1,7 +1,7 @@
 /**
  *  @file Vterrain.h
  *	@brief Implementation of the Vterrain class which inherit from the Terrain class.
- *	@note Class for the Vterrain creation including method for the Box2D implementation (Physics) and the SFMLF synchronization (graphics).
+ *	@details Class for the Vterrain creation including method for the Box2D implementation (Physics) and the SFMLF synchronization (graphics).
  *	The V Terrain is a linear ground with a V shaped gap in the middle.
  *	The ground is located at m_posY from the top of the window/world and the left corner of the gap at a distance m_runaway from the left end of the window/world.
  *	The V gap is described by a given depth m_height and either a given angle m_angle (if terrainParam.v_angle > 0) or a given width m_width.

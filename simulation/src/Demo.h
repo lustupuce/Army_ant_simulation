@@ -1,7 +1,7 @@
 /**
  *  @file Demo.h
  *	@brief Implementation of the Demo class and the MyContactListener_v2 class.
- *	@note The Demo class gather all the elements of the simulation: the terrain, the robot controller and the robots and implement more abstract simulation methods.
+ *	@details The Demo class gather all the elements of the simulation: the terrain, the robot controller and the robots and implement more abstract simulation methods.
  *	Those methods handle the robot interaction with the terrain and between themselves ie the group behavior.
  *	This is why the robots are only created via the robot controller.
  *	The demo class also synchronized the physics and simulation step.
@@ -194,4 +194,3 @@ protected:
 
 
 #endif /* DEMO_H_ */
-

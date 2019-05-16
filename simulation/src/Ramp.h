@@ -1,7 +1,7 @@
 /**
  *  @file Ramp.h
  *	@brief Implementation of the Ramp class which inherit from the Terrain class.
- *	@note Class for the Ramp creation including method for the Box2D implementation (Physics) and the SFMLF synchronization (graphics).
+ *	@details Class for the Ramp creation including method for the Box2D implementation (Physics) and the SFMLF synchronization (graphics).
  *	The Ramp Terrain is an horizontal descending ramp.
  *	The top ground is located at m_posY from the top of the window/world and the ramp at a distance m_runaway from the left end of the window/world.
  *	The Ramp is described by a height of m_height (and an angle of 90°).

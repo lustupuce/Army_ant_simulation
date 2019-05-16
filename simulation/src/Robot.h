@@ -1,7 +1,7 @@
 /**
  *  @file robot.h
  *	@brief Implement the Robot class and define enum linked to a robot object: e_state and side
- *	@note The methods implemented in this class are relative to a single robot behavior: from movement to grip creation.
+ *	@details The methods implemented in this class are relative to a single robot behavior: from movement to grip creation.
  *  @date 26 sept. 2018
  *  @author lucie houel
  */

@@ -1,7 +1,7 @@
 /**
  *	@file RobotController.h
  *	@brief Implement the RobotController class. This class act as a supervisor for the Robots.
- *	@note It handles the collective behavior of the robots and the synchronization between them.
+ *	@details It handles the collective behavior of the robots and the synchronization between them.
  *	The individual Robot object should be created via the RobotControlller.
  *	If it is not the case, the robot can be added afterward to the robotController via the addRobot(Robot& robot) method.
  *	@date 26 sept. 2018
@@ -272,4 +272,3 @@ private:
 };
 
 #endif /* ROBOTCONTROLLER_H_ */
-

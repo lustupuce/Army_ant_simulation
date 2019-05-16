@@ -19,12 +19,18 @@ Implementation of the \mbox{\hyperlink{class_demo}{Demo}} class and the \mbox{\h
 {\ttfamily \#include \char`\"{}Config.\+h\char`\"{}}\newline
 {\ttfamily \#include $<$random$>$}\newline
 {\ttfamily \#include \char`\"{}Box\+Terrain.\+h\char`\"{}}\newline
-Include dependency graph for Demo.\+h\+:
-\nopagebreak
+Include dependency graph for Demo.\+h\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{_demo_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=200pt]{_demo_8h__dep__incl}
 \end{center}
 \end{figure}
 \subsection*{Classes}
@@ -39,9 +45,8 @@ class \mbox{\hyperlink{class_demo}{Demo}}
 \subsection{Detailed Description}
 Implementation of the \mbox{\hyperlink{class_demo}{Demo}} class and the \mbox{\hyperlink{class_my_contact_listener__v2}{My\+Contact\+Listener\+\_\+v2}} class. 
 
-\begin{DoxyNote}{Note}
 The \mbox{\hyperlink{class_demo}{Demo}} class gather all the elements of the simulation\+: the terrain, the robot controller and the robots and implement more abstract simulation methods. Those methods handle the robot interaction with the terrain and between themselves ie the group behavior. This is why the robots are only created via the robot controller. The demo class also synchronized the physics and simulation step.
-\end{DoxyNote}
+
 The \mbox{\hyperlink{class_my_contact_listener__v2}{My\+Contact\+Listener\+\_\+v2}} class is used to create a listener on the contact between the physics elements (robots and terrain). \begin{DoxyDate}{Date}
 26 sept. 2018 
 \end{DoxyDate}

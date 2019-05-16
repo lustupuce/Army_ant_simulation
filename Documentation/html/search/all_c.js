@@ -1,20 +1,15 @@
 var searchData=
 [
-  ['sconfig',['sConfig',['../structconfig_1_1s_config.html',1,'config']]],
-  ['scontroller',['sController',['../structconfig_1_1s_controller.html',1,'config']]],
-  ['setbridgestability',['setBridgeStability',['../class_robot_controller.html#a19191b156161bd7a3978659329ceaad2',1,'RobotController']]],
-  ['setcontact',['setContact',['../class_robot.html#af0d391d121096fa6f2d214bb8910c0a1',1,'Robot']]],
-  ['setdelay',['setDelay',['../class_robot.html#a75e40c383e9191a17f25baa3aa5a35d8',1,'Robot']]],
-  ['setid',['setId',['../class_robot.html#a46b12a6c9386c0067f9f35b3e60a25f7',1,'Robot']]],
-  ['setnbrobots',['setNbRobots',['../class_robot_controller.html#adf00a753bc750624e805f57f8998ad78',1,'RobotController']]],
-  ['setrobotstate',['setRobotState',['../class_robot_controller.html#a797837410a2802b5d7399d132924ba2c',1,'RobotController']]],
-  ['setscale',['setScale',['../class_robot_controller.html#a76d6bb1e93bb9523850370fdf76407c4',1,'RobotController']]],
-  ['setspeed',['setSpeed',['../class_robot.html#a0a1948c69efd8bce2487afdedb6f47f1',1,'Robot']]],
-  ['setstate',['setState',['../class_robot.html#aaf534f168d818112ae1f6440b329eb0a',1,'Robot']]],
-  ['side',['side',['../_robot_8h.html#afc015eff6557e84151d2e53b94375445',1,'Robot.h']]],
-  ['srobot',['sRobot',['../structconfig_1_1s_robot.html',1,'config']]],
-  ['ssimulation',['sSimulation',['../structconfig_1_1s_simulation.html',1,'config']]],
-  ['step',['step',['../class_robot_controller.html#ab2e4091fc2e47701cc5dbd7c2d9fc649',1,'RobotController']]],
-  ['sterrain',['sTerrain',['../structconfig_1_1s_terrain.html',1,'config']]],
-  ['swindow',['sWindow',['../structconfig_1_1s_window.html',1,'config']]]
+  ['ramp',['Ramp',['../class_ramp.html',1,'']]],
+  ['ramp_2eh',['Ramp.h',['../_ramp_8h.html',1,'']]],
+  ['removerobot',['removeRobot',['../class_robot_controller.html#a0774831ed97c92f24d082603e66950b0',1,'RobotController']]],
+  ['resetnbjoint',['resetNbJoint',['../class_robot.html#abbba5cddb2dc90005c26b99d968f102d',1,'Robot']]],
+  ['robot',['Robot',['../class_robot.html',1,'']]],
+  ['robot_2eh',['Robot.h',['../_robot_8h.html',1,'']]],
+  ['robotcontroller',['RobotController',['../class_robot_controller.html',1,'']]],
+  ['robotcontroller_2eh',['RobotController.h',['../_robot_controller_8h.html',1,'']]],
+  ['robotout',['robotOut',['../class_robot_controller.html#a68972b0f0f2f033ee0d2d2c849fb38c9',1,'RobotController']]],
+  ['robotpushing',['robotPushing',['../class_robot_controller.html#a927abf2765cd53b39acf128f318c3fe5',1,'RobotController']]],
+  ['robotstacking',['robotStacking',['../class_robot_controller.html#a83d343eb8958d365624d06ac1b0b1b3d',1,'RobotController']]],
+  ['runaway',['runaway',['../structconfig_1_1s_terrain.html#ad6c30d8e675a81113ff3e5af46e636ac',1,'config::sTerrain']]]
 ];
