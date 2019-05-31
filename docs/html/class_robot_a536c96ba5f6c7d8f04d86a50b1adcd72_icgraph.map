@@ -1,5 +1,0 @@
-<map id="Robot::getJointDef" name="Robot::getJointDef">
-<area shape="rect" id="node2" href="$class_robot_controller.html#a6b0bdb7620acbf40f48426e30ff0b759" title="RobotController::createGrip\lRobots" alt="" coords="185,5,369,44"/>
-<area shape="rect" id="node3" href="$class_robot_controller.html#ab2e4091fc2e47701cc5dbd7c2d9fc649" title="RobotController::step" alt="" coords="417,12,565,37"/>
-<area shape="rect" id="node4" href="$class_demo.html#a938c3b6ab1c98ce43f977dda9d4f2b3a" title="Demo::demoLoop" alt="" coords="613,12,740,37"/>
-</map>
