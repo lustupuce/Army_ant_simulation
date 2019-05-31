@@ -1,12 +1,12 @@
-<map id="simulation/src/Config.h" name="simulation/src/Config.h">
-<area shape="rect" id="node2" href="$_terrain_8h.html" title="Implementation of the Terrain class. " alt="" coords="514,79,673,104"/>
-<area shape="rect" id="node4" href="$_demo_8h.html" title="Implementation of the Demo class and the MyContactListener_v2 class. " alt="" coords="801,225,954,251"/>
-<area shape="rect" id="node5" href="$main_8cpp.html" title="simulation/src/main.cpp" alt="" coords="1026,299,1187,324"/>
-<area shape="rect" id="node10" href="$_robot_8h.html" title="Implement the Robot class and define enum linked to a robot object: e_state and side. " alt="" coords="1067,79,1221,104"/>
-<area shape="rect" id="node3" href="$_box_terrain_8h_source.html" title="simulation/src/BoxTerrain.h" alt="" coords="5,152,187,177"/>
-<area shape="rect" id="node6" href="$_vterrain_8h.html" title="Implementation of the Vterrain class which inherit from the Terrain class. " alt="" coords="211,152,376,177"/>
-<area shape="rect" id="node7" href="$_v2_b_l_terrain_8h.html" title="Implementation of the V2BLTerrain class which inherit from the Terrain class. " alt="" coords="400,152,590,177"/>
-<area shape="rect" id="node8" href="$_ramp_8h.html" title="Implementation of the Ramp class which inherit from the Terrain class. " alt="" coords="614,152,767,177"/>
-<area shape="rect" id="node9" href="$_v_stepper_8h_source.html" title="simulation/src/VStepper.h" alt="" coords="791,152,964,177"/>
-<area shape="rect" id="node11" href="$_robot_controller_8h.html" title="Implement the RobotController class. This class act as a supervisor for the Robots. " alt="" coords="1039,152,1249,177"/>
+<map id="Config.h" name="Config.h">
+<area shape="rect" id="node2" href="$_terrain_8h.html" title="Implementation of the Terrain class. " alt="" coords="301,79,374,104"/>
+<area shape="rect" id="node4" href="$_demo_8h.html" title="Implementation of the Demo class and the MyContactListener_v2 class. " alt="" coords="459,225,527,251"/>
+<area shape="rect" id="node5" href="$main_8cpp.html" title="main.cpp" alt="" coords="621,299,696,324"/>
+<area shape="rect" id="node10" href="$_robot_8h.html" title="Implement the Robot class and define enum linked to a robot object: e_state and side. " alt="" coords="641,79,709,104"/>
+<area shape="rect" id="node3" href="$_box_terrain_8h_source.html" title="BoxTerrain.h" alt="" coords="5,152,102,177"/>
+<area shape="rect" id="node6" href="$_vterrain_8h.html" title="Implementation of the Vterrain class which inherit from the Terrain class. " alt="" coords="126,152,205,177"/>
+<area shape="rect" id="node7" href="$_v2_b_l_terrain_8h.html" title="Implementation of the V2BLTerrain class which inherit from the Terrain class. " alt="" coords="229,152,334,177"/>
+<area shape="rect" id="node8" href="$_ramp_8h.html" title="Implementation of the Ramp class which inherit from the Terrain class. " alt="" coords="358,152,426,177"/>
+<area shape="rect" id="node9" href="$_v_stepper_8h_source.html" title="VStepper.h" alt="" coords="450,152,537,177"/>
+<area shape="rect" id="node11" href="$_robot_controller_8h.html" title="Implement the RobotController class. This class act as a supervisor for the Robots. " alt="" coords="612,152,737,177"/>
 </map>
