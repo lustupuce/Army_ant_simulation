@@ -1,0 +1,6 @@
+<map id="RobotController::robotPushing" name="RobotController::robotPushing">
+<area shape="rect" id="node2" href="$class_robot.html#a7c5ede93bcb2007be1f2bd6b2137f271" title="Robot::getWheel" alt="" coords="281,5,402,31"/>
+<area shape="rect" id="node3" href="$class_robot.html#a0ccd9dbef98a3d5bf6b29d8cd781bd25" title="Robot::getBody" alt="" coords="285,55,398,80"/>
+<area shape="rect" id="node4" href="$class_robot.html#a8d1d94c9cab78a96851785b1679cd457" title="Robot::getId" alt="" coords="295,104,389,129"/>
+<area shape="rect" id="node5" href="$class_robot_controller.html#a797837410a2802b5d7399d132924ba2c" title="RobotController::setRobot\lState" alt="" coords="254,153,430,192"/>
+</map>

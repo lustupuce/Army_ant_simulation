@@ -1,0 +1,14 @@
+<map id="Demo::addRobotWithDelay" name="Demo::addRobotWithDelay">
+<area shape="rect" id="node2" href="$class_robot_controller.html#a83d343eb8958d365624d06ac1b0b1b3d" title="RobotController::robotStacking" alt="" coords="236,5,440,31"/>
+<area shape="rect" id="node4" href="$class_robot_controller.html#aa247b8c90ab585358f07a18c891c8b31" title="RobotController::getRobot\lWithId" alt="" coords="250,55,426,93"/>
+<area shape="rect" id="node5" href="$class_robot_controller.html#a19191b156161bd7a3978659329ceaad2" title="RobotController::setBridge\lStability" alt="" coords="249,117,427,156"/>
+<area shape="rect" id="node6" href="$class_robot_controller.html#ad79af125e28750338e0da1fb35d0b72d" title="RobotController::createRobot" alt="" coords="241,180,435,205"/>
+<area shape="rect" id="node7" href="$class_robot_controller.html#ae421f813b81632c35ec3494717fd0f12" title="RobotController::getRobot" alt="" coords="250,229,426,255"/>
+<area shape="rect" id="node8" href="$class_robot.html#af8bdea28202e00ebf48187b8943b245c" title="Robot::getPosition" alt="" coords="273,279,403,304"/>
+<area shape="rect" id="node9" href="$class_robot.html#ad9b03690ffb189f0990dacb813b2b72c" title="Robot::getDelay" alt="" coords="280,328,397,353"/>
+<area shape="rect" id="node10" href="$class_robot.html#a41a470133819059706aab8a8d546f6bc" title="Robot::getAngle" alt="" coords="280,377,397,403"/>
+<area shape="rect" id="node11" href="$class_demo.html#a8f833d4d73ccdb28cd2e4387fc3bb9e1" title="Demo::takeScreenshot" alt="" coords="260,427,417,452"/>
+<area shape="rect" id="node3" href="$class_robot.html#a0ccd9dbef98a3d5bf6b29d8cd781bd25" title="Robot::getBody" alt="" coords="528,5,641,31"/>
+<area shape="rect" id="node12" href="$class_box_terrain.html#a309e67722a008ef166198d36add1690a" title="BoxTerrain::drawBody" alt="" coords="509,401,660,427"/>
+<area shape="rect" id="node13" href="$class_robot_controller.html#a2d4d4c93aed605c945e7a95876825bdc" title="RobotController::drawRobots" alt="" coords="488,451,681,476"/>
+</map>
