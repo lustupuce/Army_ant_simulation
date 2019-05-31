@@ -1,0 +1,7 @@
+<map id="RobotController.cpp" name="RobotController.cpp">
+<area shape="rect" id="node2" href="$_robot_controller_8h.html" title="Implement the RobotController class. This class act as a supervisor for the Robots. " alt="" coords="216,79,341,104"/>
+<area shape="rect" id="node8" href="$constants_8h.html" title="constants.h" alt="" coords="201,299,291,324"/>
+<area shape="rect" id="node10" href="$helpers_8h.html" title="helpers.h" alt="" coords="13,152,90,177"/>
+<area shape="rect" id="node3" href="$_robot_8h.html" title="Implement the Robot class and define enum linked to a robot object: e_state and side. " alt="" coords="280,152,348,177"/>
+<area shape="rect" id="node9" href="$_config_8h.html" title="Implementation of the Configuration class used to parse the configuration file and the sConfig struct..." alt="" coords="352,225,423,251"/>
+</map>

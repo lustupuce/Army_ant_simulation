@@ -1,0 +1,4 @@
+<map id="Robot::contactOnGripSide" name="Robot::contactOnGripSide">
+<area shape="rect" id="node2" href="$class_robot.html#a0ccd9dbef98a3d5bf6b29d8cd781bd25" title="Robot::getBody" alt="" coords="234,5,347,31"/>
+<area shape="rect" id="node3" href="$class_robot.html#a7c5ede93bcb2007be1f2bd6b2137f271" title="Robot::getWheel" alt="" coords="230,55,351,80"/>
+</map>

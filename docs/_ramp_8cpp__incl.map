@@ -1,0 +1,6 @@
+<map id="Ramp.cpp" name="Ramp.cpp">
+<area shape="rect" id="node2" href="$_ramp_8h.html" title="Implementation of the Ramp class which inherit from the Terrain class. " alt="" coords="261,79,329,104"/>
+<area shape="rect" id="node3" href="$_terrain_8h.html" title="Implementation of the Terrain class. " alt="" coords="259,152,332,177"/>
+<area shape="rect" id="node7" href="$_config_8h.html" title="Implementation of the Configuration class used to parse the configuration file and the sConfig struct..." alt="" coords="467,225,538,251"/>
+<area shape="rect" id="node8" href="$constants_8h.html" title="constants.h" alt="" coords="457,299,547,324"/>
+</map>

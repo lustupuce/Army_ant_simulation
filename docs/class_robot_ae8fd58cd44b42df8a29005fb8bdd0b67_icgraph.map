@@ -1,0 +1,9 @@
+<map id="Robot::contactOnGripSide" name="Robot::contactOnGripSide">
+<area shape="rect" id="node2" href="$class_robot.html#aed1ba5683c53ac2b7e4a6c3fc7bcadba" title="Robot::gripSide" alt="" coords="230,51,344,76"/>
+<area shape="rect" id="node3" href="$class_robot_controller.html#a11e413a1ac6466f360f46820d28b0f2e" title="RobotController::findContact\lRobots" alt="" coords="397,5,587,44"/>
+<area shape="rect" id="node5" href="$class_robot_controller.html#a927abf2765cd53b39acf128f318c3fe5" title="RobotController::robotPushing" alt="" coords="392,79,592,104"/>
+<area shape="rect" id="node4" href="$class_my_contact_listener__v2.html#ac776026bb2a50ca98ab21ca962bb5cf7" title="MyContactListener_v2\l::BeginContact" alt="" coords="640,5,794,44"/>
+<area shape="rect" id="node6" href="$class_robot_controller.html#ab2e4091fc2e47701cc5dbd7c2d9fc649" title="RobotController::step" alt="" coords="644,79,791,104"/>
+<area shape="rect" id="node7" href="$class_demo.html#a938c3b6ab1c98ce43f977dda9d4f2b3a" title="Demo::demoLoop" alt="" coords="842,79,970,104"/>
+<area shape="rect" id="node8" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="1018,79,1068,104"/>
+</map>
