@@ -1,5 +1,0 @@
-<map id="RobotController::wait_delay" name="RobotController::wait_delay">
-<area shape="rect" id="node2" href="$class_robot.html#ad9b03690ffb189f0990dacb813b2b72c" title="Robot::getDelay" alt="" coords="199,5,316,31"/>
-<area shape="rect" id="node3" href="$class_robot.html#a885b7c6b9da718dfe4eb53802adfce92" title="Robot::isMoving" alt="" coords="199,55,316,80"/>
-<area shape="rect" id="node4" href="$class_robot.html#a75e40c383e9191a17f25baa3aa5a35d8" title="Robot::setDelay" alt="" coords="200,104,316,129"/>
-</map>

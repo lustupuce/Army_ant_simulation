@@ -1,6 +1,0 @@
-<map id="BoxTerrain::drawBody" name="BoxTerrain::drawBody">
-<area shape="rect" id="node2" href="$class_demo.html#a7fa722430ba973c538ae230e407854ab" title="Demo::Demo" alt="" coords="234,5,334,31"/>
-<area shape="rect" id="node3" href="$class_demo.html#a938c3b6ab1c98ce43f977dda9d4f2b3a" title="Demo::demoLoop" alt="" coords="641,107,768,132"/>
-<area shape="rect" id="node4" href="$class_demo.html#a8f833d4d73ccdb28cd2e4387fc3bb9e1" title="Demo::takeScreenshot" alt="" coords="205,107,362,132"/>
-<area shape="rect" id="node5" href="$class_demo.html#a4636f708574c6be85334ff16373e2292" title="Demo::addRobotWithDelay" alt="" coords="410,157,593,183"/>
-</map>
