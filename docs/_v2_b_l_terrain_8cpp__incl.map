@@ -1,7 +1,0 @@
-<map id="V2BLTerrain.cpp" name="V2BLTerrain.cpp">
-<area shape="rect" id="node2" href="$_v2_b_l_terrain_8h.html" title="Implementation of the V2BLTerrain class which inherit from the Terrain class. " alt="" coords="323,79,428,104"/>
-<area shape="rect" id="node9" href="$helpers_8h.html" title="helpers.h" alt="" coords="441,152,517,177"/>
-<area shape="rect" id="node3" href="$_terrain_8h.html" title="Implementation of the Terrain class. " alt="" coords="325,152,399,177"/>
-<area shape="rect" id="node7" href="$_config_8h.html" title="Implementation of the Configuration class used to parse the configuration file and the sConfig struct..." alt="" coords="326,225,397,251"/>
-<area shape="rect" id="node8" href="$constants_8h.html" title="constants.h" alt="" coords="424,299,513,324"/>
-</map>

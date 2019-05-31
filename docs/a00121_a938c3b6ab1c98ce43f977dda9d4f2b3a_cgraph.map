@@ -1,0 +1,34 @@
+<map id="Demo::demoLoop" name="Demo::demoLoop">
+<area shape="rect" id="node2" href="$a00121.html#a4636f708574c6be85334ff16373e2292" title="Demo::addRobotWithDelay" alt="" coords="190,559,373,584"/>
+<area shape="rect" id="node12" href="$a00121.html#a8f833d4d73ccdb28cd2e4387fc3bb9e1" title="Demo::takeScreenshot" alt="" coords="457,747,614,772"/>
+<area shape="rect" id="node13" href="$a00085.html#a309e67722a008ef166198d36add1690a" title="BoxTerrain::drawBody" alt="" coords="708,721,860,747"/>
+<area shape="rect" id="node14" href="$a00133.html#a2d4d4c93aed605c945e7a95876825bdc" title="RobotController::drawRobots" alt="" coords="688,852,881,877"/>
+<area shape="rect" id="node15" href="$a00133.html#ab2e4091fc2e47701cc5dbd7c2d9fc649" title="RobotController::step" alt="" coords="208,224,355,249"/>
+<area shape="rect" id="node28" href="$a00133.html#a0774831ed97c92f24d082603e66950b0" title="RobotController::removeRobot" alt="" coords="181,981,383,1007"/>
+<area shape="rect" id="node29" href="$a00121.html#a653b6b835b58959fea0758f2a1695002" title="Demo::writeBridgeFile" alt="" coords="205,852,358,877"/>
+<area shape="rect" id="node32" href="$a00133.html#a05233232614480ea30138101f730a329" title="RobotController::isBridge\lStable" alt="" coords="197,1031,367,1069"/>
+<area shape="rect" id="node33" href="$a00133.html#a612d9355c9638b9f0bb24348647ada45" title="RobotController::getNbRobots" alt="" coords="182,1093,382,1119"/>
+<area shape="rect" id="node3" href="$a00133.html#a83d343eb8958d365624d06ac1b0b1b3d" title="RobotController::robotStacking" alt="" coords="433,484,637,509"/>
+<area shape="rect" id="node5" href="$a00133.html#aa247b8c90ab585358f07a18c891c8b31" title="RobotController::getRobot\lWithId" alt="" coords="447,632,623,671"/>
+<area shape="rect" id="node6" href="$a00133.html#a19191b156161bd7a3978659329ceaad2" title="RobotController::setBridge\lStability" alt="" coords="446,372,624,411"/>
+<area shape="rect" id="node7" href="$a00133.html#ad79af125e28750338e0da1fb35d0b72d" title="RobotController::createRobot" alt="" coords="438,435,633,460"/>
+<area shape="rect" id="node8" href="$a00133.html#ae421f813b81632c35ec3494717fd0f12" title="RobotController::getRobot" alt="" coords="447,796,623,821"/>
+<area shape="rect" id="node9" href="$a00129.html#af8bdea28202e00ebf48187b8943b245c" title="Robot::getPosition" alt="" coords="470,533,600,559"/>
+<area shape="rect" id="node10" href="$a00129.html#ad9b03690ffb189f0990dacb813b2b72c" title="Robot::getDelay" alt="" coords="726,203,843,228"/>
+<area shape="rect" id="node11" href="$a00129.html#a41a470133819059706aab8a8d546f6bc" title="Robot::getAngle" alt="" coords="477,583,594,608"/>
+<area shape="rect" id="node4" href="$a00129.html#a0ccd9dbef98a3d5bf6b29d8cd781bd25" title="Robot::getBody" alt="" coords="728,499,841,524"/>
+<area shape="rect" id="node16" href="$a00133.html#a6b0bdb7620acbf40f48426e30ff0b759" title="RobotController::createGrip\lRobots" alt="" coords="443,309,627,348"/>
+<area shape="rect" id="node22" href="$a00133.html#ae433d7a77a59e8eced35fc4885051805" title="RobotController::wait\l_delay" alt="" coords="462,59,608,97"/>
+<area shape="rect" id="node25" href="$a00133.html#a69372797c97d6f9212dc63d2b35b4932" title="RobotController::checkGrabbed" alt="" coords="431,141,640,167"/>
+<area shape="rect" id="node17" href="$a00129.html#add038ac4b424821791781171a9a45de4" title="Robot::isContact" alt="" coords="724,400,844,425"/>
+<area shape="rect" id="node18" href="$a00129.html#af0d391d121096fa6f2d214bb8910c0a1" title="Robot::setContact" alt="" coords="720,301,848,327"/>
+<area shape="rect" id="node19" href="$a00129.html#ae6f0f49e30cf9c65605f6a75f390ec52" title="Robot::nbJoint" alt="" coords="731,351,838,376"/>
+<area shape="rect" id="node20" href="$a00129.html#a536c96ba5f6c7d8f04d86a50b1adcd72" title="Robot::getJointDef" alt="" coords="718,449,850,475"/>
+<area shape="rect" id="node21" href="$a00129.html#af5b6b2dc9efa49654cf80abe298cc6f9" title="Robot::incrementNbJoint" alt="" coords="700,252,868,277"/>
+<area shape="rect" id="node23" href="$a00129.html#a885b7c6b9da718dfe4eb53802adfce92" title="Robot::isMoving" alt="" coords="726,5,843,31"/>
+<area shape="rect" id="node24" href="$a00129.html#a75e40c383e9191a17f25baa3aa5a35d8" title="Robot::setDelay" alt="" coords="726,55,842,80"/>
+<area shape="rect" id="node26" href="$a00129.html#a156c0ecf0bed5e117335d4c1c12d2d06" title="Robot::isGrabbed" alt="" coords="721,104,847,129"/>
+<area shape="rect" id="node27" href="$a00129.html#aaf534f168d818112ae1f6440b329eb0a" title="Robot::setState" alt="" coords="728,153,841,179"/>
+<area shape="rect" id="node30" href="$a00133.html#a45a4e25b2bb49bf2f1dc18b0f21a6f8d" title="RobotController::getNbActive\lRobots" alt="" coords="438,845,632,884"/>
+<area shape="rect" id="node31" href="$a00129.html#a65b9be1d9d45b004a6ea500dd5f85246" title="Robot::getState" alt="" coords="478,908,592,933"/>
+</map>

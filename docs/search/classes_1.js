@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['configuration',['Configuration',['../classconfig_1_1_configuration.html',1,'config::Configuration'],['../structconfiguration.html',1,'configuration']]]
+  ['configuration',['Configuration',['../a00113.html',1,'config::Configuration'],['../a00153.html',1,'configuration']]]
 ];

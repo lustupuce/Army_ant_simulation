@@ -1,7 +1,0 @@
-<map id="config::sConfig" name="config::sConfig">
-<area shape="rect" id="node2" href="$structconfig_1_1s_robot.html" title="config::sRobot" alt="" coords="19,5,125,31"/>
-<area shape="rect" id="node3" href="$structconfig_1_1s_terrain.html" title="config::sTerrain" alt="" coords="16,55,128,80"/>
-<area shape="rect" id="node4" href="$structconfig_1_1s_simulation.html" title="config::sSimulation" alt="" coords="5,104,139,129"/>
-<area shape="rect" id="node5" href="$structconfig_1_1s_controller.html" title="config::sController" alt="" coords="8,153,136,179"/>
-<area shape="rect" id="node6" href="$structconfig_1_1s_window.html" title="config::sWindow" alt="" coords="13,203,131,228"/>
-</map>
