@@ -1,0 +1,5 @@
+<map id="RobotController::checkGrabbed" name="RobotController::checkGrabbed">
+<area shape="rect" id="node2" href="$class_robot.html#a156c0ecf0bed5e117335d4c1c12d2d06" title="Robot::isGrabbed" alt="" coords="262,5,388,31"/>
+<area shape="rect" id="node3" href="$class_robot.html#a75e40c383e9191a17f25baa3aa5a35d8" title="Robot::setDelay" alt="" coords="267,55,383,80"/>
+<area shape="rect" id="node4" href="$class_robot.html#aaf534f168d818112ae1f6440b329eb0a" title="Robot::setState" alt="" coords="268,104,382,129"/>
+</map>

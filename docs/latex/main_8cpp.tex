@@ -1,0 +1,72 @@
+\hypertarget{main_8cpp}{}\section{simulation/src/main.cpp File Reference}
+\label{main_8cpp}\index{simulation/src/main.\+cpp@{simulation/src/main.\+cpp}}
+{\ttfamily \#include \char`\"{}Box2\+D/\+Box2\+D.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}S\+F\+M\+L/\+Graphics.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}S\+F\+M\+L/\+Window.\+hpp\char`\"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include \char`\"{}Config.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Demo.\+h\char`\"{}}\newline
+Include dependency graph for main.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{main_8cpp_a075854c1227ffd274988d62bb5c859a1}{default\+\_\+parameters}} (\mbox{\hyperlink{structconfig_1_1s_config}{config\+::s\+Config}} \&cfg)
+\item 
+\mbox{\Hypertarget{main_8cpp_ae9d26453fb722b5519f2b7db05bff6aa}\label{main_8cpp_ae9d26453fb722b5519f2b7db05bff6aa}} 
+void {\bfseries parse\+\_\+argument} (char $\ast$argv\mbox{[}$\,$\mbox{]}, int i, \mbox{\hyperlink{structconfig_1_1s_config}{config\+::s\+Config}} \&cfg)
+\item 
+\mbox{\Hypertarget{main_8cpp_a8047e90c7d459c4aea1367ea2cfbaec2}\label{main_8cpp_a8047e90c7d459c4aea1367ea2cfbaec2}} 
+void {\bfseries load\+\_\+config} (std\+::string filename, \mbox{\hyperlink{structconfig_1_1s_config}{config\+::s\+Config}} \&cfg)
+\item 
+void \mbox{\hyperlink{main_8cpp_a97ee70a8770dc30d06c744b24eb2fcfc}{help}} ()
+\item 
+int \mbox{\hyperlink{main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{main}} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{main_8cpp_a075854c1227ffd274988d62bb5c859a1}\label{main_8cpp_a075854c1227ffd274988d62bb5c859a1}} 
+\index{main.\+cpp@{main.\+cpp}!default\+\_\+parameters@{default\+\_\+parameters}}
+\index{default\+\_\+parameters@{default\+\_\+parameters}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{default\+\_\+parameters()}{default\_parameters()}}
+{\footnotesize\ttfamily void default\+\_\+parameters (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structconfig_1_1s_config}{config\+::s\+Config}} \&}]{cfg }\end{DoxyParamCaption})}
+
+Update the \mbox{\hyperlink{structconfig_1_1s_config}{config\+::s\+Config}} cfg with the default configuration parameter values Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=256pt]{main_8cpp_a075854c1227ffd274988d62bb5c859a1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{main_8cpp_a97ee70a8770dc30d06c744b24eb2fcfc}\label{main_8cpp_a97ee70a8770dc30d06c744b24eb2fcfc}} 
+\index{main.\+cpp@{main.\+cpp}!help@{help}}
+\index{help@{help}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{help()}{help()}}
+{\footnotesize\ttfamily void help (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Function called when launch argument requires help. Print all the possible commands Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=189pt]{main_8cpp_a97ee70a8770dc30d06c744b24eb2fcfc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}\label{main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}} 
+\index{main.\+cpp@{main.\+cpp}!main@{main}}
+\index{main@{main}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+Prepare the world Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=256pt]{main_8cpp_a0ddf1224851353fc92bfbff6f499fa97_cgraph}
+\end{center}
+\end{figure}

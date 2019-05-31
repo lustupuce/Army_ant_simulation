@@ -1,0 +1,5 @@
+<map id="RobotController::destroyJoints" name="RobotController::destroyJoints">
+<area shape="rect" id="node2" href="$class_robot.html#ae6f0f49e30cf9c65605f6a75f390ec52" title="Robot::nbJoint" alt="" coords="235,5,342,31"/>
+<area shape="rect" id="node3" href="$class_robot.html#a0ccd9dbef98a3d5bf6b29d8cd781bd25" title="Robot::getBody" alt="" coords="232,55,345,80"/>
+<area shape="rect" id="node4" href="$class_robot.html#abbba5cddb2dc90005c26b99d968f102d" title="Robot::resetNbJoint" alt="" coords="219,104,358,129"/>
+</map>
