@@ -2,6 +2,6 @@
 <area shape="rect" id="node2" href="$class_demo.html#a4636f708574c6be85334ff16373e2292" title="Demo::addRobotWithDelay" alt="" coords="419,5,602,31"/>
 <area shape="rect" id="node4" href="$class_demo.html#a37b03d288a1bf67f586cdfe1f9ba16af" title="Demo::addRobotWithDistance" alt="" coords="170,41,371,67"/>
 <area shape="rect" id="node5" href="$class_robot_controller.html#ae433d7a77a59e8eced35fc4885051805" title="RobotController::wait\l_delay" alt="" coords="198,91,344,129"/>
-<area shape="rect" id="node3" href="$class_demo.html#a5b12f30547c9f8e89d63ab84bf0cb95f" title="Demo::demoLoop" alt="" coords="650,45,777,71"/>
+<area shape="rect" id="node3" href="$class_demo.html#a938c3b6ab1c98ce43f977dda9d4f2b3a" title="Demo::demoLoop" alt="" coords="650,45,777,71"/>
 <area shape="rect" id="node6" href="$class_robot_controller.html#ab2e4091fc2e47701cc5dbd7c2d9fc649" title="RobotController::step" alt="" coords="437,69,584,95"/>
 </map>

@@ -1,5 +1,5 @@
 <map id="RobotController::drawRobots" name="RobotController::drawRobots">
-<area shape="rect" id="node2" href="$class_demo.html#a5b12f30547c9f8e89d63ab84bf0cb95f" title="Demo::demoLoop" alt="" coords="682,31,810,56"/>
+<area shape="rect" id="node2" href="$class_demo.html#a938c3b6ab1c98ce43f977dda9d4f2b3a" title="Demo::demoLoop" alt="" coords="682,31,810,56"/>
 <area shape="rect" id="node3" href="$class_demo.html#a8f833d4d73ccdb28cd2e4387fc3bb9e1" title="Demo::takeScreenshot" alt="" coords="247,31,404,56"/>
 <area shape="rect" id="node4" href="$class_demo.html#a4636f708574c6be85334ff16373e2292" title="Demo::addRobotWithDelay" alt="" coords="452,81,634,107"/>
 </map>

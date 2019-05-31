@@ -90,158 +90,171 @@ void Demo::init(){
 
 }
 
+//Main demoLoop called in the main file: The demoLoop is structured in two cases: if the visualization is activated or not.
+Both cases are then almost identical apart from the simulation part.
 void Demo::demoLoop(){
 
-	if(m_config.simulation.visualization){
-		while (window.isOpen())
-			{
-				// check all the window's events that were triggered since the last iteration of the loop
-				sf::Event event;
-				while (window.pollEvent(event))
-					{
-						// "close requested" event: we close the window
-						if (event.type == sf::Event::Closed)
-							window.close();
+ // Case 1: the visualization is activated. It can be activated/deactivated by giving the right argument to the function (\ref param)
+ if(m_config.simulation.visualization){
+	 // SFML event loop
+	 while (window.isOpen())
+		 {
+			 // check all the window's events that were triggered since the last iteration of the loop
+			 sf::Event event;
+			 while (window.pollEvent(event))
+				 {
+					 // "close requested" event: we close the window
+					 if (event.type == sf::Event::Closed)
+						 window.close();
 
-						if (event.key.code == sf::Keyboard::S)
-						{
-//			                m_tex.update(window);
-//			                sf::Image img = m_tex.copyToImage();
-//			                std::thread t(Demo::captureInThread(), this);
-////
-//
-////			                t.detach();
-						    sf::Image Screen = window.capture();
-						    std::string name = "screenshot_" + std::to_string(m_elapsedTime) + ".jpg";
-						    Screen.saveToFile(name);
-						}
-					}
+					 // In case of visualization, a screenshot of the window can be taken anytime when typing the S key
+					 if (event.key.code == sf::Keyboard::S)
+					 {
+							 sf::Image Screen = window.capture();
+							 std::string name = "screenshot_" + std::to_string(m_elapsedTime) + ".jpg";
+							 Screen.saveToFile(name);
+					 }
+				 }
 
-				if(m_elapsedTime < m_config.simulation.bridge_duration && !m_stacking){
-					if(!addRobotWithDelay()){
-						m_stacking = true;
-						printf("robot stacking \n");
-	//					m_bridgeFile.close();
-						continue;
-					}
-					m_robotController.step(window.getSize().x);
-					m_world->Step(1.f/60.f, 100, 100);
-					m_robotController.removeRobot();
+			 // First simulation step: Bridge formation. The bridge formation duration is defined by m_config.simulation.bridge_duration
+			 // but is ended prematurely if a stacking situation is observed
+			 if(m_elapsedTime < m_config.simulation.bridge_duration && !m_stacking){
 
-					window.clear(sf::Color::White);
-					m_terrain.drawBody(window);
-					m_robotController.drawRobots(window, m_to_px);
-					window.display();
-					writeBridgeFile();
+				 //This is where the traffic control is defined: either using addRobotWithDelay() or addRobotWithDistance()
+				 if(!addRobotWithDelay()){
+					 m_stacking = true;
+					 printf("robot stacking \n");
+ //					m_bridgeFile.close();
+					 continue;
+				 }
+				 m_robotController.step(window.getSize().x);
+				 m_world->Step(1.f/60.f, 100, 100);
+				 m_robotController.removeRobot();
 
-					if(m_currentIt % 600 == 0){
-						takeScreenshot(false, 1);
-					}
+				 // Drawing part (on SFML window)
+				 window.clear(sf::Color::White);
+				 m_terrain.drawBody(window);
+				 m_robotController.drawRobots(window, m_to_px);
+				 window.display();
 
-					m_elapsedTime += 1.f/FPS;
-					m_currentIt ++;
-					if(!m_stableBridge){
-						m_stableBridge = m_robotController.isBridgeStable();
-					}
-					if(periodic_delay){
-						m_config.simulation.robot_delay = 2.5/(cos(PI/(18*60)*m_currentIt)*cos(PI/(18*60)*m_currentIt));
-					}
-				}
+				 writeBridgeFile();
 
-				else if(m_elapsedTime < m_config.simulation.dissolution_duration + m_config.simulation.bridge_duration){
+				 // Save a screenshot every 600 iteration, ie every 10 s of real-time at 60 FPS
+				 if(m_currentIt % 600 == 0){
+					 takeScreenshot(false, 1);
+				 }
 
-					m_robotController.step(window.getSize().x);
-					m_world->Step(1.f/60.f, 100, 100);
-					m_robotController.removeRobot();
+				 m_elapsedTime += 1.f/FPS;
+				 m_currentIt ++;
+				 if(!m_stableBridge){
+					 m_stableBridge = m_robotController.isBridgeStable();
+				 }
+				 if(periodic_delay){
+					 m_config.simulation.robot_delay = 2.5/(cos(PI/(18*60)*m_currentIt)*cos(PI/(18*60)*m_currentIt));
+				 }
+			 }
 
-					window.clear(sf::Color::White);
-					m_terrain.drawBody(window);
-					m_robotController.drawRobots(window, m_to_px);
-					window.display();
-					writeBridgeFile();
+			 // Second simulation step: Bridge dissolution. The bridge dissolution duration is defined by m_config.simulation.dissolution_duration
+			 else if(m_elapsedTime < m_config.simulation.dissolution_duration + m_config.simulation.bridge_duration){
 
-					if(m_currentIt % 600 == 0){
-						takeScreenshot(true, 2);
-					}
+				 m_robotController.step(window.getSize().x);
+				 m_world->Step(1.f/60.f, 100, 100);
+				 m_robotController.removeRobot();
 
-					m_elapsedTime += 1.f/FPS;
-					m_currentIt ++;
-				}
+				 // Drawing part (on SFML window)
+				 window.clear(sf::Color::White);
+				 m_terrain.drawBody(window);
+				 m_robotController.drawRobots(window, m_to_px);
+				 window.display();
 
-				else{
-					window.close();
-					break;
-				}
-			}
-	}
+				 writeBridgeFile();
 
-	else{
-		/* First part of the simulation : bridge formation */
-		while (m_elapsedTime < m_config.simulation.bridge_duration ) //&& !m_robotController.isBridgeStable() )
-			{
+				 // Save a screenshot every 600 iteration, ie every 10 s of real-time at 60 FPS
+				 if(m_currentIt % 600 == 0){
+					 takeScreenshot(true, 2);
+				 }
 
-				if(!addRobotWithDelay()){
-					m_stacking = true;
-					printf("robot stacking \n");
+				 m_elapsedTime += 1.f/FPS;
+				 m_currentIt ++;
+			 }
+
+			 else{
+				 window.close();
+				 break;
+			 }
+		 }
+ }
+
+ // Case 2: the visualization is deactivated. It can be activated/deactivated by giving the right argument to the function (\ref param)
+ else{
+	 /* First part of the simulation : bridge formation */
+	 while (m_elapsedTime < m_config.simulation.bridge_duration ) //&& !m_robotController.isBridgeStable() )
+		 {
+			 // This is where the traffic control is defined: either using addRobotWithDelay() or addRobotWithDistance()
+			 if(!addRobotWithDelay()){
+				 m_stacking = true;
+				 printf("robot stacking \n");
 //					m_bridgeFile.close();
-					break;
-				}
+				 break;
+			 }
 
-				m_robotController.step(window.getSize().x);
-				m_world->Step(1.f/60.f, 100, 100);
-				m_robotController.removeRobot();
+			 m_robotController.step(window.getSize().x);
+			 m_world->Step(1.f/60.f, 100, 100);
+			 m_robotController.removeRobot();
 
-				writeBridgeFile();
+			 writeBridgeFile();
 
-				if(m_currentIt % 600 == 0){
-					takeScreenshot(true, 1);
-				}
+			 // Save a screenshot every 600 iteration, ie every 10 s of real-time at 60 FPS
+			 if(m_currentIt % 600 == 0){
+				 takeScreenshot(true, 1);
+			 }
 
-				m_elapsedTime += 1.f/FPS;
-				m_currentIt ++;
-				if(!m_stableBridge){
-					m_stableBridge = m_robotController.isBridgeStable();
-				}
-				if(periodic_delay){
-					m_config.simulation.robot_delay = 2.5/(cos(PI/(18*60)*m_currentIt)*cos(PI/(18*60)*m_currentIt));
-				}
-			}
+			 m_elapsedTime += 1.f/FPS;
+			 m_currentIt ++;
+			 if(!m_stableBridge){
+				 m_stableBridge = m_robotController.isBridgeStable();
+			 }
+			 if(periodic_delay){
+				 m_config.simulation.robot_delay = 2.5/(cos(PI/(18*60)*m_currentIt)*cos(PI/(18*60)*m_currentIt));
+			 }
+		 }
 
-		// Get the number of robots in the final bridge
-		m_nbRobotsInBridgeState = m_robotController.getNbRobots(BRIDGE);
-		m_nbRobotsInBridge = m_nbRobotsInBridgeState + m_robotController.getNbRobotsBlocked();
-		m_elapsedTimeBridge = m_elapsedTime;
-		m_length = getNewPathLength();
-		m_height = getBridgeHeight();
+	 // Get the number of robots in the final bridge
+	 m_nbRobotsInBridgeState = m_robotController.getNbRobots(BRIDGE);
+	 m_nbRobotsInBridge = m_nbRobotsInBridgeState + m_robotController.getNbRobotsBlocked();
+	 m_elapsedTimeBridge = m_elapsedTime;
+	 m_length = getNewPathLength();
+	 m_height = getBridgeHeight();
 
-		/* Second part of the simulation : bridge dissolution */
-		while (m_elapsedTime < m_config.simulation.dissolution_duration + m_config.simulation.bridge_duration) //&& !m_robotController.isBridgeStable() )
-			{
+	 /* Second part of the simulation : bridge dissolution */
+	 while (m_elapsedTime < m_config.simulation.dissolution_duration + m_config.simulation.bridge_duration) //&& !m_robotController.isBridgeStable() )
+		 {
 
-				m_robotController.step(window.getSize().x);
-				m_world->Step(1.f/60.f, 100, 100);
-				m_robotController.removeRobot();
-				writeBridgeFile();
+			 m_robotController.step(window.getSize().x);
+			 m_world->Step(1.f/60.f, 100, 100);
+			 m_robotController.removeRobot();
+			 writeBridgeFile();
 
-				m_robotController.isBridgeDissolved();
+			 m_robotController.isBridgeDissolved();
 
-				if(m_currentIt % 600 == 0){
-					takeScreenshot(true, 2);
-				}
+			 // Save a screenshot every 600 iteration, ie every 10 s of real-time at 60 FPS
+			 if(m_currentIt % 600 == 0){
+				 takeScreenshot(true, 2);
+			 }
 
-				m_elapsedTime += 1.f/FPS;
-				m_currentIt ++;
-			}
-	}
+			 m_elapsedTime += 1.f/FPS;
+			 m_currentIt ++;
+		 }
+ }
 
-	printf("end loop \n");
-	m_bridgeFile.close();
-	/**  Data processing
-	 * Precise the simulation parameters: distance between robots, speed
-	 * Get time of the first bridge contact
-	 * get time when the last robot enter the stable bridge state
-	 * get points of contact for every robot + position and orientation of center
-	 * */
+ printf("end loop \n");
+ m_bridgeFile.close();
+ /**  Data processing
+	* Precise the simulation parameters: distance between robots, speed
+	* Get time of the first bridge contact
+	* get time when the last robot enter the stable bridge state
+	* get points of contact for every robot + position and orientation of center
+	* */
 
 }
 
