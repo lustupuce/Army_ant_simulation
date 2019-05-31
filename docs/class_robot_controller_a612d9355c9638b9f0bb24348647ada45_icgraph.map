@@ -1,5 +1,4 @@
 <map id="RobotController::getNbRobots" name="RobotController::getNbRobots">
-<area shape="rect" id="node2" href="$class_demo.html#a938c3b6ab1c98ce43f977dda9d4f2b3a" title="Demo::demoLoop" alt="" coords="472,27,599,52"/>
-<area shape="rect" id="node3" href="$class_demo.html#a1b09c62228a007c49ddc0639a65341b2" title="Demo::writeResultFile" alt="" coords="263,24,414,50"/>
-<area shape="rect" id="node4" href="$class_robot_controller.html#a5f3c279e0082ea8dbfe03fd32d8e42b5" title="RobotController::isBridge\lDissolved" alt="" coords="253,74,424,112"/>
+<area shape="rect" id="node2" href="$class_demo.html#a938c3b6ab1c98ce43f977dda9d4f2b3a" title="Demo::demoLoop" alt="" coords="275,5,402,31"/>
+<area shape="rect" id="node3" href="$class_robot_controller.html#a5f3c279e0082ea8dbfe03fd32d8e42b5" title="RobotController::isBridge\lDissolved" alt="" coords="253,55,424,93"/>
 </map>

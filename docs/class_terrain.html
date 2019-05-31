@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: Terrain Class Reference</title>
+<title>Army ant simulation: Terrain Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">My Project
+   <div id="projectname">Army ant simulation
    </div>
   </td>
  </tr>
@@ -101,7 +101,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a97e007277f8abb9dde20ef2b49c38a3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae60571b91c1979fa94bdfc5002da6ac7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_terrain.html#ae60571b91c1979fa94bdfc5002da6ac7">drawBody</a> (sf::RenderWindow &amp;window)</td></tr>
 <tr class="separator:ae60571b91c1979fa94bdfc5002da6ac7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6cd1220b8e64466cc7a2219efff4141b"><td class="memItemLeft" align="right" valign="top">virtual e_terrain_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_terrain.html#a6cd1220b8e64466cc7a2219efff4141b">getType</a> ()</td></tr>
+<tr class="memitem:a6cd1220b8e64466cc7a2219efff4141b"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_terrain_8h.html#a6d0b7e83bb7325270c1162bece970fd8">e_terrain_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_terrain.html#a6cd1220b8e64466cc7a2219efff4141b">getType</a> ()</td></tr>
 <tr class="separator:a6cd1220b8e64466cc7a2219efff4141b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a8629396e5cb03961649acdc23eacf2"><td class="memItemLeft" align="right" valign="top">virtual b2Vec2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_terrain.html#a8a8629396e5cb03961649acdc23eacf2">getTopLeftCorner</a> ()</td></tr>
 <tr class="separator:a8a8629396e5cb03961649acdc23eacf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -202,7 +202,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>m_posY</b> =2.5</td
   <table class="params">
     <tr><td class="paramname">world</td><td>is a pointer on the Box2D world object </td></tr>
     <tr><td class="paramname">window</td><td>is the SFML window </td></tr>
-    <tr><td class="paramname">terrainParam</td><td>are the terrain parameters (cf <a class="el" href="_config_8h_source.html" title="Implementation of the Configuration class used to parse the configuration file and the sConfig struct...">Config.h</a>) </td></tr>
+    <tr><td class="paramname">terrainParam</td><td>are the terrain parameters (cf <a class="el" href="_config_8h.html" title="Implementation of the Configuration class used to parse the configuration file and the sConfig struct...">Config.h</a>) </td></tr>
     <tr><td class="paramname">WINDOW_X_PX</td><td>is the x-size of the window. it is used to calculate the scale to convert from meters to pixels </td></tr>
     <tr><td class="paramname">bodylength</td><td>is the size of a robot. it is used to convert the dimension from body length to m </td></tr>
   </table>
@@ -210,19 +210,6 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>m_posY</b> =2.5</td
 </dl>
 
 <p>Reimplemented in <a class="el" href="class_ramp.html#a0dcb7d44807cb9ce61307c975b29f06e">Ramp</a>, <a class="el" href="class_v2_b_l_terrain.html#ad9b52b119e46602caa16ec4bfbb3966a">V2BLTerrain</a>, <a class="el" href="class_vterrain.html#a480ed9dbd18d1806fa68f44857f3cf99">Vterrain</a>, <a class="el" href="class_box_terrain.html#a175fb845b46ed36cd0b4516b4bb64fb3">BoxTerrain</a>, and <a class="el" href="class_v_stepper.html#adc0daf55fe95e9059576ae432bc4f24c">VStepper</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_terrain_ae7515dee9afa3b1cefac459abefb5442_icgraph.png" border="0" usemap="#class_terrain_ae7515dee9afa3b1cefac459abefb5442_icgraph" alt=""/></div>
-<map name="class_terrain_ae7515dee9afa3b1cefac459abefb5442_icgraph" id="class_terrain_ae7515dee9afa3b1cefac459abefb5442_icgraph">
-<area shape="rect" id="node2" href="class_box_terrain.html#a175fb845b46ed36cd0b4516b4bb64fb3" title="BoxTerrain::create" alt="" coords="164,5,294,31"/>
-<area shape="rect" id="node4" href="class_ramp.html#a0dcb7d44807cb9ce61307c975b29f06e" title="Ramp::create" alt="" coords="178,55,280,80"/>
-<area shape="rect" id="node5" href="class_v2_b_l_terrain.html#ad9b52b119e46602caa16ec4bfbb3966a" title="V2BLTerrain::create" alt="" coords="160,104,298,129"/>
-<area shape="rect" id="node6" href="class_v_stepper.html#adc0daf55fe95e9059576ae432bc4f24c" title="VStepper::create" alt="" coords="168,153,290,179"/>
-<area shape="rect" id="node7" href="class_vterrain.html#a480ed9dbd18d1806fa68f44857f3cf99" title="Vterrain::create" alt="" coords="173,203,285,228"/>
-<area shape="rect" id="node3" href="class_demo.html#a7fa722430ba973c538ae230e407854ab" title="Demo::Demo" alt="" coords="346,5,446,31"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -309,14 +296,6 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>a pointer on the Box2D body of the terrain </dd></dl>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_terrain_aa0e70c6bbd39935c69c2b6edb74fcd32_icgraph.png" border="0" usemap="#class_terrain_aa0e70c6bbd39935c69c2b6edb74fcd32_icgraph" alt=""/></div>
-<map name="class_terrain_aa0e70c6bbd39935c69c2b6edb74fcd32_icgraph" id="class_terrain_aa0e70c6bbd39935c69c2b6edb74fcd32_icgraph">
-<area shape="rect" id="node2" href="class_demo.html#a7fa722430ba973c538ae230e407854ab" title="Demo::Demo" alt="" coords="172,5,272,31"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -345,16 +324,6 @@ Here is the caller graph for this function:</div>
 <dl class="section return"><dt>Returns</dt><dd>the position of the bottom of the V in the box2D world coordinates [m] </dd></dl>
 
 <p>Reimplemented in <a class="el" href="class_ramp.html#a6e4926a2d16651162340113155e91e8f">Ramp</a>, <a class="el" href="class_v2_b_l_terrain.html#a0534b144e38d8ffea797c3713b3d5380">V2BLTerrain</a>, and <a class="el" href="class_vterrain.html#a970e49a3753e1c4bc4424b2602c25f85">Vterrain</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_terrain_a26e1c7c05b8256015730df34d97d29c2_icgraph.png" border="0" usemap="#class_terrain_a26e1c7c05b8256015730df34d97d29c2_icgraph" alt=""/></div>
-<map name="class_terrain_a26e1c7c05b8256015730df34d97d29c2_icgraph" id="class_terrain_a26e1c7c05b8256015730df34d97d29c2_icgraph">
-<area shape="rect" id="node2" href="class_demo.html#ac6657b0f7f55a81ba215811d31d9e5b5" title="Demo::getBridgeHeight" alt="" coords="184,5,344,31"/>
-<area shape="rect" id="node4" href="class_demo.html#a1b09c62228a007c49ddc0639a65341b2" title="Demo::writeResultFile" alt="" coords="188,55,339,80"/>
-<area shape="rect" id="node3" href="class_demo.html#a938c3b6ab1c98ce43f977dda9d4f2b3a" title="Demo::demoLoop" alt="" coords="392,5,519,31"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -414,10 +383,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_terrain_a8a8629396e5cb03961649acdc23eacf2_icgraph.png" border="0" usemap="#class_terrain_a8a8629396e5cb03961649acdc23eacf2_icgraph" alt=""/></div>
 <map name="class_terrain_a8a8629396e5cb03961649acdc23eacf2_icgraph" id="class_terrain_a8a8629396e5cb03961649acdc23eacf2_icgraph">
-<area shape="rect" id="node2" href="class_demo.html#a7fa722430ba973c538ae230e407854ab" title="Demo::Demo" alt="" coords="265,5,365,31"/>
-<area shape="rect" id="node3" href="class_demo.html#acd4e28d1626c6979bbab2e396b717cba" title="Demo::getNewPathLength" alt="" coords="226,55,404,80"/>
-<area shape="rect" id="node5" href="class_demo.html#a1b09c62228a007c49ddc0639a65341b2" title="Demo::writeResultFile" alt="" coords="239,104,391,129"/>
-<area shape="rect" id="node4" href="class_demo.html#a938c3b6ab1c98ce43f977dda9d4f2b3a" title="Demo::demoLoop" alt="" coords="452,55,579,80"/>
+<area shape="rect" id="node2" href="class_demo.html#a7fa722430ba973c538ae230e407854ab" title="Demo::Demo" alt="" coords="226,5,326,31"/>
 </map>
 </div>
 
@@ -448,16 +414,6 @@ Here is the caller graph for this function:</div>
 <dl class="section return"><dt>Returns</dt><dd>the position of the Top right corner of the V in the box2D world coordinates [m] </dd></dl>
 
 <p>Reimplemented in <a class="el" href="class_ramp.html#a72b5d41278e4ff65df8f80657ae7d9e1">Ramp</a>, <a class="el" href="class_v2_b_l_terrain.html#a2a3dc6ef761a5ab416669ce5f793558b">V2BLTerrain</a>, and <a class="el" href="class_vterrain.html#a27258a597b11a9cb78bd7e537fb037c4">Vterrain</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_terrain_a10fcf414cba83e769d99156fe16aa795_icgraph.png" border="0" usemap="#class_terrain_a10fcf414cba83e769d99156fe16aa795_icgraph" alt=""/></div>
-<map name="class_terrain_a10fcf414cba83e769d99156fe16aa795_icgraph" id="class_terrain_a10fcf414cba83e769d99156fe16aa795_icgraph">
-<area shape="rect" id="node2" href="class_demo.html#acd4e28d1626c6979bbab2e396b717cba" title="Demo::getNewPathLength" alt="" coords="235,5,412,31"/>
-<area shape="rect" id="node4" href="class_demo.html#a1b09c62228a007c49ddc0639a65341b2" title="Demo::writeResultFile" alt="" coords="248,55,399,80"/>
-<area shape="rect" id="node3" href="class_demo.html#a938c3b6ab1c98ce43f977dda9d4f2b3a" title="Demo::demoLoop" alt="" coords="460,5,588,31"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -471,7 +427,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">e_terrain_type Terrain::getType </td>
+          <td class="memname"><a class="el" href="_terrain_8h.html#a6d0b7e83bb7325270c1162bece970fd8">e_terrain_type</a> Terrain::getType </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -517,8 +473,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_terrain_a819253da1f67d199b6347b93071961e7_icgraph.png" border="0" usemap="#class_terrain_a819253da1f67d199b6347b93071961e7_icgraph" alt=""/></div>
 <map name="class_terrain_a819253da1f67d199b6347b93071961e7_icgraph" id="class_terrain_a819253da1f67d199b6347b93071961e7_icgraph">
-<area shape="rect" id="node2" href="class_demo.html#a7fa722430ba973c538ae230e407854ab" title="Demo::Demo" alt="" coords="217,5,317,31"/>
-<area shape="rect" id="node3" href="class_demo.html#a1b09c62228a007c49ddc0639a65341b2" title="Demo::writeResultFile" alt="" coords="191,55,343,80"/>
+<area shape="rect" id="node2" href="class_demo.html#a7fa722430ba973c538ae230e407854ab" title="Demo::Demo" alt="" coords="191,5,291,31"/>
 </map>
 </div>
 
