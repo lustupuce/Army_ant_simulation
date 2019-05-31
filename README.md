@@ -4,7 +4,7 @@ This github contains the c++ implementation of a simulator for soft robots simil
 ***
 Installation guide : [Installation](../../wiki/Installation-guide)
 
-Documentation :
+Documentation : [Docs](https://lustupuce.github.io/Army_ant_simulation/)
 
 ***
 organization:
