@@ -2,4 +2,5 @@
 <area shape="rect" id="node2" href="$class_robot_controller.html#a45a4e25b2bb49bf2f1dc18b0f21a6f8d" title="RobotController::getNbActive\lRobots" alt="" coords="213,5,407,44"/>
 <area shape="rect" id="node3" href="$class_robot_controller.html#ae421f813b81632c35ec3494717fd0f12" title="RobotController::getRobot" alt="" coords="222,68,398,93"/>
 <area shape="rect" id="node4" href="$class_robot.html#a65b9be1d9d45b004a6ea500dd5f85246" title="Robot::getState" alt="" coords="253,117,367,143"/>
+<area shape="rect" id="node5" href="$class_terrain.html#a26e1c7c05b8256015730df34d97d29c2" title="Terrain::getBottom" alt="" coords="245,167,375,192"/>
 </map>

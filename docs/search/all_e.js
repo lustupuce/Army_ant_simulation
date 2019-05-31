@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['takescreenshot',['takeScreenshot',['../class_demo.html#a8f833d4d73ccdb28cd2e4387fc3bb9e1',1,'Demo']]],
-  ['terrain',['Terrain',['../class_terrain.html',1,'']]],
-  ['terrain_2eh',['Terrain.h',['../_terrain_8h.html',1,'']]],
-  ['turnoffmotor',['turnOffMotor',['../class_robot.html#a4d3a07ab64d0a9289a20d40e9a9f27dc',1,'Robot']]]
+  ['wait_5fdelay',['wait_delay',['../class_robot_controller.html#ae433d7a77a59e8eced35fc4885051805',1,'RobotController']]],
+  ['writebridgefile',['writeBridgeFile',['../class_demo.html#a653b6b835b58959fea0758f2a1695002',1,'Demo']]],
+  ['writeresultfile',['writeResultFile',['../class_demo.html#a1b09c62228a007c49ddc0639a65341b2',1,'Demo']]]
 ];

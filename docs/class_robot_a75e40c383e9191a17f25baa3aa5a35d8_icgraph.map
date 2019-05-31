@@ -1,6 +1,9 @@
 <map id="Robot::setDelay" name="Robot::setDelay">
-<area shape="rect" id="node2" href="$class_robot_controller.html#ae433d7a77a59e8eced35fc4885051805" title="RobotController::wait\l_delay" alt="" coords="201,5,347,44"/>
-<area shape="rect" id="node5" href="$class_robot_controller.html#a69372797c97d6f9212dc63d2b35b4932" title="RobotController::checkGrabbed" alt="" coords="170,68,378,93"/>
-<area shape="rect" id="node3" href="$class_robot_controller.html#ab2e4091fc2e47701cc5dbd7c2d9fc649" title="RobotController::step" alt="" coords="426,40,574,65"/>
-<area shape="rect" id="node4" href="$class_demo.html#a938c3b6ab1c98ce43f977dda9d4f2b3a" title="Demo::demoLoop" alt="" coords="622,40,749,65"/>
+<area shape="rect" id="node2" href="$class_robot_controller.html#a797837410a2802b5d7399d132924ba2c" title="RobotController::setRobot\lState" alt="" coords="186,63,362,101"/>
+<area shape="rect" id="node6" href="$class_robot_controller.html#a927abf2765cd53b39acf128f318c3fe5" title="RobotController::robotPushing" alt="" coords="426,120,627,145"/>
+<area shape="rect" id="node7" href="$class_robot_controller.html#ae433d7a77a59e8eced35fc4885051805" title="RobotController::wait\l_delay" alt="" coords="454,169,600,208"/>
+<area shape="rect" id="node8" href="$class_robot_controller.html#a69372797c97d6f9212dc63d2b35b4932" title="RobotController::checkGrabbed" alt="" coords="170,231,378,256"/>
+<area shape="rect" id="node3" href="$class_robot_controller.html#a11e413a1ac6466f360f46820d28b0f2e" title="RobotController::findContact\lRobots" alt="" coords="432,5,622,44"/>
+<area shape="rect" id="node4" href="$class_robot_controller.html#ab2e4091fc2e47701cc5dbd7c2d9fc649" title="RobotController::step" alt="" coords="675,148,822,173"/>
+<area shape="rect" id="node5" href="$class_demo.html#a938c3b6ab1c98ce43f977dda9d4f2b3a" title="Demo::demoLoop" alt="" coords="870,148,998,173"/>
 </map>

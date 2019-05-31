@@ -1,4 +1,5 @@
 <map id="Robot::allowMotorRotation" name="Robot::allowMotorRotation">
-<area shape="rect" id="node2" href="$class_robot.html#ab713edf012849220f5096ea4b2d3e110" title="Robot::moveBodyWithForce" alt="" coords="238,5,426,31"/>
-<area shape="rect" id="node3" href="$class_robot.html#a2d8a6b3ef3bd324ac69119f80dc9f305" title="Robot::moveBodyWithImpulse" alt="" coords="232,55,432,80"/>
+<area shape="rect" id="node2" href="$class_robot.html#a55036d85a36c4e8ed3ff6f8381331c70" title="Robot::moveBodyWithMotor" alt="" coords="238,5,426,31"/>
+<area shape="rect" id="node3" href="$class_robot.html#ab713edf012849220f5096ea4b2d3e110" title="Robot::moveBodyWithForce" alt="" coords="238,55,426,80"/>
+<area shape="rect" id="node4" href="$class_robot.html#a2d8a6b3ef3bd324ac69119f80dc9f305" title="Robot::moveBodyWithImpulse" alt="" coords="232,104,432,129"/>
 </map>

@@ -1,3 +1,8 @@
 <map id="Robot::getId" name="Robot::getId">
-<area shape="rect" id="node2" href="$class_robot_controller.html#a927abf2765cd53b39acf128f318c3fe5" title="RobotController::robotPushing" alt="" coords="147,5,348,31"/>
+<area shape="rect" id="node2" href="$class_demo.html#a653b6b835b58959fea0758f2a1695002" title="Demo::writeBridgeFile" alt="" coords="619,6,772,31"/>
+<area shape="rect" id="node4" href="$class_robot_controller.html#a797837410a2802b5d7399d132924ba2c" title="RobotController::setRobot\lState" alt="" coords="147,74,323,113"/>
+<area shape="rect" id="node7" href="$class_robot_controller.html#a927abf2765cd53b39acf128f318c3fe5" title="RobotController::robotPushing" alt="" coords="371,138,571,163"/>
+<area shape="rect" id="node3" href="$class_demo.html#a938c3b6ab1c98ce43f977dda9d4f2b3a" title="Demo::demoLoop" alt="" coords="820,63,947,89"/>
+<area shape="rect" id="node5" href="$class_robot_controller.html#a11e413a1ac6466f360f46820d28b0f2e" title="RobotController::findContact\lRobots" alt="" coords="376,23,566,62"/>
+<area shape="rect" id="node6" href="$class_robot_controller.html#ab2e4091fc2e47701cc5dbd7c2d9fc649" title="RobotController::step" alt="" coords="622,87,769,113"/>
 </map>

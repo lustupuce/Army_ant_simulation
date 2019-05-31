@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['limitmotorrotation',['limitMotorRotation',['../class_robot.html#aec072eed2d38baedbbd5132b760720d0',1,'Robot']]]
+  ['nbjoint',['nbJoint',['../class_robot.html#ae6f0f49e30cf9c65605f6a75f390ec52',1,'Robot']]]
 ];

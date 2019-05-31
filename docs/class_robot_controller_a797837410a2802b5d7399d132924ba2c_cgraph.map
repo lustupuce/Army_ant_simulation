@@ -1,0 +1,9 @@
+<map id="RobotController::setRobotState" name="RobotController::setRobotState">
+<area shape="rect" id="node2" href="$class_robot.html#a75e40c383e9191a17f25baa3aa5a35d8" title="Robot::setDelay" alt="" coords="257,5,373,31"/>
+<area shape="rect" id="node3" href="$class_robot.html#af0d391d121096fa6f2d214bb8910c0a1" title="Robot::setContact" alt="" coords="251,55,379,80"/>
+<area shape="rect" id="node4" href="$class_robot.html#aaf534f168d818112ae1f6440b329eb0a" title="Robot::setState" alt="" coords="258,104,371,129"/>
+<area shape="rect" id="node5" href="$class_robot.html#a8d1d94c9cab78a96851785b1679cd457" title="Robot::getId" alt="" coords="268,153,362,179"/>
+<area shape="rect" id="node6" href="$class_robot.html#a65b9be1d9d45b004a6ea500dd5f85246" title="Robot::getState" alt="" coords="258,203,372,228"/>
+<area shape="rect" id="node7" href="$class_robot.html#aafe55f24c0b2ba70dc915362abd46485" title="Robot::getMotor" alt="" coords="256,252,373,277"/>
+<area shape="rect" id="node8" href="$class_robot.html#aec072eed2d38baedbbd5132b760720d0" title="Robot::limitMotorRotation" alt="" coords="229,301,401,327"/>
+</map>

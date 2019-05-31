@@ -1,3 +1,4 @@
 <map id="Terrain::getVLength" name="Terrain::getVLength">
-<area shape="rect" id="node2" href="$class_demo.html#a7fa722430ba973c538ae230e407854ab" title="Demo::Demo" alt="" coords="191,5,291,31"/>
+<area shape="rect" id="node2" href="$class_demo.html#a7fa722430ba973c538ae230e407854ab" title="Demo::Demo" alt="" coords="217,5,317,31"/>
+<area shape="rect" id="node3" href="$class_demo.html#a1b09c62228a007c49ddc0639a65341b2" title="Demo::writeResultFile" alt="" coords="191,55,343,80"/>
 </map>

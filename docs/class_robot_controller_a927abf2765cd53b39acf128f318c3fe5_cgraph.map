@@ -1,6 +1,13 @@
 <map id="RobotController::robotPushing" name="RobotController::robotPushing">
-<area shape="rect" id="node2" href="$class_robot.html#a7c5ede93bcb2007be1f2bd6b2137f271" title="Robot::getWheel" alt="" coords="281,5,402,31"/>
-<area shape="rect" id="node3" href="$class_robot.html#a0ccd9dbef98a3d5bf6b29d8cd781bd25" title="Robot::getBody" alt="" coords="285,55,398,80"/>
-<area shape="rect" id="node4" href="$class_robot.html#a8d1d94c9cab78a96851785b1679cd457" title="Robot::getId" alt="" coords="295,104,389,129"/>
-<area shape="rect" id="node5" href="$class_robot_controller.html#a797837410a2802b5d7399d132924ba2c" title="RobotController::setRobot\lState" alt="" coords="254,153,430,192"/>
+<area shape="rect" id="node2" href="$class_robot.html#a7c5ede93bcb2007be1f2bd6b2137f271" title="Robot::getWheel" alt="" coords="503,31,624,56"/>
+<area shape="rect" id="node3" href="$class_robot.html#a0ccd9dbef98a3d5bf6b29d8cd781bd25" title="Robot::getBody" alt="" coords="285,107,398,132"/>
+<area shape="rect" id="node4" href="$class_robot.html#a8d1d94c9cab78a96851785b1679cd457" title="Robot::getId" alt="" coords="516,147,610,172"/>
+<area shape="rect" id="node5" href="$class_robot_controller.html#a797837410a2802b5d7399d132924ba2c" title="RobotController::setRobot\lState" alt="" coords="254,279,430,317"/>
+<area shape="rect" id="node6" href="$class_robot.html#a75e40c383e9191a17f25baa3aa5a35d8" title="Robot::setDelay" alt="" coords="505,196,621,221"/>
+<area shape="rect" id="node7" href="$class_robot.html#af0d391d121096fa6f2d214bb8910c0a1" title="Robot::setContact" alt="" coords="499,443,627,468"/>
+<area shape="rect" id="node12" href="$class_robot.html#aed1ba5683c53ac2b7e4a6c3fc7bcadba" title="Robot::gripSide" alt="" coords="285,5,398,31"/>
+<area shape="rect" id="node8" href="$class_robot.html#aaf534f168d818112ae1f6440b329eb0a" title="Robot::setState" alt="" coords="507,245,620,271"/>
+<area shape="rect" id="node9" href="$class_robot.html#a65b9be1d9d45b004a6ea500dd5f85246" title="Robot::getState" alt="" coords="506,295,620,320"/>
+<area shape="rect" id="node10" href="$class_robot.html#aafe55f24c0b2ba70dc915362abd46485" title="Robot::getMotor" alt="" coords="505,344,622,369"/>
+<area shape="rect" id="node11" href="$class_robot.html#aec072eed2d38baedbbd5132b760720d0" title="Robot::limitMotorRotation" alt="" coords="478,393,649,419"/>
 </map>

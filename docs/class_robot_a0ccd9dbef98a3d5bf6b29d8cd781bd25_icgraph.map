@@ -1,11 +1,12 @@
 <map id="Robot::getBody" name="Robot::getBody">
 <area shape="rect" id="node2" href="$class_demo.html#a37b03d288a1bf67f586cdfe1f9ba16af" title="Demo::addRobotWithDistance" alt="" coords="168,5,369,31"/>
-<area shape="rect" id="node3" href="$class_robot_controller.html#a11e413a1ac6466f360f46820d28b0f2e" title="RobotController::findContact\lRobots" alt="" coords="174,55,363,93"/>
-<area shape="rect" id="node4" href="$class_robot_controller.html#a6b0bdb7620acbf40f48426e30ff0b759" title="RobotController::createGrip\lRobots" alt="" coords="176,117,361,156"/>
-<area shape="rect" id="node7" href="$class_robot_controller.html#a62fac365f203e2f826efb9b7b7e56854" title="RobotController::destroy\lJoints" alt="" coords="185,180,351,219"/>
-<area shape="rect" id="node8" href="$class_robot_controller.html#a927abf2765cd53b39acf128f318c3fe5" title="RobotController::robotPushing" alt="" coords="168,243,369,268"/>
-<area shape="rect" id="node9" href="$class_robot_controller.html#a83d343eb8958d365624d06ac1b0b1b3d" title="RobotController::robotStacking" alt="" coords="167,292,370,317"/>
-<area shape="rect" id="node5" href="$class_robot_controller.html#ab2e4091fc2e47701cc5dbd7c2d9fc649" title="RobotController::step" alt="" coords="436,155,583,180"/>
-<area shape="rect" id="node6" href="$class_demo.html#a938c3b6ab1c98ce43f977dda9d4f2b3a" title="Demo::demoLoop" alt="" coords="649,209,776,235"/>
-<area shape="rect" id="node10" href="$class_demo.html#a4636f708574c6be85334ff16373e2292" title="Demo::addRobotWithDelay" alt="" coords="418,233,601,259"/>
+<area shape="rect" id="node3" href="$class_demo.html#a653b6b835b58959fea0758f2a1695002" title="Demo::writeBridgeFile" alt="" coords="433,123,586,148"/>
+<area shape="rect" id="node5" href="$class_robot_controller.html#a11e413a1ac6466f360f46820d28b0f2e" title="RobotController::findContact\lRobots" alt="" coords="174,107,363,145"/>
+<area shape="rect" id="node6" href="$class_robot_controller.html#a6b0bdb7620acbf40f48426e30ff0b759" title="RobotController::createGrip\lRobots" alt="" coords="176,169,361,208"/>
+<area shape="rect" id="node8" href="$class_robot_controller.html#a62fac365f203e2f826efb9b7b7e56854" title="RobotController::destroy\lJoints" alt="" coords="185,232,351,271"/>
+<area shape="rect" id="node9" href="$class_robot_controller.html#a927abf2765cd53b39acf128f318c3fe5" title="RobotController::robotPushing" alt="" coords="168,295,369,320"/>
+<area shape="rect" id="node10" href="$class_robot_controller.html#a83d343eb8958d365624d06ac1b0b1b3d" title="RobotController::robotStacking" alt="" coords="167,344,370,369"/>
+<area shape="rect" id="node4" href="$class_demo.html#a938c3b6ab1c98ce43f977dda9d4f2b3a" title="Demo::demoLoop" alt="" coords="649,239,776,264"/>
+<area shape="rect" id="node7" href="$class_robot_controller.html#ab2e4091fc2e47701cc5dbd7c2d9fc649" title="RobotController::step" alt="" coords="436,239,583,264"/>
+<area shape="rect" id="node11" href="$class_demo.html#a4636f708574c6be85334ff16373e2292" title="Demo::addRobotWithDelay" alt="" coords="418,316,601,341"/>
 </map>
