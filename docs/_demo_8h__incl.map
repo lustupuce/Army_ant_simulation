@@ -1,4 +1,4 @@
-<map id="Demo.h" name="Demo.h">
+<map id="simulation/src/Demo.h" name="simulation/src/Demo.h">
 <area shape="rect" id="node6" href="$_robot_8h.html" title="Implement the Robot class and define enum linked to a robot object: e_state and side. " alt="" coords="187,152,255,177"/>
 <area shape="rect" id="node9" href="$_config_8h.html" title="Implementation of the Configuration class used to parse the configuration file and the sConfig struct..." alt="" coords="604,225,675,251"/>
 <area shape="rect" id="node10" href="$_robot_controller_8h.html" title="Implement the RobotController class. This class act as a supervisor for the Robots. " alt="" coords="152,79,277,104"/>

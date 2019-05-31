@@ -1,5 +1,5 @@
-<map id="Robot.h" name="Robot.h">
-<area shape="rect" id="node2" href="$_demo_8h.html" title="Implementation of the Demo class and the MyContactListener_v2 class. " alt="" coords="9,152,77,177"/>
-<area shape="rect" id="node4" href="$_robot_controller_8h.html" title="Implement the RobotController class. This class act as a supervisor for the Robots. " alt="" coords="31,79,156,104"/>
-<area shape="rect" id="node3" href="$main_8cpp.html" title="main.cpp" alt="" coords="5,225,81,251"/>
+<map id="simulation/src/Robot.h" name="simulation/src/Robot.h">
+<area shape="rect" id="node2" href="$_demo_8h.html" title="Implementation of the Demo class and the MyContactListener_v2 class. " alt="" coords="9,152,162,177"/>
+<area shape="rect" id="node4" href="$_robot_controller_8h.html" title="Implement the RobotController class. This class act as a supervisor for the Robots. " alt="" coords="52,79,263,104"/>
+<area shape="rect" id="node3" href="$main_8cpp.html" title="simulation/src/main.cpp" alt="" coords="5,225,166,251"/>
 </map>

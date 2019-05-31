@@ -1,4 +1,4 @@
-<map id="main.cpp" name="main.cpp">
+<map id="simulation/src/main.cpp" name="simulation/src/main.cpp">
 <area shape="rect" id="node6" href="$_config_8h.html" title="Implementation of the Configuration class used to parse the configuration file and the sConfig struct..." alt="" coords="934,299,1005,324"/>
 <area shape="rect" id="node8" href="$_demo_8h.html" title="Implementation of the Demo class and the MyContactListener_v2 class. " alt="" coords="689,79,757,104"/>
 <area shape="rect" id="node7" href="$constants_8h_source.html" title="constants.h" alt="" coords="845,372,935,397"/>
