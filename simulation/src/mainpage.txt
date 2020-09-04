@@ -9,17 +9,17 @@
  * - The physics is handled by Box2D: https://box2d.org/about/
  * - The graphics portion is done using SFML: https://www.sfml-dev.org
  *
- * However, both libraries does not use the same origin. Indeed. while the SFML (graphic) origin of the shapes is on the top left corner, the
+ * However, both libraries do not use the same origin. Indeed. while the SFML (graphic) origin of the shapes is on the top left corner, the
  * Box2D (physics) origin is set at the middle of the shape.\n (cf image below)
  * @image html box2d_vs_sfml.png
- * In addition, while in SFML all the positions are given in the world reference frame, the Box2D positions can be obtained either in the world reference frame our in their local
+ * In addition, while in SFML all the positions are given in the world reference frame, the Box2D positions can be obtained either in the world reference frame or in their local
  * reference frame (the shape from where the position is asked)\n
  * More importantly, the Box2D dimensions are given in meters while the SFML ones are given in pixel: to go from one to the other the conversion has to be carefully done
- * Thus, if it is possible to do all the transformation from the Box2D position to the SFML ones manually, it is usually easier to proceed as following:
+ * Thus, even if it is possible to do all the transformation from the Box2D position to the SFML ones manually, it is usually easier to proceed as following:
  * - Create the Box2D shape attached to a body
  * - Get the position of its top left corner in the world reference frame from the local reference frame \n
  * - Create the SFML corresponding shape at the position obtained previously\n
- * BE CAREFUL: the dimension also has to be converted from meters to pixel when going from Box2D to SFML\n\n
+ * BE CAREFUL: the dimensions also have to be converted from meters to pixel when going from Box2D to SFML\n\n
  * A concrete example to create a rectangle of width w and height h located at (posX, posY) is described below :
  * @code
  // Create the Box2D body (no fixture and shape attached yet)
@@ -46,9 +46,9 @@
  * @section struct Code overview
  *
  * To launch a simulation with existing terrains and without modifying the intrinsic properties of the robots or the controller,
- * only the main.cpp and Demo.cpp file should be modified.
+ * only the main.cpp and Demo.cpp files should be modified.
  * In addition, the simulator has not been implemented as a library and the main program is mixed with background source code. Thus it is better to start from
- * the existing main file (and modifying it) than creating a new one. Indeed, the main file also implements the basic function to parse the arguments to launch a simulation
+ * the existing main file (and modify it) than creating a new one. Indeed, the main file also implements the basic function to parse the arguments to launch a simulation
  * and the help function. @note A future improvement of the code could be to transform the code so that it can be used as a library (with for eg a simulation class which would be initiated with the configuration parameters).
  * However, it will require to find a way to give the terrain type as an entry parameter.
  *
